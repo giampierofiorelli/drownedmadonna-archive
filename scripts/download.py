@@ -1,0 +1,198 @@
+#!/usr/bin/env python3
+"""
+Download the original files of one era of drownedmadonna.com from the Wayback Machine.
+
+For the capture window [CAPTURE_FROM, CAPTURE_TO] (years, inclusive):
+  1. list every successful capture via the CDX API;
+  2. collapse URL variants (http/https, www, :80, &amp;, session ids, param order)
+     into one key and keep only the most recent capture of each key;
+  3. drop captures whose content digest is identical to an already kept, newer one;
+  4. fetch the raw original bytes (id_ mode) at ~1 request/second and save them
+     under mirror/<ERA_LABEL>/, recording everything in a manifest.
+
+The run is resumable: entries already in the manifest are skipped, and the script
+stops cleanly before TIME_BUDGET_MIN so the workflow can commit and continue.
+"""
+
+import csv
+import json
+import os
+import re
+import sys
+import time
+import urllib.error
+import urllib.parse
+import urllib.request
+
+DOMAIN = os.environ.get("ARCHIVE_DOMAIN", "drownedmadonna.com")
+ERA = os.environ["ERA_LABEL"]
+YEAR_FROM = os.environ["CAPTURE_FROM"]
+YEAR_TO = os.environ["CAPTURE_TO"]
+TIME_BUDGET_MIN = float(os.environ.get("TIME_BUDGET_MIN", "320"))
+DELAY = float(os.environ.get("REQUEST_DELAY", "1.0"))
+
+ROOT = os.path.join("mirror", ERA)
+PLAN_PATH = os.path.join(ROOT, "_plan.csv")
+MANIFEST_PATH = os.path.join(ROOT, "_manifest.csv")
+CDX = "https://web.archive.org/cdx/search/cdx"
+USER_AGENT = "drownedmadonna-archive-downloader/1.0 (owner recovering own site)"
+SESSION_PARAMS = {"phpsessid", "oscsid", "sessionid", "jsessionid"}
+START = time.time()
+
+
+def out_of_time():
+    return (time.time() - START) / 60 > TIME_BUDGET_MIN
+
+
+def http_get(url, attempts=6, raw=False):
+    """GET with retries; backs off hard on 429/5xx to respect archive.org."""
+    empty = b"" if raw else ""
+    for attempt in range(attempts):
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(req, timeout=120) as resp:
+                body = resp.read()
+                return resp.status, body if raw else body.decode("utf-8")
+        except urllib.error.HTTPError as exc:
+            if exc.code in (404, 403, 410):
+                return exc.code, empty
+            wait = min(600, 30 * 2 ** attempt)
+        except Exception:
+            wait = min(300, 10 * 2 ** attempt)
+        print(f"  retry in {wait}s: {url[:120]}", flush=True)
+        time.sleep(wait)
+    return None, empty
+
+
+def normalize(url):
+    """Collapse trivial URL variants into a single key."""
+    url = url.replace("&amp;", "&").replace("&amp", "&")
+    parts = urllib.parse.urlsplit(url)
+    host = (parts.hostname or "").lower()
+    if host.startswith("www."):
+        host = host[4:]
+    path = urllib.parse.unquote(parts.path) or "/"
+    path = re.sub(r"/{2,}", "/", path)
+    params = [(k, v) for k, v in urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
+              if k and k.lower() not in SESSION_PARAMS]
+    query = urllib.parse.urlencode(sorted(params))
+    return host + path + ("?" + query if query else "")
+
+
+def list_captures():
+    """All successful captures in the window, following CDX pagination."""
+    rows, resume_key = [], None
+    while True:
+        params = {
+            "url": DOMAIN, "matchType": "domain", "output": "json",
+            "fl": "original,timestamp,mimetype,digest,length",
+            "filter": "statuscode:200", "from": YEAR_FROM, "to": YEAR_TO,
+            "limit": 10000, "showResumeKey": "true",
+        }
+        if resume_key:
+            params["resumeKey"] = resume_key
+        status, text = http_get(CDX + "?" + urllib.parse.urlencode(params))
+        if status != 200 or not text.strip():
+            break
+        data = json.loads(text)
+        header, body = data[0], data[1:]
+        resume_key = None
+        if len(body) >= 2 and body[-2] == []:
+            resume_key = body[-1][0]
+            body = body[:-2]
+        rows += [dict(zip(header, r)) for r in body if len(r) == len(header)]
+        print(f"listed {len(rows)} captures", flush=True)
+        if not resume_key:
+            break
+        time.sleep(2)
+    return rows
+
+
+def build_plan():
+    """Pick the newest capture per URL key, then drop identical content."""
+    latest = {}
+    for r in list_captures():
+        key = normalize(r["original"])
+        if key not in latest or r["timestamp"] > latest[key]["timestamp"]:
+            latest[key] = r
+
+    by_digest = {}
+    for key, r in sorted(latest.items(), key=lambda kv: kv[1]["timestamp"], reverse=True):
+        by_digest.setdefault(r["digest"], (key, r))  # newest wins on identical content
+
+    plan = sorted(by_digest.values(), key=lambda kv: kv[0])
+    os.makedirs(ROOT, exist_ok=True)
+    with open(PLAN_PATH, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["key", "timestamp", "mimetype", "digest", "length", "original"])
+        for key, r in plan:
+            w.writerow([key, r["timestamp"], r["mimetype"], r["digest"], r["length"], r["original"]])
+    print(f"plan: {len(latest)} unique URLs, {len(plan)} after removing identical content", flush=True)
+
+
+def local_path(key, mimetype):
+    """Map a URL key to a safe file path inside the era folder."""
+    path, _, query = key.partition("?")
+    path = path.split("/", 1)[1] if "/" in path else ""
+    if not path or path.endswith("/"):
+        path += "index"
+    if query:
+        path += "__" + re.sub(r"[^A-Za-z0-9=._-]+", "_", query)[:150]
+    path = re.sub(r"[^A-Za-z0-9/._,=-]+", "_", path)
+    if "html" in mimetype and not re.search(r"\.(html?|php|asp)$", path, re.I):
+        path += ".html"
+    return os.path.join(ROOT, "files", path)
+
+
+def main():
+    if not os.path.exists(PLAN_PATH):
+        build_plan()
+
+    with open(PLAN_PATH, encoding="utf-8") as f:
+        plan = list(csv.DictReader(f))
+
+    done = set()
+    if os.path.exists(MANIFEST_PATH):
+        with open(MANIFEST_PATH, encoding="utf-8") as f:
+            done = {row["key"] for row in csv.DictReader(f)}
+
+    new_file = not os.path.exists(MANIFEST_PATH)
+    manifest = open(MANIFEST_PATH, "a", newline="", encoding="utf-8")
+    writer = csv.writer(manifest)
+    if new_file:
+        writer.writerow(["key", "timestamp", "status", "bytes", "file", "original"])
+
+    todo = [p for p in plan if p["key"] not in done]
+    print(f"{len(done)} already done, {len(todo)} to go", flush=True)
+
+    for i, p in enumerate(todo, 1):
+        if out_of_time():
+            print("time budget reached, stopping for this run", flush=True)
+            break
+        url = f"https://web.archive.org/web/{p['timestamp']}id_/{p['original']}"
+        status, body = http_get(url, raw=True)
+        rel = ""
+        if status == 200 and body:
+            rel = local_path(p["key"], p["mimetype"])
+            os.makedirs(os.path.dirname(rel), exist_ok=True)
+            with open(rel, "wb") as out:
+                out.write(body)
+        if status is not None:  # network failures are retried on the next run
+            writer.writerow([p["key"], p["timestamp"], status, len(body), rel, p["original"]])
+            manifest.flush()
+        if i % 100 == 0:
+            print(f"{i}/{len(todo)}", flush=True)
+        time.sleep(DELAY)
+
+    manifest.close()
+    with open(MANIFEST_PATH, encoding="utf-8") as f:
+        finished = sum(1 for _ in f) - 1
+    complete = finished >= len(plan)
+    print(f"progress: {finished}/{len(plan)} complete={complete}", flush=True)
+    with open(os.environ.get("GITHUB_OUTPUT", os.devnull), "a") as gh:
+        gh.write(f"complete={'true' if complete else 'false'}\n")
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

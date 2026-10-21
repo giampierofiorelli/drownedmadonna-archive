@@ -1,0 +1,66 @@
+name: Wayback download
+
+# Starts when config/download.json changes, or manually.
+# Each run works for up to ~5h20m, commits progress, then re-dispatches itself
+# until the era is complete.
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - config/download.json
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: download
+  cancel-in-progress: false
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Read config
+        id: cfg
+        run: |
+          echo "era=$(jq -r .era config/download.json)" >> "$GITHUB_OUTPUT"
+          echo "from=$(jq -r .capture_from config/download.json)" >> "$GITHUB_OUTPUT"
+          echo "to=$(jq -r .capture_to config/download.json)" >> "$GITHUB_OUTPUT"
+
+      - name: Download era
+        id: dl
+        env:
+          ERA_LABEL: ${{ steps.cfg.outputs.era }}
+          CAPTURE_FROM: ${{ steps.cfg.outputs.from }}
+          CAPTURE_TO: ${{ steps.cfg.outputs.to }}
+          TIME_BUDGET_MIN: "320"
+        run: python scripts/download.py
+
+      - name: Commit progress
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add mirror/
+          if git diff --cached --quiet; then
+            echo "Nothing new to commit"
+          else
+            git commit -q -m "Wayback download: ${{ steps.cfg.outputs.era }} progress"
+            git pull --rebase -q
+            git push -q
+          fi
+
+      - name: Continue in a new run
+        if: steps.dl.outputs.complete == 'false'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run download.yml --ref main
