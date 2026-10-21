@@ -25,6 +25,8 @@ import urllib.error
 import urllib.parse
 import urllib.request
 
+from urlkeys import normalize
+
 DOMAIN = os.environ.get("ARCHIVE_DOMAIN", "drownedmadonna.com")
 ERA = os.environ["ERA_LABEL"]
 YEAR_FROM = os.environ["CAPTURE_FROM"]
@@ -38,8 +40,8 @@ PLAN_PATH = os.path.join(ROOT, "_plan.csv")
 MANIFEST_PATH = os.path.join(ROOT, "_manifest.csv")
 CDX = "https://web.archive.org/cdx/search/cdx"
 USER_AGENT = "drownedmadonna-archive-downloader/1.0 (owner recovering own site)"
-SESSION_PARAMS = {"phpsessid", "oscsid", "sessionid", "jsessionid"}
 START = time.time()
+CHECKPOINTS = 0
 
 
 def out_of_time():
@@ -64,21 +66,6 @@ def http_get(url, attempts=6, raw=False):
         print(f"  retry in {wait}s: {url[:120]}", flush=True)
         time.sleep(wait)
     return None, empty
-
-
-def normalize(url):
-    """Collapse trivial URL variants into a single key."""
-    url = url.replace("&amp;", "&").replace("&amp", "&")
-    parts = urllib.parse.urlsplit(url)
-    host = (parts.hostname or "").lower()
-    if host.startswith("www."):
-        host = host[4:]
-    path = urllib.parse.unquote(parts.path) or "/"
-    path = re.sub(r"/{2,}", "/", path)
-    params = [(k, v) for k, v in urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
-              if k and k.lower() not in SESSION_PARAMS]
-    query = urllib.parse.urlencode(sorted(params))
-    return host + path + ("?" + query if query else "")
 
 
 def list_captures():
@@ -154,9 +141,13 @@ def checkpoint(done_count, total):
                 f"Last update: {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}\n")
     if not os.environ.get("GITHUB_ACTIONS"):
         return
+    global CHECKPOINTS
+    CHECKPOINTS += 1
+    # Rebuild the Netlify copy only every third checkpoint (~30 min) to limit builds.
+    skip = "" if CHECKPOINTS % 3 == 0 else " [skip netlify]"
     cmds = [
         ["git", "add", "mirror/"],
-        ["git", "commit", "-q", "-m", f"Wayback download: {ERA} checkpoint {done_count}/{total}"],
+        ["git", "commit", "-q", "-m", f"Wayback download: {ERA} checkpoint {done_count}/{total}" + skip],
         ["git", "pull", "--rebase", "-q"],
         ["git", "push", "-q"],
     ]
