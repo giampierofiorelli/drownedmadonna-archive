@@ -29,6 +29,9 @@ REFRESH_RE = re.compile(r"""(content\s*=\s*["']\s*\d+\s*;\s*url\s*=\s*)([^"'>\s]
 CSS_URL_RE = re.compile(r"""url\(\s*(['"]?)([^'")]+)\1\s*\)""", re.I)
 TITLE_RE = re.compile(rb"<title[^>]*>(.*?)</title>", re.I | re.S)
 SKIP_SCHEMES = ("mailto:", "javascript:", "data:", "#", "about:", "tel:")
+# Hosting cannot send X-Robots-Tag headers, so every archived page gets a noindex tag.
+NOINDEX_TAG = '<meta name="robots" content="noindex, nofollow">'
+NOINDEX_RE = re.compile(r"<head[^>]*>", re.I)
 
 
 def load_era(era):
@@ -112,6 +115,8 @@ def build_era(era):
                 text = CSS_URL_RE.sub(lambda m: f"url({m.group(1)}{rewrite(m.group(2))}{m.group(1)})", text)
             else:
                 text = rewrite_html(text, rewrite)
+                text = NOINDEX_RE.sub(lambda m: m.group(0) + NOINDEX_TAG, text, count=1) \
+                    if NOINDEX_RE.search(text) else NOINDEX_TAG + text
                 t = TITLE_RE.search(data)
                 title = re.sub(r"\s+", " ", t.group(1).decode("latin-1")).strip() if t else ""
                 listing.append((rel, title or rel, original))
