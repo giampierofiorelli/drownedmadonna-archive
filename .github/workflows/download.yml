@@ -36,6 +36,11 @@ jobs:
           echo "from=$(jq -r .capture_from config/download.json)" >> "$GITHUB_OUTPUT"
           echo "to=$(jq -r .capture_to config/download.json)" >> "$GITHUB_OUTPUT"
 
+      - name: Configure git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Download era
         id: dl
         env:

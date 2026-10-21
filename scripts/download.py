@@ -18,6 +18,7 @@ import csv
 import json
 import os
 import re
+import subprocess
 import sys
 import time
 import urllib.error
@@ -30,6 +31,7 @@ YEAR_FROM = os.environ["CAPTURE_FROM"]
 YEAR_TO = os.environ["CAPTURE_TO"]
 TIME_BUDGET_MIN = float(os.environ.get("TIME_BUDGET_MIN", "320"))
 DELAY = float(os.environ.get("REQUEST_DELAY", "1.0"))
+CHECKPOINT_MIN = float(os.environ.get("CHECKPOINT_MIN", "10"))
 
 ROOT = os.path.join("mirror", ERA)
 PLAN_PATH = os.path.join(ROOT, "_plan.csv")
@@ -144,6 +146,27 @@ def local_path(key, mimetype):
     return os.path.join(ROOT, "files", path)
 
 
+def checkpoint(done_count, total):
+    """Write a progress file and push everything downloaded so far (CI only)."""
+    with open(os.path.join(ROOT, "_status.md"), "w", encoding="utf-8") as f:
+        f.write(f"# {ERA}\n\nProcessed {done_count} of {total} files "
+                f"({100 * done_count / max(total, 1):.0f}%).\n\n"
+                f"Last update: {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}\n")
+    if not os.environ.get("GITHUB_ACTIONS"):
+        return
+    cmds = [
+        ["git", "add", "mirror/"],
+        ["git", "commit", "-q", "-m", f"Wayback download: {ERA} checkpoint {done_count}/{total}"],
+        ["git", "pull", "--rebase", "-q"],
+        ["git", "push", "-q"],
+    ]
+    for cmd in cmds:
+        if subprocess.run(cmd).returncode != 0 and cmd[1] != "commit":
+            print(f"  checkpoint step failed: {' '.join(cmd)}", flush=True)
+            return
+    print(f"checkpoint pushed: {done_count}/{total}", flush=True)
+
+
 def main():
     if not os.path.exists(PLAN_PATH):
         build_plan()
@@ -164,6 +187,8 @@ def main():
 
     todo = [p for p in plan if p["key"] not in done]
     print(f"{len(done)} already done, {len(todo)} to go", flush=True)
+    checkpoint(len(done), len(plan))
+    last_checkpoint = time.time()
 
     for i, p in enumerate(todo, 1):
         if out_of_time():
@@ -182,6 +207,9 @@ def main():
             manifest.flush()
         if i % 100 == 0:
             print(f"{i}/{len(todo)}", flush=True)
+        if time.time() - last_checkpoint > CHECKPOINT_MIN * 60:
+            checkpoint(len(done) + i, len(plan))
+            last_checkpoint = time.time()
         time.sleep(DELAY)
 
     manifest.close()
