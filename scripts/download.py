@@ -32,8 +32,8 @@ ERA = os.environ["ERA_LABEL"]
 YEAR_FROM = os.environ["CAPTURE_FROM"]
 YEAR_TO = os.environ["CAPTURE_TO"]
 TIME_BUDGET_MIN = float(os.environ.get("TIME_BUDGET_MIN", "320"))
-# archive.org throttles bursts (roughly 15 requests/minute); stay just under it.
-DELAY = float(os.environ.get("REQUEST_DELAY", "4.0"))
+# Pause between requests to stay well clear of archive.org rate limiting.
+DELAY = float(os.environ.get("REQUEST_DELAY", "2.0"))
 CHECKPOINT_MIN = float(os.environ.get("CHECKPOINT_MIN", "10"))
 
 ROOT = os.path.join("mirror", ERA)
@@ -52,6 +52,9 @@ def out_of_time():
 def http_get(url, attempts=6, raw=False):
     """GET with retries; backs off hard on 429/5xx to respect archive.org."""
     empty = b"" if raw else ""
+    # Archived URLs can contain spaces, accents or other non-ASCII characters;
+    # percent-encode them while leaving already-valid URL syntax untouched.
+    url = urllib.parse.quote(url, safe=":/?#[]@!$&'()*+,;=%~")
     for attempt in range(attempts):
         try:
             req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
@@ -63,6 +66,10 @@ def http_get(url, attempts=6, raw=False):
                 return exc.code, empty
             STATS[f"http_{exc.code}"] = STATS.get(f"http_{exc.code}", 0) + 1
             wait = min(600, 30 * 2 ** attempt)
+        except (UnicodeError, ValueError) as exc:
+            # Not a network problem: retrying cannot help, so record it as failed.
+            STATS[type(exc).__name__] = STATS.get(type(exc).__name__, 0) + 1
+            return 0, empty
         except Exception as exc:
             name = type(exc).__name__
             STATS[name] = STATS.get(name, 0) + 1
