@@ -32,7 +32,8 @@ ERA = os.environ["ERA_LABEL"]
 YEAR_FROM = os.environ["CAPTURE_FROM"]
 YEAR_TO = os.environ["CAPTURE_TO"]
 TIME_BUDGET_MIN = float(os.environ.get("TIME_BUDGET_MIN", "320"))
-DELAY = float(os.environ.get("REQUEST_DELAY", "1.0"))
+# archive.org throttles bursts (roughly 15 requests/minute); stay just under it.
+DELAY = float(os.environ.get("REQUEST_DELAY", "4.0"))
 CHECKPOINT_MIN = float(os.environ.get("CHECKPOINT_MIN", "10"))
 
 ROOT = os.path.join("mirror", ERA)
@@ -41,7 +42,7 @@ MANIFEST_PATH = os.path.join(ROOT, "_manifest.csv")
 CDX = "https://web.archive.org/cdx/search/cdx"
 USER_AGENT = "drownedmadonna-archive-downloader/1.0 (owner recovering own site)"
 START = time.time()
-CHECKPOINTS = 0
+STATS = {}  # retry reasons this run, reported in _status.md
 
 
 def out_of_time():
@@ -60,9 +61,13 @@ def http_get(url, attempts=6, raw=False):
         except urllib.error.HTTPError as exc:
             if exc.code in (404, 403, 410):
                 return exc.code, empty
+            STATS[f"http_{exc.code}"] = STATS.get(f"http_{exc.code}", 0) + 1
             wait = min(600, 30 * 2 ** attempt)
-        except Exception:
+        except Exception as exc:
+            name = type(exc).__name__
+            STATS[name] = STATS.get(name, 0) + 1
             wait = min(300, 10 * 2 ** attempt)
+        STATS["wait_seconds"] = STATS.get("wait_seconds", 0) + wait
         print(f"  retry in {wait}s: {url[:120]}", flush=True)
         time.sleep(wait)
     return None, empty
@@ -138,13 +143,12 @@ def checkpoint(done_count, total):
     with open(os.path.join(ROOT, "_status.md"), "w", encoding="utf-8") as f:
         f.write(f"# {ERA}\n\nProcessed {done_count} of {total} files "
                 f"({100 * done_count / max(total, 1):.0f}%).\n\n"
-                f"Last update: {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}\n")
+                f"Last update: {time.strftime('%Y-%m-%d %H:%M UTC', time.gmtime())}\n\n"
+                f"Delay between requests: {DELAY}s. "
+                f"Retries this run: {json.dumps(STATS) if STATS else 'none'}\n")
     if not os.environ.get("GITHUB_ACTIONS"):
         return
-    global CHECKPOINTS
-    CHECKPOINTS += 1
-    # Rebuild the Netlify copy only every third checkpoint (~30 min) to limit builds.
-    skip = "" if CHECKPOINTS % 3 == 0 else " [skip netlify]"
+    skip = ""
     cmds = [
         ["git", "add", "mirror/"],
         ["git", "commit", "-q", "-m", f"Wayback download: {ERA} checkpoint {done_count}/{total}" + skip],
