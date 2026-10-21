@@ -24,6 +24,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
+from concurrent.futures import FIRST_COMPLETED, ThreadPoolExecutor, wait
 
 from urlkeys import normalize
 
@@ -35,6 +36,7 @@ TIME_BUDGET_MIN = float(os.environ.get("TIME_BUDGET_MIN", "320"))
 # Pause between requests to stay well clear of archive.org rate limiting.
 DELAY = float(os.environ.get("REQUEST_DELAY", "2.0"))
 CHECKPOINT_MIN = float(os.environ.get("CHECKPOINT_MIN", "10"))
+WORKERS = int(os.environ.get("WORKERS", "4"))
 
 ROOT = os.path.join("mirror", ERA)
 PLAN_PATH = os.path.join(ROOT, "_plan.csv")
@@ -192,10 +194,8 @@ def main():
     checkpoint(len(done), len(plan))
     last_checkpoint = time.time()
 
-    for i, p in enumerate(todo, 1):
-        if out_of_time():
-            print("time budget reached, stopping for this run", flush=True)
-            break
+    def fetch_one(p):
+        """Download one capture; runs in a worker thread."""
         url = f"https://web.archive.org/web/{p['timestamp']}id_/{p['original']}"
         status, body = http_get(url, raw=True)
         rel = ""
@@ -204,15 +204,38 @@ def main():
             os.makedirs(os.path.dirname(rel), exist_ok=True)
             with open(rel, "wb") as out:
                 out.write(body)
-        if status is not None:  # network failures are retried on the next run
-            writer.writerow([p["key"], p["timestamp"], status, len(body), rel, p["original"]])
-            manifest.flush()
-        if i % 100 == 0:
-            print(f"{i}/{len(todo)}", flush=True)
-        if time.time() - last_checkpoint > CHECKPOINT_MIN * 60:
-            checkpoint(len(done) + i, len(plan))
-            last_checkpoint = time.time()
-        time.sleep(DELAY)
+        time.sleep(DELAY)  # per-worker pause keeps the overall rate modest
+        return p, status, len(body), rel
+
+    # Archive responses are slow (~15s each), so a few parallel workers multiply
+    # throughput while the request rate stays low. The manifest is written only
+    # from this thread.
+    processed = 0
+    queue = iter(todo)
+    with ThreadPoolExecutor(max_workers=WORKERS) as pool:
+        running = set()
+        while True:
+            while len(running) < WORKERS and not out_of_time():
+                p = next(queue, None)
+                if p is None:
+                    break
+                running.add(pool.submit(fetch_one, p))
+            if not running:
+                break
+            finished, running = wait(running, return_when=FIRST_COMPLETED)
+            for fut in finished:
+                p, status, size, rel = fut.result()
+                processed += 1
+                if status is not None:  # network failures are retried on the next run
+                    writer.writerow([p["key"], p["timestamp"], status, size, rel, p["original"]])
+                    manifest.flush()
+                if processed % 100 == 0:
+                    print(f"{processed}/{len(todo)}", flush=True)
+            if time.time() - last_checkpoint > CHECKPOINT_MIN * 60:
+                checkpoint(len(done) + processed, len(plan))
+                last_checkpoint = time.time()
+    if out_of_time():
+        print("time budget reached, stopping for this run", flush=True)
 
     manifest.close()
     with open(MANIFEST_PATH, encoding="utf-8") as f:
