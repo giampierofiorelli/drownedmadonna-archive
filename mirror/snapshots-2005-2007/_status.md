@@ -1,7 +1,7 @@
 # snapshots-2005-2007
 
-Processed 66 of 186 files (35%).
+Processed 186 of 186 files (100%).
 
-Last update: 2026-10-22 14:31 UTC
+Last update: 2026-10-22 14:54 UTC
 
-Delay between requests: 2.0s. Retries this run: {"URLError": 12, "wait_seconds": 170}
+Delay between requests: 2.0s. Retries this run: none
