@@ -1,0 +1,963 @@
+
+<html>
+<head>
+<meta name="copyright" content="Copyright (C) 2001-2202 Bruce Corkhill">
+<title>Discussion Forum: vendo tutto affrettatevi</title>
+
+<!-- Web Wiz Forums is written and produced by Bruce Corkhill ©2001-2002
+     	If you want your own Forum then goto http://www.webwizguide.info -->
+     	   	
+<script  language="JavaScript">
+<!-- Hide from older browsers...
+
+//Function to check form is filled in correctly before submitting
+function CheckForm () {
+
+	var errorMsg = "";
+	
+	//Check for message
+	if (document.frmAddMessage.message.value==""){
+		errorMsg += "\n\tMessage \t- Enter a Message to post";
+	}
+	
+	//If there is aproblem with the form then display an error
+	if (errorMsg != ""){
+		msg = "_______________________________________________________________\n\n";
+		msg += "The form has not been submitted because there are problem(s) with the form.\n";
+		msg += "Please correct the problem(s) and re-submit the form.\n";
+		msg += "_______________________________________________________________\n\n";
+		msg += "The following field(s) need to be corrected: -\n";
+		
+		errorMsg += alert(msg + errorMsg + "\n\n");
+		return false;
+	}
+	
+	return true;
+}
+
+//Function to jump to another forum
+function ForumJump(URL) {
+	
+	if (URL.options[URL.selectedIndex].value != "") self.location.href = URL.options[URL.selectedIndex].value;	
+	return true;
+}
+
+//Function to open pop up window
+function openWin(theURL,winName,features) {
+  	window.open(theURL,winName,features);
+}
+
+// -->
+</script>
+
+<style type="text/css">
+<!--
+.text {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;}
+.bold {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;}
+.heading {font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #000000;}
+.lgText {font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #000000; font-weight: bold;}
+.tHeading {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;}
+.tiHeading {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;}
+a {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #0000CC;}
+a:hover {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #0000CC;}
+a:visited {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #0000CC;}
+a:visited:hover {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #FF0000;}
+-->
+</style>
+</head>
+<body bgcolor="#CCFFFF" text="#000000" background="" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+ <tr> 
+  <td colspan="2"><table width="90%" border="0" cellspacing="7" cellpadding="0" align="center">
+  <tr> 
+    <td width="14%" valign="top">&nbsp;
+    <td align="center" width="72%"> 
+      
+
+<p align="center">
+<applet code="Lake.class" id="Lake" width="366" height="60" align="center">
+ 
+  <param name="image" value="forum_images/titoloforum.jpg">
+</applet>
+</p>
+
+    <td align="center" width="14%"><a href="http://www.drownedmadonna.com" target="_self" style="font-size: 11px;"> Drowned Madonna</a> 
+  </tr>
+</table></td>
+ </tr>
+ <tr> 
+  <td width="0%" valign="top"><!-- side bar --></td><td width="100%" valign="top">
+<br>
+      <table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+        <tr><td class="text">Welcome Guest</td>
+          <td align="right">
+          
+<a href="register_form.asp?ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1" target="_self"><img src="forum_images/register.gif" width="87" height="26" alt="Register" border="0" align="absmiddle"></a>&nbsp;<a href="login_user.asp?ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1" target="_self"><img src="forum_images/login.gif" width="87" height="26" alt="Login" border="0" align="absmiddle"></a>
+          
+            <a href="search_form.asp?ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1" target="_self"><img src="forum_images/search.gif" width="87" height="26" align="absmiddle" border="0" alt="Search The Forum"></a> 
+            <a href="forum_members.asp?ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1" target="_self"><img src="forum_images/members_list.gif" width="87" height="26" border="0" align="absmiddle" alt="Display List of Forum Members"></a>
+          </td>
+        </tr>
+      </table>
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+ <tr> 
+  <td align="left" width="69%"> 
+   
+<img src="forum_images/folder_icon.gif" border="0" align="bottom">&nbsp;<a href="default.asp" target="_self">All Forums</a><br>
+<img src="forum_images/folder_line.gif">&nbsp;<img src="forum_images/open_folder_icon.gif" width="15" height="15">&nbsp;<a href="display_forum_topics.asp?ForumID=4&PagePosition=1&ThreadPage=1" target="_self">Cerco, vendo o scambio</a>
+  </td>
+  <td align="right" width="31%" >&nbsp;</td>
+ </tr>
+</table>
+      <table width="98%" border="0" cellspacing="0" cellpadding="4" align="center">
+        <tr> 
+          <td width="70%"><span class="lgText"><img src="forum_images/subject_folder.gif" alt="Subject" align="absmiddle"> Topic: vendo tutto affrettatevi</span></td>
+          
+<td align="right"><a href="post_message_form.asp?mode=new&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1"  target="_self"><img src="forum_images/post_reply.gif" width="87" height="26" border="0" align="absmiddle" alt="Post Reply"></a>&nbsp;<a href="post_message_form.asp?mode=new&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1"  target="_self"><img src="forum_images/new_post.gif" width="87" height="26" border="0" align="absmiddle" alt="Post New Topic"></a></td>       
+        </tr>
+      </table>
+
+	<a name="2827">
+	<table width="98%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" align="center">
+          <tr>
+           <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#78F4FE" height="145">
+             <tr> 
+              <td colspan="2">
+               <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#D0C0FE" background="">
+                   <tr> 
+                    <td class="text">Message posted by <a href="JavaScript:openWin('pop_up_profile.asp?profile=87&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">LuckyStar</a> on 04 Luglio 2002 at 10:07<span style="font-size=10px"> - IP Logged</span>
+            <br>
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=87&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')"><img src="forum_images/profile_icon.gif" border="0" alt="View&nbsp;LuckyStar's&nbsp;Profile" align="absmiddle"></a> 
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=87&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')" style="font-size: 10px;" title="View&nbsp;LuckyStar's&nbsp;Profile">Profile</a>&nbsp;&nbsp;
+            <a href="search_form.asp?search=LuckyStar&searchIn=Author&forum=4&date=DESC"><img src="forum_images/search_icon.gif" border="0" alt="Search for other posts by&nbsp;LuckyStar" align="absmiddle"></a> 
+            <a href="search.asp?search=LuckyStar&searchIn=Author&forum=4&searchSort=dateDESC" style="font-size: 10px;" title="Search for other posts by&nbsp;LuckyStar">Search</a>&nbsp;&nbsp; 
+            
+            <a href="post_message_form.asp?mode=quote&threadID=2827&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=1"><img src="forum_images/quote_icon.gif" align="absmiddle" border="0" alt="Quote&nbsp;LuckyStar"></a> 
+            <a href="post_message_form.asp?mode=quote&threadID=2827&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=9"  target="_self" style="font-size: 10px;" title="QuoteLuckyStar">Quote</a>&nbsp;&nbsp;
+            <a href="pm_new_message_form.asp?name=LuckyStar" target="_self"><img src="forum_images/e-mail_topic.gif" align="absmiddle" border="0" alt="Send Private Message"></a> 
+            <a href="pm_new_message_form.asp?name=LuckyStar" target="_self" style="font-size: 10px;">Send Msg</a>&nbsp;&nbsp; 
+            
+           </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+             <tr> 
+              <td valign="top"> 
+               <table border="0" cellspacing="1" cellpadding="1" bgcolor="#666666" height="100%">
+                <tr> 
+                 <td valign="top" bgcolor="#F7BBFD" background=""> 
+                  <table border="0" cellspacing="0" cellpadding="0" bgcolor="#F7BBFD" background="" height="100%">
+                   <tr> 
+                    <td valign="top"> 
+              	     <table border="0" cellspacing="0" cellpadding="2" height="145">
+                      <tr> 
+                       <td class="text" align="center">LuckyStar</td>
+                      </tr>
+                      <tr> <td class="text" align="center"><img src="http://www.sindrismad&#111;nnapage.com/smp/avatars/dad_10.gif" width="60" height="60" alt="Avatar" OnError="this.src='avatars/blank.gif', height='0';"></td></tr>
+                      <tr> 
+                       <td class="text" align="center"><span style="font-size: 10px;">Standard Member</span><br><img src="forum_images/1_star_rating.gif" alt="Standard Member"></td>
+                      </tr>
+                      <tr> 
+                       <td><img src="forum_images/1px_spacer.gif" width="112" height="1"></td>
+                       </tr>
+          		<tr> 
+           		<td class="text" valign="bottom"><span style="font-size: 10px;">Italia
+           		 <br>05 Giugno 2002
+           		 <br>81&nbsp;Posts</span></td>
+           		</tr>
+                     </table>       
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+              <td width="90%">
+               <table border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" width="100%">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FCF7E0" background="" height="147">
+                   <tr> 
+                    <td class="text" valign="top"> 
+                     <!-- Message body -->ciao sarei interessato alle foto e se hai i biglietti dei c&#111;ncerti del Bl&#111;nd Ambiti&#111;n o Girlie Show, fammi sapere ciao...<!-- Message body -->
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+<br>
+
+	<a name="2835">
+	<table width="98%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" align="center">
+          <tr>
+           <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#78F4FE" height="145">
+             <tr> 
+              <td colspan="2">
+               <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#D0C0FE" background="">
+                   <tr> 
+                    <td class="text">Message posted by <a href="JavaScript:openWin('pop_up_profile.asp?profile=242&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">maxvamp</a> on 04 Luglio 2002 at 11:42<span style="font-size=10px"> - IP Logged</span>
+            <br>
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=242&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')"><img src="forum_images/profile_icon.gif" border="0" alt="View&nbsp;maxvamp's&nbsp;Profile" align="absmiddle"></a> 
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=242&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')" style="font-size: 10px;" title="View&nbsp;maxvamp's&nbsp;Profile">Profile</a>&nbsp;&nbsp;
+            <a href="search_form.asp?search=maxvamp&searchIn=Author&forum=4&date=DESC"><img src="forum_images/search_icon.gif" border="0" alt="Search for other posts by&nbsp;maxvamp" align="absmiddle"></a> 
+            <a href="search.asp?search=maxvamp&searchIn=Author&forum=4&searchSort=dateDESC" style="font-size: 10px;" title="Search for other posts by&nbsp;maxvamp">Search</a>&nbsp;&nbsp; 
+            
+            <a href="post_message_form.asp?mode=quote&threadID=2835&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=1"><img src="forum_images/quote_icon.gif" align="absmiddle" border="0" alt="Quote&nbsp;maxvamp"></a> 
+            <a href="post_message_form.asp?mode=quote&threadID=2835&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=9"  target="_self" style="font-size: 10px;" title="Quotemaxvamp">Quote</a>&nbsp;&nbsp;
+            <a href="pm_new_message_form.asp?name=maxvamp" target="_self"><img src="forum_images/e-mail_topic.gif" align="absmiddle" border="0" alt="Send Private Message"></a> 
+            <a href="pm_new_message_form.asp?name=maxvamp" target="_self" style="font-size: 10px;">Send Msg</a>&nbsp;&nbsp; 
+            
+           </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+             <tr> 
+              <td valign="top"> 
+               <table border="0" cellspacing="1" cellpadding="1" bgcolor="#666666" height="100%">
+                <tr> 
+                 <td valign="top" bgcolor="#F7BBFD" background=""> 
+                  <table border="0" cellspacing="0" cellpadding="0" bgcolor="#F7BBFD" background="" height="100%">
+                   <tr> 
+                    <td valign="top"> 
+              	     <table border="0" cellspacing="0" cellpadding="2" height="145">
+                      <tr> 
+                       <td class="text" align="center">maxvamp</td>
+                      </tr>
+                      <tr> <td class="text" align="center"><img src="http://www.mad-eyes.net/goodies/images/av_vogue04.gif" width="60" height="60" alt="Avatar" OnError="this.src='avatars/blank.gif', height='0';"></td></tr>
+                      <tr> 
+                       <td class="text" align="center"><span style="font-size: 10px;">Gold Member</span><br><img src="forum_images/2_star_rating.gif" alt="Gold Member"></td>
+                      </tr>
+                      <tr> 
+                       <td><img src="forum_images/1px_spacer.gif" width="112" height="1"></td>
+                       </tr>
+          		<tr> 
+           		<td class="text" valign="bottom"><span style="font-size: 10px;">Italia, Genova
+           		 <br>13 Giugno 2002
+           		 <br>898&nbsp;Posts</span></td>
+           		</tr>
+                     </table>       
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+              <td width="90%">
+               <table border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" width="100%">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FCF7E0" background="" height="147">
+                   <tr> 
+                    <td class="text" valign="top"> 
+                     <!-- Message body --><FONT color=red face="Arial, Helvetica, sans-serif" size=6><strong>SE HAI IL CALENDARIO UFFICIALE C&#079;N FOTO PEPSI IN COPERTINA UFFICIALE C&#079;NTATTAMI IN PVT O SCRIVIMI SU MAIL <a target="_blank" href= "mailto:DROWNEDMAX@INWIND.IT">DROWNEDMAX@INWIND.IT</A></strong></FONT><!-- Signature --><br><br><span style="font-size=9px">-------------</span><br><img border="0" src= "http://digilander.libero.it/the_drowned_world/Vamp.gif"><img border="0" src= "http://utenti.lycos.it/maxvamp/diva.jpg"><img border="0" src= "http://www.mad-eyes.net/goodies/images/av_voguemtv01.gif"><!-- Signature --><!-- Message body -->
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+<br>
+
+	<a name="3093">
+	<table width="98%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" align="center">
+          <tr>
+           <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#78F4FE" height="145">
+             <tr> 
+              <td colspan="2">
+               <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#D0C0FE" background="">
+                   <tr> 
+                    <td class="text">Message posted by <a href="JavaScript:openWin('pop_up_profile.asp?profile=22&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">*cosmic*system*</a> on 07 Luglio 2002 at 18:13<span style="font-size=10px"> - IP Logged</span>
+            <br>
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=22&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')"><img src="forum_images/profile_icon.gif" border="0" alt="View&nbsp;*cosmic*system*'s&nbsp;Profile" align="absmiddle"></a> 
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=22&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')" style="font-size: 10px;" title="View&nbsp;*cosmic*system*'s&nbsp;Profile">Profile</a>&nbsp;&nbsp;
+            <a href="search_form.asp?search=%2Acosmic%2Asystem%2A&searchIn=Author&forum=4&date=DESC"><img src="forum_images/search_icon.gif" border="0" alt="Search for other posts by&nbsp;*cosmic*system*" align="absmiddle"></a> 
+            <a href="search.asp?search=*cosmic*system*&searchIn=Author&forum=4&searchSort=dateDESC" style="font-size: 10px;" title="Search for other posts by&nbsp;*cosmic*system*">Search</a>&nbsp;&nbsp; 
+            
+            <a href="post_message_form.asp?mode=quote&threadID=3093&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=1"><img src="forum_images/quote_icon.gif" align="absmiddle" border="0" alt="Quote&nbsp;*cosmic*system*"></a> 
+            <a href="post_message_form.asp?mode=quote&threadID=3093&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=9"  target="_self" style="font-size: 10px;" title="Quote*cosmic*system*">Quote</a>&nbsp;&nbsp;
+            <a href="pm_new_message_form.asp?name=%2Acosmic%2Asystem%2A" target="_self"><img src="forum_images/e-mail_topic.gif" align="absmiddle" border="0" alt="Send Private Message"></a> 
+            <a href="pm_new_message_form.asp?name=%2Acosmic%2Asystem%2A" target="_self" style="font-size: 10px;">Send Msg</a>&nbsp;&nbsp; 
+            
+           </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+             <tr> 
+              <td valign="top"> 
+               <table border="0" cellspacing="1" cellpadding="1" bgcolor="#666666" height="100%">
+                <tr> 
+                 <td valign="top" bgcolor="#F7BBFD" background=""> 
+                  <table border="0" cellspacing="0" cellpadding="0" bgcolor="#F7BBFD" background="" height="100%">
+                   <tr> 
+                    <td valign="top"> 
+              	     <table border="0" cellspacing="0" cellpadding="2" height="145">
+                      <tr> 
+                       <td class="text" align="center">*cosmic*system*</td>
+                      </tr>
+                      <tr> <td class="text" align="center"><img src="http://www.mad-eyes.net/goodies/images/av_sa01.gif" width="60" height="60" alt="Avatar" OnError="this.src='avatars/blank.gif', height='0';"></td></tr>
+                      <tr> 
+                       <td class="text" align="center"><span style="font-size: 10px;">Gold Member</span><br><img src="forum_images/2_star_rating.gif" alt="Gold Member"></td>
+                      </tr>
+                      <tr> 
+                       <td><img src="forum_images/1px_spacer.gif" width="112" height="1"></td>
+                       </tr>
+          		<tr> 
+           		<td class="text" valign="bottom"><span style="font-size: 10px;">Italia, Ravenna
+           		 <br>27 Maggio 2002
+           		 <br>994&nbsp;Posts</span></td>
+           		</tr>
+                     </table>       
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+              <td width="90%">
+               <table border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" width="100%">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FCF7E0" background="" height="147">
+                   <tr> 
+                    <td class="text" valign="top"> 
+                     <!-- Message body -->Ciao!<br>
+S&#111;no interessato agli articoli dal 1985 al 1990.Vendi in blocco?Se hai un prezzo di partenza fammi sapere.<!-- Signature --><br><br><span style="font-size=9px">-------------</span><br>Absolutely no regrets...<!-- Signature --><!-- Message body -->
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+<br>
+
+	<a name="3105">
+	<table width="98%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" align="center">
+          <tr>
+           <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#78F4FE" height="145">
+             <tr> 
+              <td colspan="2">
+               <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#D0C0FE" background="">
+                   <tr> 
+                    <td class="text">Message posted by <a href="JavaScript:openWin('pop_up_profile.asp?profile=22&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">*cosmic*system*</a> on 07 Luglio 2002 at 21:05<span style="font-size=10px"> - IP Logged</span>
+            <br>
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=22&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')"><img src="forum_images/profile_icon.gif" border="0" alt="View&nbsp;*cosmic*system*'s&nbsp;Profile" align="absmiddle"></a> 
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=22&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')" style="font-size: 10px;" title="View&nbsp;*cosmic*system*'s&nbsp;Profile">Profile</a>&nbsp;&nbsp;
+            <a href="search_form.asp?search=%2Acosmic%2Asystem%2A&searchIn=Author&forum=4&date=DESC"><img src="forum_images/search_icon.gif" border="0" alt="Search for other posts by&nbsp;*cosmic*system*" align="absmiddle"></a> 
+            <a href="search.asp?search=*cosmic*system*&searchIn=Author&forum=4&searchSort=dateDESC" style="font-size: 10px;" title="Search for other posts by&nbsp;*cosmic*system*">Search</a>&nbsp;&nbsp; 
+            
+            <a href="post_message_form.asp?mode=quote&threadID=3105&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=1"><img src="forum_images/quote_icon.gif" align="absmiddle" border="0" alt="Quote&nbsp;*cosmic*system*"></a> 
+            <a href="post_message_form.asp?mode=quote&threadID=3105&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=9"  target="_self" style="font-size: 10px;" title="Quote*cosmic*system*">Quote</a>&nbsp;&nbsp;
+            <a href="pm_new_message_form.asp?name=%2Acosmic%2Asystem%2A" target="_self"><img src="forum_images/e-mail_topic.gif" align="absmiddle" border="0" alt="Send Private Message"></a> 
+            <a href="pm_new_message_form.asp?name=%2Acosmic%2Asystem%2A" target="_self" style="font-size: 10px;">Send Msg</a>&nbsp;&nbsp; 
+            
+           </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+             <tr> 
+              <td valign="top"> 
+               <table border="0" cellspacing="1" cellpadding="1" bgcolor="#666666" height="100%">
+                <tr> 
+                 <td valign="top" bgcolor="#F7BBFD" background=""> 
+                  <table border="0" cellspacing="0" cellpadding="0" bgcolor="#F7BBFD" background="" height="100%">
+                   <tr> 
+                    <td valign="top"> 
+              	     <table border="0" cellspacing="0" cellpadding="2" height="145">
+                      <tr> 
+                       <td class="text" align="center">*cosmic*system*</td>
+                      </tr>
+                      <tr> <td class="text" align="center"><img src="http://www.mad-eyes.net/goodies/images/av_sa01.gif" width="60" height="60" alt="Avatar" OnError="this.src='avatars/blank.gif', height='0';"></td></tr>
+                      <tr> 
+                       <td class="text" align="center"><span style="font-size: 10px;">Gold Member</span><br><img src="forum_images/2_star_rating.gif" alt="Gold Member"></td>
+                      </tr>
+                      <tr> 
+                       <td><img src="forum_images/1px_spacer.gif" width="112" height="1"></td>
+                       </tr>
+          		<tr> 
+           		<td class="text" valign="bottom"><span style="font-size: 10px;">Italia, Ravenna
+           		 <br>27 Maggio 2002
+           		 <br>994&nbsp;Posts</span></td>
+           		</tr>
+                     </table>       
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+              <td width="90%">
+               <table border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" width="100%">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FCF7E0" background="" height="147">
+                   <tr> 
+                    <td class="text" valign="top"> 
+                     <!-- Message body -->Si,mi piacerebbe prendere gli annuari<br>
+TUTTI!<br>
+Il periodo e' dal 85 al 90 vero?<br>
+Se si,dammi un prezzo per tutti gli annuari.<br>
+E poi anche per quelli staccati,magari dimmi quelli c&#111;n copertine quali s&#111;no perche' ne ho molti anche io.<br>
+GRAZIE!<!-- Signature --><br><br><span style="font-size=9px">-------------</span><br>Absolutely no regrets...<!-- Signature --><!-- Message body -->
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+<br>
+
+	<a name="3139">
+	<table width="98%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" align="center">
+          <tr>
+           <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#78F4FE" height="145">
+             <tr> 
+              <td colspan="2">
+               <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#D0C0FE" background="">
+                   <tr> 
+                    <td class="text">Message posted by <a href="JavaScript:openWin('pop_up_profile.asp?profile=22&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">*cosmic*system*</a> on 08 Luglio 2002 at 09:29<span style="font-size=10px"> - IP Logged</span>
+            <br>
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=22&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')"><img src="forum_images/profile_icon.gif" border="0" alt="View&nbsp;*cosmic*system*'s&nbsp;Profile" align="absmiddle"></a> 
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=22&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')" style="font-size: 10px;" title="View&nbsp;*cosmic*system*'s&nbsp;Profile">Profile</a>&nbsp;&nbsp;
+            <a href="search_form.asp?search=%2Acosmic%2Asystem%2A&searchIn=Author&forum=4&date=DESC"><img src="forum_images/search_icon.gif" border="0" alt="Search for other posts by&nbsp;*cosmic*system*" align="absmiddle"></a> 
+            <a href="search.asp?search=*cosmic*system*&searchIn=Author&forum=4&searchSort=dateDESC" style="font-size: 10px;" title="Search for other posts by&nbsp;*cosmic*system*">Search</a>&nbsp;&nbsp; 
+            
+            <a href="post_message_form.asp?mode=quote&threadID=3139&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=1"><img src="forum_images/quote_icon.gif" align="absmiddle" border="0" alt="Quote&nbsp;*cosmic*system*"></a> 
+            <a href="post_message_form.asp?mode=quote&threadID=3139&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=9"  target="_self" style="font-size: 10px;" title="Quote*cosmic*system*">Quote</a>&nbsp;&nbsp;
+            <a href="pm_new_message_form.asp?name=%2Acosmic%2Asystem%2A" target="_self"><img src="forum_images/e-mail_topic.gif" align="absmiddle" border="0" alt="Send Private Message"></a> 
+            <a href="pm_new_message_form.asp?name=%2Acosmic%2Asystem%2A" target="_self" style="font-size: 10px;">Send Msg</a>&nbsp;&nbsp; 
+            
+           </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+             <tr> 
+              <td valign="top"> 
+               <table border="0" cellspacing="1" cellpadding="1" bgcolor="#666666" height="100%">
+                <tr> 
+                 <td valign="top" bgcolor="#F7BBFD" background=""> 
+                  <table border="0" cellspacing="0" cellpadding="0" bgcolor="#F7BBFD" background="" height="100%">
+                   <tr> 
+                    <td valign="top"> 
+              	     <table border="0" cellspacing="0" cellpadding="2" height="145">
+                      <tr> 
+                       <td class="text" align="center">*cosmic*system*</td>
+                      </tr>
+                      <tr> <td class="text" align="center"><img src="http://www.mad-eyes.net/goodies/images/av_sa01.gif" width="60" height="60" alt="Avatar" OnError="this.src='avatars/blank.gif', height='0';"></td></tr>
+                      <tr> 
+                       <td class="text" align="center"><span style="font-size: 10px;">Gold Member</span><br><img src="forum_images/2_star_rating.gif" alt="Gold Member"></td>
+                      </tr>
+                      <tr> 
+                       <td><img src="forum_images/1px_spacer.gif" width="112" height="1"></td>
+                       </tr>
+          		<tr> 
+           		<td class="text" valign="bottom"><span style="font-size: 10px;">Italia, Ravenna
+           		 <br>27 Maggio 2002
+           		 <br>994&nbsp;Posts</span></td>
+           		</tr>
+                     </table>       
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+              <td width="90%">
+               <table border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" width="100%">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FCF7E0" background="" height="147">
+                   <tr> 
+                    <td class="text" valign="top"> 
+                     <!-- Message body -->Ok.<br>
+Io direi un prezzo come 60 euro per tutto.Le copertine s&#111;no staccate vero?I girnali quindi n&#111;n s&#111;no interi.Fammi sapere.<!-- Signature --><br><br><span style="font-size=9px">-------------</span><br>Absolutely no regrets...<!-- Signature --><!-- Message body -->
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+<br>
+
+	<a name="4475">
+	<table width="98%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" align="center">
+          <tr>
+           <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#78F4FE" height="145">
+             <tr> 
+              <td colspan="2">
+               <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#D0C0FE" background="">
+                   <tr> 
+                    <td class="text">Message posted by <a href="JavaScript:openWin('pop_up_profile.asp?profile=15&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">holiday</a> on 16 Luglio 2002 at 14:22<span style="font-size=10px"> - IP Logged</span>
+            <br>
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=15&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')"><img src="forum_images/profile_icon.gif" border="0" alt="View&nbsp;holiday's&nbsp;Profile" align="absmiddle"></a> 
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=15&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')" style="font-size: 10px;" title="View&nbsp;holiday's&nbsp;Profile">Profile</a>&nbsp;&nbsp;
+            <a href="search_form.asp?search=holiday&searchIn=Author&forum=4&date=DESC"><img src="forum_images/search_icon.gif" border="0" alt="Search for other posts by&nbsp;holiday" align="absmiddle"></a> 
+            <a href="search.asp?search=holiday&searchIn=Author&forum=4&searchSort=dateDESC" style="font-size: 10px;" title="Search for other posts by&nbsp;holiday">Search</a>&nbsp;&nbsp; 
+            
+            <a href="post_message_form.asp?mode=quote&threadID=4475&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=1"><img src="forum_images/quote_icon.gif" align="absmiddle" border="0" alt="Quote&nbsp;holiday"></a> 
+            <a href="post_message_form.asp?mode=quote&threadID=4475&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=9"  target="_self" style="font-size: 10px;" title="Quoteholiday">Quote</a>&nbsp;&nbsp;
+            <a href="pm_new_message_form.asp?name=holiday" target="_self"><img src="forum_images/e-mail_topic.gif" align="absmiddle" border="0" alt="Send Private Message"></a> 
+            <a href="pm_new_message_form.asp?name=holiday" target="_self" style="font-size: 10px;">Send Msg</a>&nbsp;&nbsp; 
+            
+           </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+             <tr> 
+              <td valign="top"> 
+               <table border="0" cellspacing="1" cellpadding="1" bgcolor="#666666" height="100%">
+                <tr> 
+                 <td valign="top" bgcolor="#F7BBFD" background=""> 
+                  <table border="0" cellspacing="0" cellpadding="0" bgcolor="#F7BBFD" background="" height="100%">
+                   <tr> 
+                    <td valign="top"> 
+              	     <table border="0" cellspacing="0" cellpadding="2" height="145">
+                      <tr> 
+                       <td class="text" align="center">holiday</td>
+                      </tr>
+                      <tr> <td class="text" align="center"><img src="avatars/Flik.gif" width="60" height="60" alt="Avatar" OnError="this.src='avatars/blank.gif', height='0';"></td></tr>
+                      <tr> 
+                       <td class="text" align="center"><span style="font-size: 10px;">Standard Member</span><br><img src="forum_images/1_star_rating.gif" alt="Standard Member"></td>
+                      </tr>
+                      <tr> 
+                       <td><img src="forum_images/1px_spacer.gif" width="112" height="1"></td>
+                       </tr>
+          		<tr> 
+           		<td class="text" valign="bottom"><span style="font-size: 10px;">Italia, Ravenna
+           		 <br>27 Maggio 2002
+           		 <br>93&nbsp;Posts</span></td>
+           		</tr>
+                     </table>       
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+              <td width="90%">
+               <table border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" width="100%">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FCF7E0" background="" height="147">
+                   <tr> 
+                    <td class="text" valign="top"> 
+                     <!-- Message body --><P>IO TI VOLEVO CHIEDERE PER I DISCHI. MA LI VENDI TUTTI IN BLOCCO? OPPURE POSSO DIRTI QUALI S&#079;NO QUELLI CHEMI POSS&#079;NO INTERESSARE? </P>
+<P>ANCHE A ME INTERESSEREBBERO MOLTO GLI ARTICOLI E LE FOTO?</P>
+<P>MA COME FUNZI&#079;NA TI DEVO DARE UN'OFFERTA?</P>
+<P>SCUSA MA NN HO BEN CAPITO COME PUò FUNZI&#079;NARE QUESTA COSA!! OK?</P>
+<P>GRAZIE!!</P>
+<P>BYE BYE</P><!-- Message body -->
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+<br>
+
+	<a name="5259">
+	<table width="98%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" align="center">
+          <tr>
+           <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#78F4FE" height="145">
+             <tr> 
+              <td colspan="2">
+               <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#D0C0FE" background="">
+                   <tr> 
+                    <td class="text">Message posted by <a href="JavaScript:openWin('pop_up_profile.asp?profile=422&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">skobe</a> on 23 Luglio 2002 at 04:00<span style="font-size=10px"> - IP Logged</span>
+            <br>
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=422&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')"><img src="forum_images/profile_icon.gif" border="0" alt="View&nbsp;skobe's&nbsp;Profile" align="absmiddle"></a> 
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=422&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')" style="font-size: 10px;" title="View&nbsp;skobe's&nbsp;Profile">Profile</a>&nbsp;&nbsp;
+            <a href="search_form.asp?search=skobe&searchIn=Author&forum=4&date=DESC"><img src="forum_images/search_icon.gif" border="0" alt="Search for other posts by&nbsp;skobe" align="absmiddle"></a> 
+            <a href="search.asp?search=skobe&searchIn=Author&forum=4&searchSort=dateDESC" style="font-size: 10px;" title="Search for other posts by&nbsp;skobe">Search</a>&nbsp;&nbsp; 
+            
+            <a href="post_message_form.asp?mode=quote&threadID=5259&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=1"><img src="forum_images/quote_icon.gif" align="absmiddle" border="0" alt="Quote&nbsp;skobe"></a> 
+            <a href="post_message_form.asp?mode=quote&threadID=5259&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=9"  target="_self" style="font-size: 10px;" title="Quoteskobe">Quote</a>&nbsp;&nbsp;
+            <a href="pm_new_message_form.asp?name=skobe" target="_self"><img src="forum_images/e-mail_topic.gif" align="absmiddle" border="0" alt="Send Private Message"></a> 
+            <a href="pm_new_message_form.asp?name=skobe" target="_self" style="font-size: 10px;">Send Msg</a>&nbsp;&nbsp; 
+            
+           </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+             <tr> 
+              <td valign="top"> 
+               <table border="0" cellspacing="1" cellpadding="1" bgcolor="#666666" height="100%">
+                <tr> 
+                 <td valign="top" bgcolor="#F7BBFD" background=""> 
+                  <table border="0" cellspacing="0" cellpadding="0" bgcolor="#F7BBFD" background="" height="100%">
+                   <tr> 
+                    <td valign="top"> 
+              	     <table border="0" cellspacing="0" cellpadding="2" height="145">
+                      <tr> 
+                       <td class="text" align="center">skobe</td>
+                      </tr>
+                      
+                      <tr> 
+                       <td class="text" align="center"><span style="font-size: 10px;">Standard Member</span><br><img src="forum_images/1_star_rating.gif" alt="Standard Member"></td>
+                      </tr>
+                      <tr> 
+                       <td><img src="forum_images/1px_spacer.gif" width="112" height="1"></td>
+                       </tr>
+          		<tr> 
+           		<td class="text" valign="bottom"><span style="font-size: 10px;">Italia
+           		 <br>11 Luglio 2002
+           		 <br>5&nbsp;Posts</span></td>
+           		</tr>
+                     </table>       
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+              <td width="90%">
+               <table border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" width="100%">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FCF7E0" background="" height="147">
+                   <tr> 
+                    <td class="text" valign="top"> 
+                     <!-- Message body --><strong><FONT color=orange size=3>ciao mi interessano le interviste e gl' special tv ...mi puoi mandare una lista ....grazie aspetto.</FONT></strong><!-- Signature --><br><br><span style="font-size=9px">-------------</span><br>Skobe<!-- Signature --><!-- Message body -->
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+<br>
+
+	<a name="9651">
+	<table width="98%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" align="center">
+          <tr>
+           <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#78F4FE" height="145">
+             <tr> 
+              <td colspan="2">
+               <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#D0C0FE" background="">
+                   <tr> 
+                    <td class="text">Message posted by <a href="JavaScript:openWin('pop_up_profile.asp?profile=544&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">laura</a> on 08 Settembre 2002 at 18:33<span style="font-size=10px"> - IP Logged</span>
+            <br>
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=544&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')"><img src="forum_images/profile_icon.gif" border="0" alt="View&nbsp;laura's&nbsp;Profile" align="absmiddle"></a> 
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=544&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')" style="font-size: 10px;" title="View&nbsp;laura's&nbsp;Profile">Profile</a>&nbsp;&nbsp;
+            <a href="search_form.asp?search=laura&searchIn=Author&forum=4&date=DESC"><img src="forum_images/search_icon.gif" border="0" alt="Search for other posts by&nbsp;laura" align="absmiddle"></a> 
+            <a href="search.asp?search=laura&searchIn=Author&forum=4&searchSort=dateDESC" style="font-size: 10px;" title="Search for other posts by&nbsp;laura">Search</a>&nbsp;&nbsp; 
+            
+            <a href="post_message_form.asp?mode=quote&threadID=9651&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=1"><img src="forum_images/quote_icon.gif" align="absmiddle" border="0" alt="Quote&nbsp;laura"></a> 
+            <a href="post_message_form.asp?mode=quote&threadID=9651&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=9"  target="_self" style="font-size: 10px;" title="Quotelaura">Quote</a>&nbsp;&nbsp;
+            <a href="pm_new_message_form.asp?name=laura" target="_self"><img src="forum_images/e-mail_topic.gif" align="absmiddle" border="0" alt="Send Private Message"></a> 
+            <a href="pm_new_message_form.asp?name=laura" target="_self" style="font-size: 10px;">Send Msg</a>&nbsp;&nbsp; 
+            
+           </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+             <tr> 
+              <td valign="top"> 
+               <table border="0" cellspacing="1" cellpadding="1" bgcolor="#666666" height="100%">
+                <tr> 
+                 <td valign="top" bgcolor="#F7BBFD" background=""> 
+                  <table border="0" cellspacing="0" cellpadding="0" bgcolor="#F7BBFD" background="" height="100%">
+                   <tr> 
+                    <td valign="top"> 
+              	     <table border="0" cellspacing="0" cellpadding="2" height="145">
+                      <tr> 
+                       <td class="text" align="center">laura</td>
+                      </tr>
+                      <tr> <td class="text" align="center"><img src="avatars/Catwoman.gif" width="60" height="60" alt="Avatar" OnError="this.src='avatars/blank.gif', height='0';"></td></tr>
+                      <tr> 
+                       <td class="text" align="center"><span style="font-size: 10px;">Standard Member</span><br><img src="forum_images/1_star_rating.gif" alt="Standard Member"></td>
+                      </tr>
+                      <tr> 
+                       <td><img src="forum_images/1px_spacer.gif" width="112" height="1"></td>
+                       </tr>
+          		<tr> 
+           		<td class="text" valign="bottom"><span style="font-size: 10px;">Italia
+           		 <br>08 Settembre 2002
+           		 <br>12&nbsp;Posts</span></td>
+           		</tr>
+                     </table>       
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+              <td width="90%">
+               <table border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" width="100%">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FCF7E0" background="" height="147">
+                   <tr> 
+                    <td class="text" valign="top"> 
+                     <!-- Message body -->ciao s&#111;no laura, vendi ancora qualcosa o n&#111;n hai&nbsp; piu niente? s&#111;no interessata ad articoli, giornali e sex ufficiale. prop&#111;ni i prezzi. <a target="_blank" href= "mailto:laura.sv@libero.it">laura.sv@libero.it</A><!-- Signature --><br><br><span style="font-size=9px">-------------</span><br>laura<!-- Signature --><!-- Message body -->
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+<br>
+
+	<a name="12138">
+	<table width="98%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" align="center">
+          <tr>
+           <td>
+            <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#78F4FE" height="145">
+             <tr> 
+              <td colspan="2">
+               <table width="100%" border="0" cellspacing="0" cellpadding="1" bgcolor="#666666">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#D0C0FE" background="">
+                   <tr> 
+                    <td class="text">Message posted by <a href="JavaScript:openWin('pop_up_profile.asp?profile=538&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">The Lucky Star</a> on 28 Settembre 2002 at 23:16<span style="font-size=10px"> - IP Logged</span>
+            <br>
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=538&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')"><img src="forum_images/profile_icon.gif" border="0" alt="View&nbsp;The Lucky Star's&nbsp;Profile" align="absmiddle"></a> 
+            <a href="JavaScript:openWin('pop_up_profile.asp?profile=538&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')" style="font-size: 10px;" title="View&nbsp;The Lucky Star's&nbsp;Profile">Profile</a>&nbsp;&nbsp;
+            <a href="search_form.asp?search=The+Lucky+Star&searchIn=Author&forum=4&date=DESC"><img src="forum_images/search_icon.gif" border="0" alt="Search for other posts by&nbsp;The Lucky Star" align="absmiddle"></a> 
+            <a href="search.asp?search=The Lucky Star&searchIn=Author&forum=4&searchSort=dateDESC" style="font-size: 10px;" title="Search for other posts by&nbsp;The Lucky Star">Search</a>&nbsp;&nbsp; 
+            
+            <a href="post_message_form.asp?mode=quote&threadID=12138&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=1"><img src="forum_images/quote_icon.gif" align="absmiddle" border="0" alt="Quote&nbsp;The Lucky Star"></a> 
+            <a href="post_message_form.asp?mode=quote&threadID=12138&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1&ThreadPos=9"  target="_self" style="font-size: 10px;" title="QuoteThe Lucky Star">Quote</a>&nbsp;&nbsp;
+            <a href="pm_new_message_form.asp?name=The+Lucky+Star" target="_self"><img src="forum_images/e-mail_topic.gif" align="absmiddle" border="0" alt="Send Private Message"></a> 
+            <a href="pm_new_message_form.asp?name=The+Lucky+Star" target="_self" style="font-size: 10px;">Send Msg</a>&nbsp;&nbsp; 
+            
+           </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+             <tr> 
+              <td valign="top"> 
+               <table border="0" cellspacing="1" cellpadding="1" bgcolor="#666666" height="100%">
+                <tr> 
+                 <td valign="top" bgcolor="#F7BBFD" background=""> 
+                  <table border="0" cellspacing="0" cellpadding="0" bgcolor="#F7BBFD" background="" height="100%">
+                   <tr> 
+                    <td valign="top"> 
+              	     <table border="0" cellspacing="0" cellpadding="2" height="145">
+                      <tr> 
+                       <td class="text" align="center">The Lucky Star</td>
+                      </tr>
+                      
+                      <tr> 
+                       <td class="text" align="center"><span style="font-size: 10px;">Standard Member</span><br><img src="forum_images/1_star_rating.gif" alt="Standard Member"></td>
+                      </tr>
+                      <tr> 
+                       <td><img src="forum_images/1px_spacer.gif" width="112" height="1"></td>
+                       </tr>
+          		<tr> 
+           		<td class="text" valign="bottom"><span style="font-size: 10px;">Italia
+           		 <br>07 Settembre 2002
+           		 <br>2&nbsp;Posts</span></td>
+           		</tr>
+                     </table>       
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+              <td width="90%">
+               <table border="0" cellspacing="0" cellpadding="1" bgcolor="#666666" width="100%">
+                <tr> 
+                 <td> 
+                  <table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FCF7E0" background="" height="147">
+                   <tr> 
+                    <td class="text" valign="top"> 
+                     <!-- Message body --><P>Io sarei interessata a SEX,</P>
+<P><FONT &#115;tyle="BACKGROUND-COLOR: #ffffdf">mi pui risp&#111;ndere al mio indirizzo per dirmi quanto vuoi?</FONT></P>
+<P><FONT &#115;tyle="BACKGROUND-COLOR: #ffffdf">Per favore n&#111;n risp&#111;ndere nel forum, ma a <a target="_blank" href= "mailto:francross80@libero.it">francross80@libero.it</A></FONT></P>
+<P><FONT &#115;tyle="BACKGROUND-COLOR: #ffffdf">grazie</FONT></P>
+<P><FONT &#115;tyle="BACKGROUND-COLOR: #ffffdf">P.S. S&#111;no disposto a pagare un prezzo elevato (n&#111;n approfittarne però)</FONT></P><!-- Signature --><br><br><span style="font-size=9px">-------------</span><br>I Guess I'll Die Another Day...<!-- Signature --><!-- Message body -->
+                    </td>
+                   </tr>
+                  </table>
+                 </td>
+                </tr>
+               </table>
+              </td>
+             </tr>
+            </table>
+           </td>
+          </tr>
+         </table>
+<br>
+<a name="reply"></a>
+<div align="center"> 
+
+  <p class="text">If you wish to post a reply to this thread you must first&nbsp;<a href="login_user.asp?ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1" target="_self">Login</a><br>
+  If you are not already registered you must first&nbsp;<a href="register_form.asp?ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1" target="_self">register</a> 
+</p>
+  
+    <form>
+          <table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+            <tr> 
+              <td>
+	<span class="text">Forum Jump</span>
+	 <select onChange="ForumJump(this)" name="SelectJumpForum">
+           <option value="" selected>-- Select Forum --</option>
+
+		<option value="">Italian Section - Forum In Italiano</option>
+		<option value="display_forum_topics.asp?ForumID=2">&nbsp;&nbsp;-&nbsp;Discussioni di carattere generale</option>
+		<option value="display_forum_topics.asp?ForumID=14">&nbsp;&nbsp;-&nbsp;La Frase Del Giorno</option>
+		<option value="display_forum_topics.asp?ForumID=3">&nbsp;&nbsp;-&nbsp;Survivors</option>
+		<option value="display_forum_topics.asp?ForumID=4">&nbsp;&nbsp;-&nbsp;Cerco, vendo o scambio</option>
+		<option value="display_forum_topics.asp?ForumID=9">&nbsp;&nbsp;-&nbsp;Promuovete i vostri siti</option>
+		<option value="">English Section</option>
+		<option value="display_forum_topics.asp?ForumID=7">&nbsp;&nbsp;-&nbsp;General Discussions</option>
+		<option value="display_forum_topics.asp?ForumID=13">&nbsp;&nbsp;-&nbsp;Promote Your Webpage</option>
+         </select></td>
+              
+<td align="right"><a href="post_message_form.asp?mode=new&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1"  target="_self"><img src="forum_images/post_reply.gif" width="87" height="26" border="0" align="absmiddle" alt="Post Reply"></a>&nbsp;<a href="post_message_form.asp?mode=new&ReturnPage=Thread&ForumID=4&TopicID=521&PagePosition=1&ThreadPage=1"  target="_self"><img src="forum_images/new_post.gif" width="87" height="26" border="0" align="absmiddle" alt="Post New Topic"></a></td>
+            </tr>
+          </table>
+    </form>
+ <table width="300" border="0" cellspacing="0" cellpadding="1" align="center" bgcolor="#666666">
+  <tr> 
+    <td> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="4" align="center" bgcolor="#FFFFCC" background="">
+        <tr>
+      <td align="center"> <a href="JavaScript:openWin('display_printer_threads.asp?ForumID=4&TopicID=521','printer_friendly','toolbar=0,location=0,status=0,menubar=1,scrollbars=1,resizable=1,width=640,height=390')"><img src="forum_images/print_version.gif" width="16" height="14" align="absmiddle" border="0" alt="Printable version"></a> 
+       <a href="JavaScript:openWin('display_printer_threads.asp?ForumID=4&TopicID=521','printer_friendly','toolbar=0,location=0,status=0,menubar=1,scrollbars=1,resizable=1,width=640,height=390')" style="font-size: 10px;">Printable version</a> 
+       
+      </td>
+     </tr>
+    </table>
+   </tr>
+  </table>
+  <br>
+<span class="text" style="font-size:10px">Powered by <a href="http://www.webwizguide.info" target="_blank" style="font-size:10px">Web Wiz Forums</a> version 6.11</span><br><span class="text" style="font-size:10px">Copyright &copy;2001-2002 Web Wiz Guide</span>
+</div>         
+</td>
+ </tr>
+ <tr> 
+  <td colspan="2"> <!-- footer -->
+ <br> </td>
+ </tr>
+</table>
+</body>
+</html>
