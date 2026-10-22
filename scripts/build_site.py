@@ -60,7 +60,10 @@ def era_year(era):
     return found[-1] if found else "2005"
 
 
-def make_rewriter(pages, page_rel, page_url, year):
+ALL_PAGES = {}  # normalized key -> (era, rel) across every downloaded era
+
+
+def make_rewriter(pages, page_rel, page_url, year, era):
     """Return a function mapping a raw link value to its rewritten value."""
     here = posixpath.dirname(page_rel)
 
@@ -77,6 +80,12 @@ def make_rewriter(pages, page_rel, page_url, year):
         target = pages.get(key) or pages.get(key.rstrip("/")) or pages.get(key + "/")
         if target:
             rel = posixpath.relpath(target[0], here or ".")
+            return urllib.parse.quote(rel, safe="/._-,=~") + frag
+        # The same file may have been archived in a later (or earlier) era:
+        # an image a 2005 page shows is often only captured in 2007.
+        other = ALL_PAGES.get(key) or ALL_PAGES.get(key.rstrip("/")) or ALL_PAGES.get(key + "/")
+        if other:
+            rel = posixpath.relpath(f"{other[0]}/{other[1]}", posixpath.join(era, here) or ".")
             return urllib.parse.quote(rel, safe="/._-,=~") + frag
         return f"https://web.archive.org/web/{year}/{absolute}"
 
@@ -113,7 +122,7 @@ def build_era(era):
         if is_html(rel, mime) or rel.lower().endswith(".css") or "css" in mime:
             data = open(src, "rb").read()
             text = data.decode("latin-1")  # byte-preserving round trip
-            rewrite = make_rewriter(pages, rel, original, year)
+            rewrite = make_rewriter(pages, rel, original, year, era)
             if rel.lower().endswith(".css") or "css" in mime:
                 text = CSS_URL_RE.sub(lambda m: f"url({m.group(1)}{rewrite(m.group(2))}{m.group(1)})", text)
             else:
@@ -149,6 +158,9 @@ def main():
                   if os.path.exists(os.path.join(MIRROR, d, "_manifest.csv")))
     items = []
     era_pages = {}
+    for era in eras:
+        for key, (rel, _, _) in load_era(era).items():
+            ALL_PAGES.setdefault(key, (era, rel))
     for era in eras:
         n_pages, n_files, era_pages[era] = build_era(era)
         items.append(f'<li><a href="{era}/index-of-pages.html">{era}</a> '
