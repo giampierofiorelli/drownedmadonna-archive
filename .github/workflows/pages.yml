@@ -10,6 +10,7 @@ on:
       - mirror/**
       - scripts/build_site.py
       - scripts/urlkeys.py
+      - scripts/exclusives.py
       - .github/workflows/pages.yml
 
 permissions:

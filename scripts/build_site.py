@@ -19,6 +19,9 @@ import re
 import shutil
 import urllib.parse
 
+import json
+
+import exclusives
 from urlkeys import normalize, site_host
 
 MIRROR = "mirror"
@@ -135,7 +138,7 @@ def build_era(era):
 <style>body{{font:15px/1.5 system-ui,sans-serif;margin:24px;max-width:900px}}small{{color:#777}}li{{margin:4px 0}}</style>
 <p><a href="../index.html">All eras</a></p>
 <h1>{html.escape(era)}</h1><p>{len(listing)} pages, {len(pages)} files in total.</p><ol>{rows}</ol>""")
-    return len(listing), len(pages)
+    return len(listing), len(pages), pages
 
 
 def main():
@@ -145,17 +148,23 @@ def main():
     eras = sorted(d for d in os.listdir(MIRROR)
                   if os.path.exists(os.path.join(MIRROR, d, "_manifest.csv")))
     items = []
+    era_pages = {}
     for era in eras:
-        n_pages, n_files = build_era(era)
+        n_pages, n_files, era_pages[era] = build_era(era)
         items.append(f'<li><a href="{era}/index-of-pages.html">{era}</a> '
                      f'<small>{n_pages} pages, {n_files} files</small></li>')
         print(f"{era}: {n_pages} pages, {n_files} files")
+    with open(os.path.join("config", "download.json"), encoding="utf-8") as f:
+        config_eras = json.load(f)["eras"]
+    n_excl, n_review = exclusives.build(OUT, era_pages, config_eras)
+    print(f"exclusives: {n_excl} listed, {n_review} to review")
     with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f:
         f.write(f"""<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex">
 <title>DrownedMadonna archive</title>
 <style>body{{font:15px/1.5 system-ui,sans-serif;margin:24px;max-width:900px}}small{{color:#777}}</style>
 <h1>DrownedMadonna archive</h1>
 <p>Earlier versions of drownedmadonna.com recovered from the Wayback Machine. Download in progress: this site rebuilds as files arrive.</p>
+<p><a href="exclusives.html">All exclusives, in chronological order</a> <small>{n_excl} so far</small></p>
 <ul>{''.join(items)}</ul>""")
 
 
