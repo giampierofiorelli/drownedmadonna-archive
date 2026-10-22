@@ -1,8 +1,8 @@
 name: Wayback download
 
-# Starts when config/download.json changes, or manually.
-# Each run works for up to ~5h20m, commits progress, then re-dispatches itself
-# until the era is complete.
+# Downloads the eras listed in config/download.json, one after another.
+# Each run works for up to ~5h20m on the first incomplete era, commits progress,
+# then re-dispatches itself until every era is complete.
 on:
   workflow_dispatch:
   push:
@@ -29,12 +29,9 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Read config
+      - name: Pick era
         id: cfg
-        run: |
-          echo "era=$(jq -r .era config/download.json)" >> "$GITHUB_OUTPUT"
-          echo "from=$(jq -r .capture_from config/download.json)" >> "$GITHUB_OUTPUT"
-          echo "to=$(jq -r .capture_to config/download.json)" >> "$GITHUB_OUTPUT"
+        run: python scripts/next_era.py
 
       - name: Configure git
         run: |
@@ -43,6 +40,7 @@ jobs:
 
       - name: Download era
         id: dl
+        if: steps.cfg.outputs.done == 'false'
         env:
           ERA_LABEL: ${{ steps.cfg.outputs.era }}
           CAPTURE_FROM: ${{ steps.cfg.outputs.from }}
@@ -54,8 +52,6 @@ jobs:
       - name: Commit progress
         if: always()
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add mirror/
           if git diff --cached --quiet; then
             echo "Nothing new to commit"
@@ -72,8 +68,13 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run pages.yml --ref main
 
+      - name: Check remaining eras
+        id: next
+        if: always()
+        run: python scripts/next_era.py
+
       - name: Continue in a new run
-        if: steps.dl.outputs.complete == 'false'
+        if: ${{ !cancelled() && steps.next.outputs.done == 'false' }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run download.yml --ref main

@@ -43,6 +43,8 @@ LAST_PUBLISH = 0.0
 ROOT = os.path.join("mirror", ERA)
 PLAN_PATH = os.path.join(ROOT, "_plan.csv")
 MANIFEST_PATH = os.path.join(ROOT, "_manifest.csv")
+RETRIES_PATH = os.path.join(ROOT, "_retries.json")
+MAX_RUN_FAILURES = int(os.environ.get("MAX_RUN_FAILURES", "3"))
 CDX = "https://web.archive.org/cdx/search/cdx"
 USER_AGENT = "drownedmadonna-archive-downloader/1.0 (owner recovering own site)"
 START = time.time()
@@ -198,6 +200,11 @@ def main():
     if new_file:
         writer.writerow(["key", "timestamp", "status", "bytes", "file", "original"])
 
+    retries = {}
+    if os.path.exists(RETRIES_PATH):
+        with open(RETRIES_PATH, encoding="utf-8") as f:
+            retries = json.load(f)
+
     todo = [p for p in plan if p["key"] not in done]
     print(f"{len(done)} already done, {len(todo)} to go", flush=True)
     checkpoint(len(done), len(plan))
@@ -235,7 +242,13 @@ def main():
             for fut in finished:
                 p, status, size, rel = fut.result()
                 processed += 1
-                if status is not None:  # network failures are retried on the next run
+                if status is None:
+                    # Network failure: retry on later runs, but give up after
+                    # MAX_RUN_FAILURES so an era can still complete.
+                    retries[p["key"]] = retries.get(p["key"], 0) + 1
+                    if retries[p["key"]] >= MAX_RUN_FAILURES:
+                        status = "failed"
+                if status is not None:
                     writer.writerow([p["key"], p["timestamp"], status, size, rel, p["original"]])
                     manifest.flush()
                 if processed % 100 == 0:
@@ -247,6 +260,8 @@ def main():
         print("time budget reached, stopping for this run", flush=True)
 
     manifest.close()
+    with open(RETRIES_PATH, "w", encoding="utf-8") as f:
+        json.dump(retries, f, indent=0, sort_keys=True)
     with open(MANIFEST_PATH, encoding="utf-8") as f:
         finished = sum(1 for _ in f) - 1
     complete = finished >= len(plan)
