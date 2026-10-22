@@ -1,10 +1,40 @@
 {
   "eras": [
-    { "era": "2002-2005-phpnuke", "capture_from": "2002", "capture_to": "2005" },
-    { "era": "2006-2010", "capture_from": "2006", "capture_to": "2010" },
-    { "era": "2011-2013-joomla", "capture_from": "2011", "capture_to": "2013" },
-    { "era": "2014-2017-wordpress", "capture_from": "2014", "capture_to": "2017" },
-    { "era": "2018-2021-wordpress", "capture_from": "2018", "capture_to": "2021" },
-    { "era": "2022-2025-wordpress", "capture_from": "2022", "capture_to": "202510" }
+    {
+      "era": "2002-2005-phpnuke",
+      "capture_from": "2002",
+      "capture_to": "2005"
+    },
+    {
+      "era": "snapshots-2005-2007",
+      "capture_from": "200506",
+      "capture_to": "200712",
+      "mode": "listings"
+    },
+    {
+      "era": "2006-2010",
+      "capture_from": "2006",
+      "capture_to": "2010"
+    },
+    {
+      "era": "2011-2013-joomla",
+      "capture_from": "2011",
+      "capture_to": "2013"
+    },
+    {
+      "era": "2014-2017-wordpress",
+      "capture_from": "2014",
+      "capture_to": "2017"
+    },
+    {
+      "era": "2018-2021-wordpress",
+      "capture_from": "2018",
+      "capture_to": "2021"
+    },
+    {
+      "era": "2022-2025-wordpress",
+      "capture_from": "2022",
+      "capture_to": "202510"
+    }
   ]
 }

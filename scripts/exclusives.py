@@ -38,6 +38,8 @@ TAG = re.compile(r"<[^>]+>")
 TITLE = re.compile(r"<title[^>]*>(.*?)</title>", re.I | re.S)
 NUKE_BLOCK_DATE = re.compile(
     r"Written by .*? on (\w+day), (\w+) (\d{1,2}) @ [\d:]+ \w+ (.*?)\s*\[\d+ reads\]", re.I | re.S)
+NUKE_TITLE_CELL = re.compile(r"<font class=\"?testo_notizia\"?[^>]*>(.*?)</font>\s*</td>", re.I | re.S)
+NUKE_FULL_DATE = re.compile(r"Written by .*? on (\d{4})-(\d{2})-(\d{2}) \d", re.I | re.S)
 NOISE_ANCHORS = re.compile(r"^(read more|comments?|\d+ comments?|more|continue reading|permalink)\b", re.I)
 
 
@@ -156,26 +158,59 @@ def is_listing(path, query):
     return p.endswith("modules.php") and query.get("file") == "categories" and query.get("catid") == "2"
 
 
+def is_nuke_page(path):
+    """Front page or modules.php page of the PHP-Nuke years."""
+    p = path.lower()
+    return p in ("/", "/index.php") or p.endswith("modules.php")
+
+
 def plan_dates(era):
     with open(os.path.join(MIRROR, era, "_plan.csv"), encoding="utf-8") as f:
         return {r["key"]: safe_date(r["timestamp"][:4], r["timestamp"][4:6], r["timestamp"][6:8])
                 for r in csv.DictReader(f)}
 
 
-def read_nuke_listing(text, captured, get, listing_path):
-    """PHP-Nuke category page: each story block has a sid link and a 'Written by ... on' line."""
+def read_nuke_listing(text, captured, get, listing_path, only_exclusive=False):
+    """PHP-Nuke listing page: each story block has a sid link and a 'Written by ... on' line.
+
+    On the Exclusive category page every story is an exclusive; on front pages
+    and other listings (only_exclusive) just the stories titled "Exclusive...".
+    """
     for block in re.split(r"<table\s+width=\"100%\"", text, flags=re.I):
         sids = re.findall(r"file=article(?:&amp;|&)sid=(\d+)", block)
-        m = NUKE_BLOCK_DATE.search(clean(block))
-        if not sids or not m:
+        if not sids:
             continue
+        flat = clean(block)
+        date, tagged = None, False
+        m = NUKE_BLOCK_DATE.search(flat)
+        if m:
+            # 2003-2005 theme: "Written by X on Friday, May 27 @ 19:01:08 CEST Title [N reads]"
+            weekday, month, day, title = m.groups()
+            if captured:
+                date = infer_year(weekday, month, int(day), captured)
+        else:
+            # Late-2005 theme: title in its own cell, "[EXCLUSIVE]" linked to category 2,
+            # and "Written by X on 2005-09-13 23:23:07 ..." with the full date.
+            head = NUKE_TITLE_CELL.search(block)
+            full = NUKE_FULL_DATE.search(flat)
+            if not head or not full:
+                continue
+            title = clean(head.group(1))
+            # Every category badge shares one style; what marks an exclusive is
+            # the Exclusive category link or a badge reading "... EXCLUSIVE".
+            badge = re.match(r"^\[\s*([^\]]+?)\s*\]", title)
+            tagged = bool(re.search(r"catid=2[\"&'\s>]", head.group(1))) or \
+                bool(badge and re.search(r"exclusive", badge.group(1), re.I))
+            date = safe_date(*full.groups())
+        if only_exclusive and not (tagged or starts_exclusive(title)):
+            continue
+        title = re.sub(r"^\[\s*([^\]]*exclusive[^\]]*?)\s*\]\s*", lambda m: m.group(1).upper() + ": ",
+                       title.strip(), flags=re.I).rstrip(".")
         a = get(f"nuke:{int(sids[0])}")
         a.exclusive = True
         a.listing = a.listing or listing_path
-        weekday, month, day, title = m.groups()
-        a.note_title(title.strip().rstrip("."), strong=True)
-        if captured:
-            a.note_date(infer_year(weekday, month, int(day), captured), exact=True)
+        a.note_title(title, strong=True)
+        a.note_date(date, exact=True)
 
 
 def build(out_dir, era_pages, config_eras):
@@ -236,10 +271,15 @@ def build(out_dir, era_pages, config_eras):
                 continue
             parts = urllib.parse.urlsplit(original.replace("&amp;", "&"))
             query = dict(urllib.parse.parse_qsl(parts.query))
-            if not is_listing(urllib.parse.unquote(parts.path), query):
+            path = urllib.parse.unquote(parts.path) or "/"
+            listed = is_listing(path, query)
+            if era.startswith("snapshots") or is_nuke_page(path):
+                # Front pages and news listings keep the titles and summaries of
+                # stories never archived on their own; the Exclusive category
+                # lists only exclusives, other pages are filtered by title/tag.
+                read_nuke_listing(text, captured_on.get(key), get, f"{era}/{rel}", only_exclusive=not listed)
                 continue
-            if parts.path.lower().endswith("modules.php"):
-                read_nuke_listing(text, captured_on.get(key), get, f"{era}/{rel}")
+            if not listed:
                 continue
             for href, label in ANCHOR.findall(text):
                 ident = article_id(href, original)

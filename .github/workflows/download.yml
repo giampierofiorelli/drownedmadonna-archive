@@ -45,6 +45,7 @@ jobs:
           ERA_LABEL: ${{ steps.cfg.outputs.era }}
           CAPTURE_FROM: ${{ steps.cfg.outputs.from }}
           CAPTURE_TO: ${{ steps.cfg.outputs.to }}
+          ERA_MODE: ${{ steps.cfg.outputs.mode }}
           TIME_BUDGET_MIN: "320"
           GH_TOKEN: ${{ github.token }}
         run: python scripts/download.py

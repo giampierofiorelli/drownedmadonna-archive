@@ -32,6 +32,9 @@ DOMAIN = os.environ.get("ARCHIVE_DOMAIN", "drownedmadonna.com")
 ERA = os.environ["ERA_LABEL"]
 YEAR_FROM = os.environ["CAPTURE_FROM"]
 YEAR_TO = os.environ["CAPTURE_TO"]
+# "files" (default): newest capture of each URL. "listings": every distinct
+# capture of front pages and news listings, to recover stories never archived alone.
+MODE = os.environ.get("ERA_MODE", "files") or "files"
 TIME_BUDGET_MIN = float(os.environ.get("TIME_BUDGET_MIN", "320"))
 # Pause between requests to stay well clear of archive.org rate limiting.
 DELAY = float(os.environ.get("REQUEST_DELAY", "2.0"))
@@ -115,8 +118,45 @@ def list_captures():
     return rows
 
 
+def is_listing_page(url):
+    """Front pages and news listings, whose successive captures each show different stories."""
+    parts = urllib.parse.urlsplit(url.replace("&amp;", "&"))
+    path = (parts.path or "/").lower()
+    if path in ("", "/", "/index.php", "/index.html", "/index.htm"):
+        return True
+    if not path.endswith("modules.php"):
+        return False
+    q = {k.lower(): v for k, v in urllib.parse.parse_qsl(parts.query)}
+    if "sid" in q or q.get("file") in ("article", "print", "friend", "comments"):
+        return False
+    return q.get("name", "News") in ("News", "") and not q.get("d_op") and not q.get("op", "").startswith("modload")
+
+
+def build_listing_plan():
+    """Every distinct capture of the listing pages: each one may hold stories lost elsewhere."""
+    by_digest = {}
+    for r in list_captures():
+        if "html" not in r.get("mimetype", "") or not is_listing_page(r["original"]):
+            continue
+        by_digest.setdefault(r["digest"], r)  # identical captures are kept once
+    plan = []
+    for r in by_digest.values():
+        rest = normalize(r["original"]).split("/", 1)[1] if "/" in normalize(r["original"]) else ""
+        plan.append((f"drownedmadonna.com/_snapshots/{r['timestamp']}/{rest}", r))
+    plan.sort(key=lambda kv: kv[1]["timestamp"])
+    os.makedirs(ROOT, exist_ok=True)
+    with open(PLAN_PATH, "w", newline="", encoding="utf-8") as f:
+        w = csv.writer(f)
+        w.writerow(["key", "timestamp", "mimetype", "digest", "length", "original"])
+        for key, r in plan:
+            w.writerow([key, r["timestamp"], r["mimetype"], r["digest"], r["length"], r["original"]])
+    print(f"listing plan: {len(plan)} distinct captures of front and listing pages", flush=True)
+
+
 def build_plan():
     """Pick the newest capture per URL key, then drop identical content."""
+    if MODE == "listings":
+        return build_listing_plan()
     latest = {}
     for r in list_captures():
         key = normalize(r["original"])
