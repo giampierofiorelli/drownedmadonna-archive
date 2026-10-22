@@ -1,0 +1,236 @@
+
+<html>
+<head>
+<meta name="copyright" content="Copyright (C) 2001-2202 Bruce Corkhill">
+<title>Discussion Forum: General Discussions</title>
+<!-- Web Wiz Forums is written and produced by Bruce Corkhill ©2001-2002
+     	If you want your own Forum then goto http://www.webwizguide.info -->
+<script  language="JavaScript">
+<!-- Hide from older browsers...
+
+
+//Function to choose how many topics are show
+function ShowTopics(Show){
+
+   	strShow = escape(Show.options[Show.selectedIndex].value);
+   	document.cookie = "show=" + strShow
+   	
+   	if (Show != "") self.location.href = "display_forum_topics.asp?ForumID=7&PagePosition=1";
+	return true;
+}
+
+//Function to jump to another forum
+function ForumJump(URL) {
+	
+	if (URL.options[URL.selectedIndex].value != "") self.location.href = URL.options[URL.selectedIndex].value;	
+	return true;
+}
+
+//Function to open pop up window
+function openWin(theURL,winName,features) {
+  	window.open(theURL,winName,features);
+}
+// -->
+</script>
+
+<style type="text/css">
+<!--
+.text {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;}
+.bold {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;}
+.heading {font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #000000;}
+.lgText {font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #000000; font-weight: bold;}
+.tHeading {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;}
+.tiHeading {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;}
+a {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #0000CC;}
+a:hover {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #0000CC;}
+a:visited {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #0000CC;}
+a:visited:hover {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #FF0000;}
+-->
+</style>
+</head>
+<body bgcolor="#CCFFFF" text="#000000" background="" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+ <tr> 
+  <td colspan="2"><table width="90%" border="0" cellspacing="7" cellpadding="0" align="center">
+  <tr> 
+    <td width="14%" valign="top">&nbsp;
+    <td align="center" width="72%"> 
+      
+
+<p align="center">
+<applet code="Lake.class" id="Lake" width="366" height="60" align="center">
+ 
+  <param name="image" value="forum_images/titoloforum.jpg">
+</applet>
+</p>
+
+    <td align="center" width="14%"><a href="http://www.drownedmadonna.com" target="_self" style="font-size: 11px;"> Drowned Madonna</a> 
+  </tr>
+</table></td>
+ </tr>
+ <tr> 
+  <td width="0%" valign="top"><!-- side bar --></td><td width="100%" valign="top">
+<br>
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+ <tr> 
+  <td class="text">Welcome Guest</td>
+  <td align="right">
+<a href="register_form.asp?ReturnPage=Topic&ForumID=7&PagePosition=1" target="_self"><img src="forum_images/register.gif" width="87" height="26" alt="Register" border="0" align="absmiddle"></a>&nbsp;<a href="login_user.asp?ReturnPage=Topic&ForumID=7&PagePosition=1" target="_self"><img src="forum_images/login.gif" width="87" height="26" alt="Login" border="0" align="absmiddle"></a>
+   <a href="search_form.asp?ReturnPage=Topic&ForumID=7&PagePosition=1" target="_self"><img src="forum_images/search.gif" width="87" height="26" align="absmiddle" border="0" alt="Search The Forum"></a> 
+   <a href="forum_members.asp?ReturnPage=Topic&ForumID=7&PagePosition=1" target="_self"><img src="forum_images/members_list.gif" width="87" height="26" border="0" align="absmiddle" alt="Display List of Forum Members"></a></td>
+ </tr>
+</table>
+<a href="http://www.webwizguide.info"></a> 
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+ <tr> 
+  <td align="left" width="71%"><img src="forum_images/folder_icon.gif" border="0" align="bottom">&nbsp;<a href="default.asp" target="_self">All Forums</a><br>
+   <img src="forum_images/folder_line.gif">&nbsp;<img src="forum_images/open_folder_icon.gif"> 
+   
+<a href="display_forum_topics.asp?ForumID=7" target="_self">General Discussions</a><br>
+  </td>
+  <td align="right" width="29%">&nbsp; 
+   </td>
+ </tr>
+</table>
+<table width="98%" border="0" cellspacing="0" cellpadding="4" align="center">
+ <tr> 
+  <form>
+   <td width="50%"><span class="text">Show Topics</span> 
+    <select name="show" onChange=ShowTopics(this)>
+     <option value="0" >All</option>
+     <option value="7" >from the Last Week</option>
+     <option value="14" >from the Two Weeks</option>
+     <option value="31" selected>from the Last Month</option>
+     <option value="62" >from the Last Two Months</option>
+     <option value="182" >from the Last Six Months</option>
+     <option value="365" >from the Year</option>
+    </select>
+   </td>
+   <td align="right" width="50%"><a href="post_message_form.asp?mode=new&ReturnPage=Topic&ForumID=7&PagePosition=1" target="_self"><img src="forum_images/new_post.gif" width="87" height="26" border="0" align="absmiddle" alt="Post New Topic"></a></td>
+  </form>
+ </tr>
+</table>
+<table width="98%" border="0" cellspacing="0" cellpadding="0" bgcolor="#666666" align="center">
+ <tr> 
+  <td> 
+   <table width="100%" border="0" cellspacing="1" cellpadding="2" height="14" bgcolor="#666666">
+    <tr> 
+     <td bgcolor="#FFCC66" width="3%" height="2" class="tHeading" background="forum_images/barra.jpg">&nbsp;</td>
+     <td bgcolor="#FFCC66" width="41%" height="2" class="tHeading" background="forum_images/barra.jpg">Topics</td>
+     <td bgcolor="#FFCC66" width="15%" height="2" class="tHeading" background="forum_images/barra.jpg">Topic Starter</td>
+     <td bgcolor="#FFCC66" width="7%" align="center" height="2" class="tHeading" background="forum_images/barra.jpg">Replies</td>
+     <td bgcolor="#FFCC66" width="7%" align="center" height="2" class="tHeading" background="forum_images/barra.jpg">Views</td>
+     <td bgcolor="#FFCC66" width="29%" align="center" height="2" class="tHeading" background="forum_images/barra.jpg">Last Post</td>
+    </tr>
+    
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/priority_post_icon.gif" border="0" alt="Priority Topic"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=7&TopicID=1218&PagePosition=1" target="_self">Nuove regole. Leggetele!</a><br><img src="forum_images/pages_icon.gif" align="middle" alt="Pages"> <a href="display_topic_threads.asp?ForumID=7&TopicID=1218&PagePosition=1&ThreadPage=1" target="_self" style="font-size:10px;">1</a> <a href="display_topic_threads.asp?ForumID=7&TopicID=1218&PagePosition=1&ThreadPage=2" target="_self" style="font-size:10px;">2</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=1&ForumID=7','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Giampiero</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">14</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">496</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">20 Settembre 2002&nbsp;at&nbsp;04:03
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=7','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a> <a href="display_topic_threads.asp?ForumID=7&TopicID=1218&PagePosition=1&get=last#11196" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/pinned_topic_icon.gif" border="0" alt="Pinned Topic"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=7&TopicID=722&PagePosition=1" target="_self">I WENT TO THE FINAL UFG’S LAST NIGHT!</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=415&ForumID=7','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">janinejb</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">5</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">96</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">19 Luglio 2002&nbsp;at&nbsp;22:11
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=124&ForumID=7','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">mc410</a> <a href="display_topic_threads.asp?ForumID=7&TopicID=722&PagePosition=1&get=last#4975" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/pinned_topic_icon.gif" border="0" alt="Pinned Topic"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=7&TopicID=120&PagePosition=1" target="_self">A big present for you all!</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=1&ForumID=7','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Giampiero</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">5</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">165</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">10 Luglio 2002&nbsp;at&nbsp;22:36
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=1&ForumID=7','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Giampiero</a> <a href="display_topic_threads.asp?ForumID=7&TopicID=120&PagePosition=1&get=last#3672" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/pinned_topic_icon.gif" border="0" alt="Pinned Topic"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=7&TopicID=65&PagePosition=1" target="_self">Help this community grow!</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=1&ForumID=7','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Giampiero</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">0</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">29</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">03 Giugno 2002&nbsp;at&nbsp;02:53
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=1&ForumID=7','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Giampiero</a> <a href="display_topic_threads.asp?ForumID=7&TopicID=65&PagePosition=1&get=last#253" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/pinned_topic_icon.gif" border="0" alt="Pinned Topic"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=7&TopicID=42&PagePosition=1" target="_self">Welcome!</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=1&ForumID=7','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Giampiero</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">0</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">49</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">01 Giugno 2002&nbsp;at&nbsp;14:05
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=1&ForumID=7','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Giampiero</a> <a href="display_topic_threads.asp?ForumID=7&TopicID=42&PagePosition=1&get=last#162" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=7&TopicID=1722&PagePosition=1" target="_self">mad&#111;nna c&#111;ncert for trade vhs</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=7','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">29</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">28 Settembre 2002&nbsp;at&nbsp;01:35
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=7','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a> <a href="display_topic_threads.asp?ForumID=7&TopicID=1722&PagePosition=1&get=last#12047" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<br>
+<form>
+ <table width="98%" border="0" cellspacing="0" cellpadding="4" align="center">
+  <tr> 
+   <td>
+	<span class="text">Forum Jump</span>
+	 <select onChange="ForumJump(this)" name="SelectJumpForum">
+           <option value="" selected>-- Select Forum --</option>
+
+		<option value="">Italian Section - Forum In Italiano</option>
+		<option value="display_forum_topics.asp?ForumID=2">&nbsp;&nbsp;-&nbsp;Discussioni di carattere generale</option>
+		<option value="display_forum_topics.asp?ForumID=3">&nbsp;&nbsp;-&nbsp;Survivors</option>
+		<option value="display_forum_topics.asp?ForumID=4">&nbsp;&nbsp;-&nbsp;Cerco, vendo o scambio</option>
+		<option value="display_forum_topics.asp?ForumID=9">&nbsp;&nbsp;-&nbsp;Promuovete i vostri siti</option>
+		<option value="">English Section</option>
+		<option value="display_forum_topics.asp?ForumID=7">&nbsp;&nbsp;-&nbsp;General Discussions</option>
+		<option value="display_forum_topics.asp?ForumID=13">&nbsp;&nbsp;-&nbsp;Promote Your Webpage</option>
+		<option value="display_forum_topics.asp?ForumID=8">&nbsp;&nbsp;-&nbsp;Problems with the Forum</option>
+         </select></td>
+   
+   <td align="right"><a href="post_message_form.asp?mode=new&ReturnPage=Topic&ForumID=7&PagePosition=1" target="_self"><img src="forum_images/new_post.gif" width="87" height="26" border="0" align="absmiddle" alt="Post New Topic"></a></td>
+  </tr>
+ </table>
+</form>
+<div align="center">
+ <table width="617" border="0" cellspacing="0" cellpadding="2">
+  <tr> 
+   <td width="193" class="text"><img src="forum_images/no_new_posts_icon.gif" alt="Open Topic (no new replies)"> <span style="font-size: 10px;"> Open Topic (no new replies)</span></td>
+   <td width="184" class="text"><img src="forum_images/hot_topic_no_new_posts_icon.gif" alt="Hot Topic (no new replies)"> <span style="font-size: 10px;"> Hot Topic (no new replies)</span></td>
+   <td width="141" class="text"><img src="forum_images/priority_post_icon.gif" alt="Priority Topic"> <span style="font-size: 10px;"> Priority Topic</span></td>
+   <td width="94" class="text"><img src="forum_images/pinned_topic_icon.gif" alt="Pinned Topic"> <span style="font-size: 10px;"> Pinned Topic</span></td>
+  </tr>
+  <tr> 
+   <td width="193" class="text"><img src="forum_images/new_posts_icon.gif" alt="Open Topic (new replies)"> <span style="font-size: 10px;"> Open Topic (new replies)</span></td>
+   <td width="184" class="text"><img src="forum_images/hot_topic_new_posts_icon.gif" alt="Hot Topic (new replies)"> <span style="font-size: 10px;"> Hot Topic (new replies)</span></td>
+   <td width="141" class="text"><img src="forum_images/priority_post_locked_icon.gif" alt="Locked Priority Topic"> <span style="font-size: 10px;">Locked Priority Topic</span></td>
+   <td width="94" class="text"><img src="forum_images/closed_topic_icon.gif" alt="Closed Topic"> <span style="font-size: 10px;"> Closed Topic</span></td>
+  </tr>
+ </table>
+ <br>
+</div>
+<div align="center"> 
+<span class="text" style="font-size:10px">Powered by <a href="http://www.webwizguide.info" target="_blank" style="font-size:10px">Web Wiz Forums</a> version 6.11</span><br><span class="text" style="font-size:10px">Copyright &copy;2001-2002 Web Wiz Guide</span>
+</div>
+</td>
+ </tr>
+ <tr> 
+  <td colspan="2"> <!-- footer -->
+ <br> </td>
+ </tr>
+</table>
+</body>
+</html>

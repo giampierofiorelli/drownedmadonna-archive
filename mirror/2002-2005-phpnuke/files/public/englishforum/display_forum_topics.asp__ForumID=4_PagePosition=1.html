@@ -1,0 +1,421 @@
+
+<html>
+<head>
+<meta name="copyright" content="Copyright (C) 2001-2202 Bruce Corkhill">
+<title>Discussion Forum: Cerco, vendo o scambio</title>
+<!-- Web Wiz Forums is written and produced by Bruce Corkhill ©2001-2002
+     	If you want your own Forum then goto http://www.webwizguide.info -->
+<script  language="JavaScript">
+<!-- Hide from older browsers...
+
+
+//Function to choose how many topics are show
+function ShowTopics(Show){
+
+   	strShow = escape(Show.options[Show.selectedIndex].value);
+   	document.cookie = "show=" + strShow
+   	
+   	if (Show != "") self.location.href = "display_forum_topics.asp?ForumID=4&PagePosition=1";
+	return true;
+}
+
+//Function to jump to another forum
+function ForumJump(URL) {
+	
+	if (URL.options[URL.selectedIndex].value != "") self.location.href = URL.options[URL.selectedIndex].value;	
+	return true;
+}
+
+//Function to open pop up window
+function openWin(theURL,winName,features) {
+  	window.open(theURL,winName,features);
+}
+// -->
+</script>
+
+<style type="text/css">
+<!--
+.text {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000;}
+.bold {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;}
+.heading {font-family: Arial, Helvetica, sans-serif; font-size: 18px; color: #000000;}
+.lgText {font-family: Arial, Helvetica, sans-serif; font-size: 15px; color: #000000; font-weight: bold;}
+.tHeading {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;}
+.tiHeading {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #000000; font-weight: bold;}
+a {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #0000CC;}
+a:hover {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #0000CC;}
+a:visited {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #0000CC;}
+a:visited:hover {font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; color: #FF0000;}
+-->
+</style>
+</head>
+<body bgcolor="#CCFFFF" text="#000000" background="" marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+ <tr> 
+  <td colspan="2"><table width="90%" border="0" cellspacing="7" cellpadding="0" align="center">
+  <tr> 
+    <td width="14%" valign="top">&nbsp;
+    <td align="center" width="72%"> 
+      
+
+<p align="center">
+<applet code="Lake.class" id="Lake" width="366" height="60" align="center">
+ 
+  <param name="image" value="forum_images/titoloforum.jpg">
+</applet>
+</p>
+
+    <td align="center" width="14%"><a href="http://www.drownedmadonna.com" target="_self" style="font-size: 11px;"> Drowned Madonna</a> 
+  </tr>
+</table></td>
+ </tr>
+ <tr> 
+  <td width="0%" valign="top"><!-- side bar --></td><td width="100%" valign="top">
+<br>
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+ <tr> 
+  <td class="text">Welcome Guest</td>
+  <td align="right">
+<a href="register_form.asp?ReturnPage=Topic&ForumID=4&PagePosition=1" target="_self"><img src="forum_images/register.gif" width="87" height="26" alt="Register" border="0" align="absmiddle"></a>&nbsp;<a href="login_user.asp?ReturnPage=Topic&ForumID=4&PagePosition=1" target="_self"><img src="forum_images/login.gif" width="87" height="26" alt="Login" border="0" align="absmiddle"></a>
+   <a href="search_form.asp?ReturnPage=Topic&ForumID=4&PagePosition=1" target="_self"><img src="forum_images/search.gif" width="87" height="26" align="absmiddle" border="0" alt="Search The Forum"></a> 
+   <a href="forum_members.asp?ReturnPage=Topic&ForumID=4&PagePosition=1" target="_self"><img src="forum_images/members_list.gif" width="87" height="26" border="0" align="absmiddle" alt="Display List of Forum Members"></a></td>
+ </tr>
+</table>
+<a href="http://www.webwizguide.info"></a> 
+<table width="98%" border="0" cellspacing="0" cellpadding="3" align="center">
+ <tr> 
+  <td align="left" width="71%"><img src="forum_images/folder_icon.gif" border="0" align="bottom">&nbsp;<a href="default.asp" target="_self">All Forums</a><br>
+   <img src="forum_images/folder_line.gif">&nbsp;<img src="forum_images/open_folder_icon.gif"> 
+   
+<a href="display_forum_topics.asp?ForumID=4" target="_self">Cerco, vendo o scambio</a><br>
+  </td>
+  <td align="right" width="29%">&nbsp; 
+   </td>
+ </tr>
+</table>
+<table width="98%" border="0" cellspacing="0" cellpadding="4" align="center">
+ <tr> 
+  <form>
+   <td width="50%"><span class="text">Show Topics</span> 
+    <select name="show" onChange=ShowTopics(this)>
+     <option value="0" >All</option>
+     <option value="7" >from the Last Week</option>
+     <option value="14" >from the Two Weeks</option>
+     <option value="31" selected>from the Last Month</option>
+     <option value="62" >from the Last Two Months</option>
+     <option value="182" >from the Last Six Months</option>
+     <option value="365" >from the Year</option>
+    </select>
+   </td>
+   <td align="right" width="50%"><a href="post_message_form.asp?mode=new&ReturnPage=Topic&ForumID=4&PagePosition=1" target="_self"><img src="forum_images/new_post.gif" width="87" height="26" border="0" align="absmiddle" alt="Post New Topic"></a></td>
+  </form>
+ </tr>
+</table>
+<table width="98%" border="0" cellspacing="0" cellpadding="0" bgcolor="#666666" align="center">
+ <tr> 
+  <td> 
+   <table width="100%" border="0" cellspacing="1" cellpadding="2" height="14" bgcolor="#666666">
+    <tr> 
+     <td bgcolor="#FFCC66" width="3%" height="2" class="tHeading" background="forum_images/barra.jpg">&nbsp;</td>
+     <td bgcolor="#FFCC66" width="41%" height="2" class="tHeading" background="forum_images/barra.jpg">Topics</td>
+     <td bgcolor="#FFCC66" width="15%" height="2" class="tHeading" background="forum_images/barra.jpg">Topic Starter</td>
+     <td bgcolor="#FFCC66" width="7%" align="center" height="2" class="tHeading" background="forum_images/barra.jpg">Replies</td>
+     <td bgcolor="#FFCC66" width="7%" align="center" height="2" class="tHeading" background="forum_images/barra.jpg">Views</td>
+     <td bgcolor="#FFCC66" width="29%" align="center" height="2" class="tHeading" background="forum_images/barra.jpg">Last Post</td>
+    </tr>
+    
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/priority_post_icon.gif" border="0" alt="Priority Topic"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1218&PagePosition=1" target="_self">Nuove regole. Leggetele!</a><br><img src="forum_images/pages_icon.gif" align="middle" alt="Pages"> <a href="display_topic_threads.asp?ForumID=4&TopicID=1218&PagePosition=1&ThreadPage=1" target="_self" style="font-size:10px;">1</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1218&PagePosition=1&ThreadPage=2" target="_self" style="font-size:10px;">2</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=1&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Giampiero</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">14</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">496</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">20 Settembre 2002&nbsp;at&nbsp;04:03
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1218&PagePosition=1&get=last#11196" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="Open Topic (no new replies)"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=2318&PagePosition=1" target="_self">VHS varie</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=620&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">MadC</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">12</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">19 Ottobre 2002&nbsp;at&nbsp;19:59
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=537&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Snatch</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=2318&PagePosition=1&get=last#16121" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=2122&PagePosition=1" target="_self">CERCO BUSTINA E DISCO</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=25&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">LIZ_</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">5</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">41</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">18 Ottobre 2002&nbsp;at&nbsp;22:50
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=24&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">unconscious</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=2122&PagePosition=1&get=last#16052" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="Open Topic (no new replies)"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=2328&PagePosition=1" target="_self">vhs c&#111;ncert  trade agg.18 ottobre</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">0</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">14</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">18 Ottobre 2002&nbsp;at&nbsp;20:32
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=2328&PagePosition=1&get=last#16012" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=2296&PagePosition=1" target="_self">Who&#146;s that girl Torino</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=613&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">nolis73</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">2</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">26</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">18 Ottobre 2002&nbsp;at&nbsp;09:18
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=613&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">nolis73</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=2296&PagePosition=1&get=last#15932" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=2305&PagePosition=1" target="_self">i want the BAT</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=573&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">silvio ciccone</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">21</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">17 Ottobre 2002&nbsp;at&nbsp;17:49
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=225&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Frozen</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=2305&PagePosition=1&get=last#15894" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1945&PagePosition=1" target="_self">BAT Gothenburg,Torino,L&#111;nd&#111;n,RotterdamVHS</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=569&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">dalyx</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">2</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">39</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">14 Ottobre 2002&nbsp;at&nbsp;22:07
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1945&PagePosition=1&get=last#15286" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1896&PagePosition=1" target="_self">virgin tour la</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=274&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">overandover</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">27</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">14 Ottobre 2002&nbsp;at&nbsp;22:00
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1896&PagePosition=1&get=last#15282" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1908&PagePosition=1" target="_self">cerco Bl&#111;nd Ambiti&#111;n tour in dvd</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=513&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">egido75</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">5</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">54</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">13 Ottobre 2002&nbsp;at&nbsp;15:55
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=57&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">elemaddy85</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1908&PagePosition=1&get=last#14882" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1923&PagePosition=1" target="_self">PROMO  DIE ANOTHER DAY  VENDO</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=576&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">billybudd</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">33</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">13 Ottobre 2002&nbsp;at&nbsp;14:17
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=22&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">*cosmic*system*</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1923&PagePosition=1&get=last#14864" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=2054&PagePosition=1" target="_self">DVD VIRGIN E BL&#079;ND AMBITI&#079;N TOUR</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=590&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">deglamour</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">6</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">72</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">13 Ottobre 2002&nbsp;at&nbsp;14:15
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=22&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">*cosmic*system*</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=2054&PagePosition=1&get=last#14863" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1478&PagePosition=1" target="_self">VENDO VHS DI MAD&#079;NNA</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=537&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Snatch</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">6</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">105</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">09 Ottobre 2002&nbsp;at&nbsp;20:31
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=537&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Snatch</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1478&PagePosition=1&get=last#14117" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1512&PagePosition=1" target="_self">VENDO EMMY AND THE EMMYS FIRST TIME OUT .</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=537&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Snatch</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">4</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">61</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">08 Ottobre 2002&nbsp;at&nbsp;19:57
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=537&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Snatch</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1512&PagePosition=1&get=last#13833" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1707&PagePosition=1" target="_self">lista agg. 22/9 c&#111;ncert for trade</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">2</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">174</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">08 Ottobre 2002&nbsp;at&nbsp;15:32
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1707&PagePosition=1&get=last#13728" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=2015&PagePosition=1" target="_self">maddy  c&#111;ncert trade agg 8 0ttobre</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">0</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">78</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">08 Ottobre 2002&nbsp;at&nbsp;12:08
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=2015&PagePosition=1&get=last#13657" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/no_new_posts_icon.gif" border="0" alt="Open Topic (no new replies)"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1983&PagePosition=1" target="_self">cart&#111;nato del ghv2 e vhs</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=544&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">laura</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">0</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">13</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">06 Ottobre 2002&nbsp;at&nbsp;18:07
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=544&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">laura</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1983&PagePosition=1&get=last#13327" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=652&PagePosition=1" target="_self">CERCO SPECIAL,INTERVISTE,E GL&#146;INEDITI</a><br><img src="forum_images/pages_icon.gif" align="middle" alt="Pages"> <a href="display_topic_threads.asp?ForumID=4&TopicID=652&PagePosition=1&ThreadPage=1" target="_self" style="font-size:10px;">1</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=652&PagePosition=1&ThreadPage=2" target="_self" style="font-size:10px;">2</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=422&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">skobe</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">11</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">139</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">05 Ottobre 2002&nbsp;at&nbsp;13:13
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=401&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">caro</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=652&PagePosition=1&get=last#13179" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1950&PagePosition=1" target="_self">...per i collezi&#111;nisti...</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=577&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Japanese!!</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">0</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">23</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">05 Ottobre 2002&nbsp;at&nbsp;11:10
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=577&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Japanese!!</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1950&PagePosition=1&get=last#13169" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1100&PagePosition=1" target="_self">CERCO FILM VHS</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=89&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">underwear</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">5</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">76</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">05 Ottobre 2002&nbsp;at&nbsp;01:07
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=44&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">thunderpuss</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1100&PagePosition=1&get=last#13162" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1931&PagePosition=1" target="_self">mad&#111;nna scambio list agg 3 ottobre</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">0</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">86</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">05 Ottobre 2002&nbsp;at&nbsp;00:57
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1931&PagePosition=1&get=last#13159" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1687&PagePosition=1" target="_self">BA e GS live in Japan &#111;n DVD</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=44&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">thunderpuss</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">6</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">81</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">03 Ottobre 2002&nbsp;at&nbsp;17:31
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=258&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">soonerorlater</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1687&PagePosition=1&get=last#12954" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1421&PagePosition=1" target="_self">BL&#079;ND AMBITI&#079;N TORINO</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=225&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Frozen</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">6</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">124</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">03 Ottobre 2002&nbsp;at&nbsp;16:12
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=225&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">Frozen</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1421&PagePosition=1&get=last#12927" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1885&PagePosition=1" target="_self">mad&#111;nna c&#111;ncert &#111;n dvd</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">0</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">24</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">01 Ottobre 2002&nbsp;at&nbsp;19:15
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1885&PagePosition=1&get=last#12627" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1846&PagePosition=1" target="_self">lista agg. il 30 sett. c&#111;ncert for trade</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">0</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">38</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">30 Settembre 2002&nbsp;at&nbsp;22:09
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1846&PagePosition=1&get=last#12493" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#F8F7EF" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#F8F7EF" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=1744&PagePosition=1" target="_self">comprate da rarita</a></td>
+     <td bgcolor="#F8F7EF" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=544&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">laura</a></td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">1</td>
+     <td bgcolor="#F8F7EF" background="" width="7%" align="center" class="text">71</td>
+     <td bgcolor="#F8F7EF" background="" width="29%" class="text" align="right">29 Settembre 2002&nbsp;at&nbsp;01:33
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=386&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">rarità</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=1744&PagePosition=1&get=last#12148" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+    <tr> 
+     <td bgcolor="#FEFEFC" background="" width="1%" align="center"><img src="forum_images/hot_topic_no_new_posts_icon.gif" border="0" alt="Hot Topic (no new replies)"></td>
+     <td bgcolor="#FEFEFC" background="" width="41%" class="text"><a href="display_topic_threads.asp?ForumID=4&TopicID=521&PagePosition=1" target="_self">vendo tutto affrettatevi</a></td>
+     <td bgcolor="#FEFEFC" background="" width="15%" class="text"><a href="JavaScript:openWin('pop_up_profile.asp?profile=87&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">LuckyStar</a></td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">8</td>
+     <td bgcolor="#FEFEFC" background="" width="7%" align="center" class="text">282</td>
+     <td bgcolor="#FEFEFC" background="" width="29%" class="text" align="right">28 Settembre 2002&nbsp;at&nbsp;23:16
+      <br>By <a href="JavaScript:openWin('pop_up_profile.asp?profile=538&ForumID=4','profile','toolbar=0,location=0,status=0,menubar=0,scrollbars=0,resizable=1,width=440,height=370')">The Lucky Star</a> <a href="display_topic_threads.asp?ForumID=4&TopicID=521&PagePosition=1&get=last#12138" target="_self"><img src="forum_images/right_arrow.gif" align="absmiddle" border="0" alt="View Last Post"></a></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<br>
+<form>
+ <table width="98%" border="0" cellspacing="0" cellpadding="4" align="center">
+  <tr> 
+   <td>
+	<span class="text">Forum Jump</span>
+	 <select onChange="ForumJump(this)" name="SelectJumpForum">
+           <option value="" selected>-- Select Forum --</option>
+
+		<option value="">Italian Section - Forum In Italiano</option>
+		<option value="display_forum_topics.asp?ForumID=2">&nbsp;&nbsp;-&nbsp;Discussioni di carattere generale</option>
+		<option value="display_forum_topics.asp?ForumID=3">&nbsp;&nbsp;-&nbsp;Survivors</option>
+		<option value="display_forum_topics.asp?ForumID=4">&nbsp;&nbsp;-&nbsp;Cerco, vendo o scambio</option>
+		<option value="display_forum_topics.asp?ForumID=9">&nbsp;&nbsp;-&nbsp;Promuovete i vostri siti</option>
+		<option value="">English Section</option>
+		<option value="display_forum_topics.asp?ForumID=7">&nbsp;&nbsp;-&nbsp;General Discussions</option>
+		<option value="display_forum_topics.asp?ForumID=13">&nbsp;&nbsp;-&nbsp;Promote Your Webpage</option>
+		<option value="display_forum_topics.asp?ForumID=8">&nbsp;&nbsp;-&nbsp;Problems with the Forum</option>
+         </select></td>
+   
+		<td><span class="text">Page
+		 <select onChange="ForumJump(this)" name="SelectTopicPage">
+		  <option value="display_forum_topics.asp?ForumID=4&PagePosition=1" selected>1</option>
+		  <option value="display_forum_topics.asp?ForumID=4&PagePosition=2">2</option>
+		</select> of 2</span></td>
+   <td align="right"><a href="post_message_form.asp?mode=new&ReturnPage=Topic&ForumID=4&PagePosition=1" target="_self"><img src="forum_images/new_post.gif" width="87" height="26" border="0" align="absmiddle" alt="Post New Topic"></a></td>
+  </tr>
+ </table>
+</form>
+<div align="center">
+ <table width="617" border="0" cellspacing="0" cellpadding="2">
+  <tr> 
+   <td width="193" class="text"><img src="forum_images/no_new_posts_icon.gif" alt="Open Topic (no new replies)"> <span style="font-size: 10px;"> Open Topic (no new replies)</span></td>
+   <td width="184" class="text"><img src="forum_images/hot_topic_no_new_posts_icon.gif" alt="Hot Topic (no new replies)"> <span style="font-size: 10px;"> Hot Topic (no new replies)</span></td>
+   <td width="141" class="text"><img src="forum_images/priority_post_icon.gif" alt="Priority Topic"> <span style="font-size: 10px;"> Priority Topic</span></td>
+   <td width="94" class="text"><img src="forum_images/pinned_topic_icon.gif" alt="Pinned Topic"> <span style="font-size: 10px;"> Pinned Topic</span></td>
+  </tr>
+  <tr> 
+   <td width="193" class="text"><img src="forum_images/new_posts_icon.gif" alt="Open Topic (new replies)"> <span style="font-size: 10px;"> Open Topic (new replies)</span></td>
+   <td width="184" class="text"><img src="forum_images/hot_topic_new_posts_icon.gif" alt="Hot Topic (new replies)"> <span style="font-size: 10px;"> Hot Topic (new replies)</span></td>
+   <td width="141" class="text"><img src="forum_images/priority_post_locked_icon.gif" alt="Locked Priority Topic"> <span style="font-size: 10px;">Locked Priority Topic</span></td>
+   <td width="94" class="text"><img src="forum_images/closed_topic_icon.gif" alt="Closed Topic"> <span style="font-size: 10px;"> Closed Topic</span></td>
+  </tr>
+ </table>
+ <br>
+</div>
+<div align="center"> 
+<span class="text" style="font-size:10px">Powered by <a href="http://www.webwizguide.info" target="_blank" style="font-size:10px">Web Wiz Forums</a> version 6.11</span><br><span class="text" style="font-size:10px">Copyright &copy;2001-2002 Web Wiz Guide</span>
+</div>
+</td>
+ </tr>
+ <tr> 
+  <td colspan="2"> <!-- footer -->
+ <br> </td>
+ </tr>
+</table>
+</body>
+</html>
