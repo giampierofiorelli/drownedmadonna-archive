@@ -112,6 +112,37 @@ def site_title(raw):
     return t.strip()
 
 
+# Words that only French titles of the site use: one is enough.
+FRENCH_DISTINCT = {
+    "du", "des", "les", "une", "sur", "avec", "pour", "dans", "aux", "au", "nouveau", "nouvelle",
+    "nouvelles", "nouveaux", "rencontre", "autre", "autres", "peu", "titre", "titres", "liste",
+    "certaines", "inédites", "inédit", "inédite", "première", "premières", "avant-première",
+    "croquis", "numéro", "ouverture", "séance", "réalisateurs", "répétition", "détails", "sortie",
+    "magasin", "survêtement", "célébrités", "incroyable", "derniers", "dernières", "couverture",
+    "fêtes", "chante", "remis", "scène", "maladie", "marchandises", "voici", "quitte", "tournée",
+    "écoutez", "ecoutez", "spécial", "spéciale", "juillet", "juin", "deux", "campagne", "soir",
+}
+# Short words English, Italian or Spanish titles can contain too: two are needed.
+FRENCH_WEAK = {"de", "la", "le", "et", "en", "ce", "à"}
+ITALIAN_HINTS = {"il", "della", "sulla", "sul", "degli", "per", "foto", "altri", "altre", "un'altra",
+                 "nuovo", "nuova", "dal", "al", "del", "di", "dettagli", "anteprima", "esclusiva"}
+
+
+def is_french(title):
+    """Heuristic for the French edition's titles (English and Italian ones are kept)."""
+    words = re.findall(r"[a-zà-ÿ'-]+", (title or "").lower())
+    words = [w.split("'")[-1] if w.startswith(("l'", "d'", "qu'")) else w for w in words]
+    if any(w in ITALIAN_HINTS for w in words):
+        return False
+    distinct = sum(1 for w in words if w in FRENCH_DISTINCT)
+    weak = sum(1 for w in words if w in FRENCH_WEAK)
+    accents = bool(re.search(r"[éèêàçùûô]", title or "", re.I))
+    # Lower-case "de"/"le" between words is French ("Photos de Coachella");
+    # English titles only have them capitalised in names ("Robert De Niro").
+    lowercase_article = bool(re.search(r"\s(de|le)\s", title or ""))
+    return distinct >= 1 or weak >= 2 or (accents and weak >= 1) or lowercase_article
+
+
 def starts_exclusive(text):
     return bool(re.match(r"^\W*exclusive\b", text or "", re.I))
 
@@ -268,6 +299,18 @@ def build(out_dir, era_pages, config_eras):
                 a.note_date(date, exact=True)
                 if re.search(r"\bcategory-exclusive\b", text, re.I):
                     a.exclusive = True
+                head = NUKE_TITLE_CELL.search(text)
+                if head:
+                    # PHP-Nuke article pages repeat the story's category badge
+                    # ("[EXCLUSIVE]", "[WORLD EXCLUSIVE]", "[Exclusive Preview]") in the title cell.
+                    cell = clean(head.group(1))
+                    badge = re.search(r"\[\s*([^\]]+?)\s*\]\s*(.+)$", cell)
+                    if badge and re.search(r"exclusiv|esclusiv", badge.group(1), re.I):
+                        a.exclusive = True
+                        a.note_title(f"{badge.group(1).upper()}: {badge.group(2).rstrip('.')}", strong=True)
+                full = NUKE_FULL_DATE.search(clean(text))
+                if full:
+                    a.note_date(safe_date(*full.groups()), exact=True)
                 continue
             parts = urllib.parse.urlsplit(original.replace("&amp;", "&"))
             query = dict(urllib.parse.parse_qsl(parts.query))
@@ -289,7 +332,8 @@ def build(out_dir, era_pages, config_eras):
                     a.note_date(ident[1], exact=True)
                     a.note_title(clean(label))
 
-    # 3. Classify and order.
+    # 3. Classify and order. French-language stories (the 2006-2007 French
+    # edition) are left out on purpose.
     chosen, review = [], []
     for a in articles.values():
         if not a.title:
@@ -298,7 +342,9 @@ def build(out_dir, era_pages, config_eras):
             a.exclusive = True
         elif mentions_exclusive(a.title):
             a.mention = True
-        if not (a.exclusive or a.mention):
+        # Only the PHP-Nuke years had a French edition; later English titles
+        # rebuilt from URL slugs can contain words like "dans" in names.
+        if not (a.exclusive or a.mention) or (a.id.startswith("nuke:") and is_french(a.title)):
             continue
         if not a.date and a.first_seen:
             a.date, a.date_exact = a.first_seen, False
