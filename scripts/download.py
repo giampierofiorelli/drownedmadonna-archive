@@ -37,6 +37,8 @@ TIME_BUDGET_MIN = float(os.environ.get("TIME_BUDGET_MIN", "320"))
 DELAY = float(os.environ.get("REQUEST_DELAY", "2.0"))
 CHECKPOINT_MIN = float(os.environ.get("CHECKPOINT_MIN", "10"))
 WORKERS = int(os.environ.get("WORKERS", "4"))
+PUBLISH_EVERY_MIN = float(os.environ.get("PUBLISH_EVERY_MIN", "30"))
+LAST_PUBLISH = 0.0
 
 ROOT = os.path.join("mirror", ERA)
 PLAN_PATH = os.path.join(ROOT, "_plan.csv")
@@ -157,10 +159,9 @@ def checkpoint(done_count, total):
                 f"Retries this run: {json.dumps(STATS) if STATS else 'none'}\n")
     if not os.environ.get("GITHUB_ACTIONS"):
         return
-    skip = ""
     cmds = [
         ["git", "add", "mirror/"],
-        ["git", "commit", "-q", "-m", f"Wayback download: {ERA} checkpoint {done_count}/{total}" + skip],
+        ["git", "commit", "-q", "-m", f"Wayback download: {ERA} checkpoint {done_count}/{total}"],
         ["git", "pull", "--rebase", "-q"],
         ["git", "push", "-q"],
     ]
@@ -169,6 +170,14 @@ def checkpoint(done_count, total):
             print(f"  checkpoint step failed: {' '.join(cmd)}", flush=True)
             return
     print(f"checkpoint pushed: {done_count}/{total}", flush=True)
+
+    # Pushes made with the Actions token do not trigger other workflows, so the
+    # Pages site is republished explicitly, at most every PUBLISH_EVERY_MIN.
+    global LAST_PUBLISH
+    if time.time() - LAST_PUBLISH >= PUBLISH_EVERY_MIN * 60:
+        if subprocess.run(["gh", "workflow", "run", "pages.yml", "--ref", "main"]).returncode == 0:
+            LAST_PUBLISH = time.time()
+            print("site republish requested", flush=True)
 
 
 def main():

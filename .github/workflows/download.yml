@@ -48,6 +48,7 @@ jobs:
           CAPTURE_FROM: ${{ steps.cfg.outputs.from }}
           CAPTURE_TO: ${{ steps.cfg.outputs.to }}
           TIME_BUDGET_MIN: "320"
+          GH_TOKEN: ${{ github.token }}
         run: python scripts/download.py
 
       - name: Commit progress
@@ -63,6 +64,13 @@ jobs:
             git pull --rebase -q
             git push -q
           fi
+
+      # Bot pushes do not trigger the Pages workflow, so request it explicitly.
+      - name: Republish site
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run pages.yml --ref main
 
       - name: Continue in a new run
         if: steps.dl.outputs.complete == 'false'
