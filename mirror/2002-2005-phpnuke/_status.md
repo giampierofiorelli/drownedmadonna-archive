@@ -1,7 +1,7 @@
 # 2002-2005-phpnuke
 
-Processed 3279 of 3627 files (90%).
+Processed 3321 of 3627 files (92%).
 
-Last update: 2026-10-22 06:50 UTC
+Last update: 2026-10-22 07:01 UTC
 
-Delay between requests: 2.0s. Retries this run: {"URLError": 318, "wait_seconds": 12120}
+Delay between requests: 2.0s. Retries this run: {"URLError": 350, "wait_seconds": 13970}
