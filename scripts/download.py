@@ -35,6 +35,8 @@ YEAR_TO = os.environ["CAPTURE_TO"]
 # "files" (default): newest capture of each URL. "listings": every distinct
 # capture of front pages and news listings, to recover stories never archived alone.
 MODE = os.environ.get("ERA_MODE", "files") or "files"
+# Optional "first-last" story ids: download only those PHP-Nuke articles, from any capture year.
+SID_RANGE = os.environ.get("ERA_SID_RANGE", "")
 TIME_BUDGET_MIN = float(os.environ.get("TIME_BUDGET_MIN", "320"))
 # Pause between requests to stay well clear of archive.org rate limiting.
 DELAY = float(os.environ.get("REQUEST_DELAY", "2.0"))
@@ -118,6 +120,15 @@ def list_captures():
     return rows
 
 
+def in_sid_range(url):
+    """PHP-Nuke article whose story id falls in SID_RANGE ("first-last")."""
+    q = dict(urllib.parse.parse_qsl(urllib.parse.urlsplit(url.replace("&amp;", "&")).query))
+    if q.get("file") != "article" or not q.get("sid", "").isdigit():
+        return False
+    first, last = (int(x) for x in SID_RANGE.split("-"))
+    return first <= int(q["sid"]) <= last
+
+
 def is_listing_page(url):
     """Front pages and news listings, whose successive captures each show different stories."""
     parts = urllib.parse.urlsplit(url.replace("&amp;", "&"))
@@ -159,6 +170,8 @@ def build_plan():
         return build_listing_plan()
     latest = {}
     for r in list_captures():
+        if SID_RANGE and not in_sid_range(r["original"]):
+            continue
         key = normalize(r["original"])
         if key not in latest or r["timestamp"] > latest[key]["timestamp"]:
             latest[key] = r

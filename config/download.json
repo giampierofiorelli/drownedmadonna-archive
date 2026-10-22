@@ -12,6 +12,12 @@
       "mode": "listings"
     },
     {
+      "era": "articles-2005-2006-confessions",
+      "capture_from": "2005",
+      "capture_to": "2025",
+      "sid_range": "8031-11531"
+    },
+    {
       "era": "2006-2010",
       "capture_from": "2006",
       "capture_to": "2010"
