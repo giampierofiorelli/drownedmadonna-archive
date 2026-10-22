@@ -34,7 +34,8 @@ def main():
     with open(out, "a", encoding="utf-8") as f:
         if pick:
             f.write(f"era={pick['era']}\nfrom={pick['capture_from']}\nto={pick['capture_to']}\n"
-                    f"mode={pick.get('mode', 'files')}\nsids={pick.get('sid_range', '')}\ndone=false\n")
+                    f"mode={pick.get('mode', 'files')}\nsids={pick.get('sid_range', '')}\n"
+                    f"domain={pick.get('domain', 'drownedmadonna.com')}\ndone=false\n")
         else:
             f.write("done=true\n")
     print(pick["era"] if pick else "all eras complete")

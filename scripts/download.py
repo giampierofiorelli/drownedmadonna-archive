@@ -129,6 +129,14 @@ def in_sid_range(url):
     return first <= int(q["sid"]) <= last
 
 
+def is_forum_page(url, mimetype):
+    """phpBB topic and forum index pages: the posts themselves, not profiles or forms."""
+    if "html" not in mimetype:
+        return False
+    q = {k.lower(): v for k, v in urllib.parse.parse_qsl(urllib.parse.urlsplit(url.replace("&amp;", "&")).query)}
+    return q.get("name") == "Forums" and q.get("file") in ("viewtopic", "viewforum")
+
+
 def is_listing_page(url):
     """Front pages and news listings, whose successive captures each show different stories."""
     parts = urllib.parse.urlsplit(url.replace("&amp;", "&"))
@@ -171,6 +179,8 @@ def build_plan():
     latest = {}
     for r in list_captures():
         if SID_RANGE and not in_sid_range(r["original"]):
+            continue
+        if MODE == "forum" and not is_forum_page(r["original"], r.get("mimetype", "")):
             continue
         key = normalize(r["original"])
         if key not in latest or r["timestamp"] > latest[key]["timestamp"]:

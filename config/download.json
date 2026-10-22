@@ -18,6 +18,13 @@
       "sid_range": "8031-11531"
     },
     {
+      "era": "forum-madonnafanzine",
+      "capture_from": "2006",
+      "capture_to": "2008",
+      "mode": "forum",
+      "domain": "madonnafanzine.com"
+    },
+    {
       "era": "2006-2010",
       "capture_from": "2006",
       "capture_to": "2010"

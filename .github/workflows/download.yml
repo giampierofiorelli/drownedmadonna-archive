@@ -47,6 +47,7 @@ jobs:
           CAPTURE_TO: ${{ steps.cfg.outputs.to }}
           ERA_MODE: ${{ steps.cfg.outputs.mode }}
           ERA_SID_RANGE: ${{ steps.cfg.outputs.sids }}
+          ARCHIVE_DOMAIN: ${{ steps.cfg.outputs.domain }}
           TIME_BUDGET_MIN: "320"
           GH_TOKEN: ${{ github.token }}
         run: python scripts/download.py
