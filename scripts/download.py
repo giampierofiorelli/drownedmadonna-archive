@@ -247,11 +247,30 @@ def main():
         with open(MANIFEST_PATH, encoding="utf-8") as f:
             done = {row["key"] for row in csv.DictReader(f)}
 
-    new_file = not os.path.exists(MANIFEST_PATH)
-    manifest = open(MANIFEST_PATH, "a", newline="", encoding="utf-8")
-    writer = csv.writer(manifest)
-    if new_file:
-        writer.writerow(["key", "timestamp", "status", "bytes", "file", "original"])
+    def append_row(row):
+        # Open and close on every row: a checkpoint's `git pull --rebase` can
+        # replace the manifest file, and a handle kept open would then write
+        # into the old, unlinked copy and lose every later row.
+        new_file = not os.path.exists(MANIFEST_PATH) or os.path.getsize(MANIFEST_PATH) == 0
+        with open(MANIFEST_PATH, "a", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            if new_file:
+                w.writerow(["key", "timestamp", "status", "bytes", "file", "original"])
+            w.writerow(row)
+
+    # Files already in the repository but missing from the manifest (lost rows
+    # from an earlier run) count as downloaded.
+    recovered = 0
+    for p in plan:
+        if p["key"] in done:
+            continue
+        rel = local_path(p["key"], p["mimetype"])
+        if os.path.exists(rel) and os.path.getsize(rel) > 0:
+            append_row([p["key"], p["timestamp"], 200, os.path.getsize(rel), rel, p["original"]])
+            done.add(p["key"])
+            recovered += 1
+    if recovered:
+        print(f"recovered {recovered} files already downloaded", flush=True)
 
     retries = {}
     if os.path.exists(RETRIES_PATH):
@@ -302,8 +321,7 @@ def main():
                     if retries[p["key"]] >= MAX_RUN_FAILURES:
                         status = "failed"
                 if status is not None:
-                    writer.writerow([p["key"], p["timestamp"], status, size, rel, p["original"]])
-                    manifest.flush()
+                    append_row([p["key"], p["timestamp"], status, size, rel, p["original"]])
                 if processed % 100 == 0:
                     print(f"{processed}/{len(todo)}", flush=True)
             if time.time() - last_checkpoint > CHECKPOINT_MIN * 60:
@@ -312,7 +330,6 @@ def main():
     if out_of_time():
         print("time budget reached, stopping for this run", flush=True)
 
-    manifest.close()
     with open(RETRIES_PATH, "w", encoding="utf-8") as f:
         json.dump(retries, f, indent=0, sort_keys=True)
     with open(MANIFEST_PATH, encoding="utf-8") as f:
