@@ -129,6 +129,7 @@ class Article:
         self.exclusive = False
         self.mention = False
         self.local = None      # path relative to the site root
+        self.listing = None    # archived listing page that shows its summary
         self.wayback = None
         self.slug = None
 
@@ -161,7 +162,7 @@ def plan_dates(era):
                 for r in csv.DictReader(f)}
 
 
-def read_nuke_listing(text, captured, get):
+def read_nuke_listing(text, captured, get, listing_path):
     """PHP-Nuke category page: each story block has a sid link and a 'Written by ... on' line."""
     for block in re.split(r"<table\s+width=\"100%\"", text, flags=re.I):
         sids = re.findall(r"file=article(?:&amp;|&)sid=(\d+)", block)
@@ -170,6 +171,7 @@ def read_nuke_listing(text, captured, get):
             continue
         a = get(f"nuke:{int(sids[0])}")
         a.exclusive = True
+        a.listing = a.listing or listing_path
         weekday, month, day, title = m.groups()
         a.note_title(title.strip().rstrip("."), strong=True)
         if captured:
@@ -237,7 +239,7 @@ def build(out_dir, era_pages, config_eras):
             if not is_listing(urllib.parse.unquote(parts.path), query):
                 continue
             if parts.path.lower().endswith("modules.php"):
-                read_nuke_listing(text, captured_on.get(key), get)
+                read_nuke_listing(text, captured_on.get(key), get, f"{era}/{rel}")
                 continue
             for href, label in ANCHOR.findall(text):
                 ident = article_id(href, original)
@@ -302,10 +304,19 @@ def fallback_wayback(a):
 
 
 def row_html(a, config_eras):
-    href = a.local or a.wayback or fallback_wayback(a)
     if a.local:
-        href = urllib.parse.quote(href, safe="/._-,=~")
-    where = "Archive copy" if a.local else "Wayback Machine"
+        href, where = urllib.parse.quote(a.local, safe="/._-,=~"), "Archive copy"
+    elif a.wayback:
+        href, where = a.wayback, "Wayback Machine"
+    elif a.listing:
+        # The article itself was never archived: open the category page that
+        # shows its summary, scrolled to it with a text fragment.
+        words = re.sub(r"^\W*exclusive\W*", "", a.title, flags=re.I).split()[:6]
+        fragment = urllib.parse.quote(" ".join(words), safe="")
+        href = urllib.parse.quote(a.listing, safe="/._-,=~") + (f"#:~:text={fragment}" if words else "")
+        where = "Summary only"
+    else:
+        href, where = fallback_wayback(a), "Wayback search"
     return (f'<tr><td class="d">{html.escape(fmt_date(a))}</td>'
             f'<td><a href="{html.escape(href)}">{html.escape(a.title)}</a></td>'
             f'<td class="e">{html.escape(era_label(a, config_eras))}</td><td class="e">{where}</td></tr>')
@@ -313,6 +324,7 @@ def row_html(a, config_eras):
 
 def write_page(out_dir, chosen, review, config_eras):
     local = sum(1 for a in chosen if a.local)
+    summary = sum(1 for a in chosen if not a.local and not a.wayback and a.listing)
     rows = "\n".join(row_html(a, config_eras) for a in chosen)
     review_rows = "\n".join(row_html(a, config_eras) for a in review)
     page = f"""<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
@@ -337,7 +349,7 @@ td.e{{color:var(--muted);font-size:13px;white-space:nowrap}}
 <main>
 <p><a href="index.html">All eras</a></p>
 <h1>DrownedMadonna exclusives</h1>
-<p>{len(chosen)} exclusives found so far, oldest first. {local} open the recovered copy; the others open on the Wayback Machine until their era finishes downloading. A date marked "c." is when the page was first archived, not its publication date.</p>
+<p>{len(chosen)} exclusives found so far, oldest first. {local} open the recovered copy. {summary} were never archived as full articles: they open the recovered Exclusive category page, at their title and summary. The others open on the Wayback Machine until their era finishes downloading. A date marked "c." is when the page was first archived, not its publication date.</p>
 <table><thead><tr><th>Date</th><th>Title</th><th class="e">Era</th><th class="e">Opens</th></tr></thead>
 <tbody>
 {rows}
