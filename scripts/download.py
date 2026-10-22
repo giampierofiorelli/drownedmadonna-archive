@@ -235,6 +235,21 @@ def checkpoint(done_count, total):
             print("site republish requested", flush=True)
 
 
+MANIFEST_HEADER = "key,timestamp,status,bytes,file,original"
+
+
+def repair_manifest_header(path):
+    """Restore the header row if an earlier run lost it (rows appended to a 0-byte file)."""
+    if not os.path.exists(path) or os.path.getsize(path) == 0:
+        return
+    with open(path, encoding="utf-8") as f:
+        text = f.read()
+    if not text.startswith(MANIFEST_HEADER):
+        with open(path, "w", encoding="utf-8", newline="") as f:
+            f.write(MANIFEST_HEADER + "\r\n" + text)
+        print("manifest header restored", flush=True)
+
+
 def main():
     if not os.path.exists(PLAN_PATH):
         build_plan()
@@ -242,6 +257,7 @@ def main():
     with open(PLAN_PATH, encoding="utf-8") as f:
         plan = list(csv.DictReader(f))
 
+    repair_manifest_header(MANIFEST_PATH)
     done = set()
     if os.path.exists(MANIFEST_PATH):
         with open(MANIFEST_PATH, encoding="utf-8") as f:

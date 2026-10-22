@@ -11,10 +11,12 @@ import os
 
 
 def rows(path):
+    """Data rows of a plan or manifest (a manifest may lack its header row)."""
     if not os.path.exists(path):
         return None
     with open(path, encoding="utf-8") as f:
-        return sum(1 for _ in csv.DictReader(f))
+        lines = [line for line in f if line.strip()]
+    return len(lines) - (1 if lines and lines[0].startswith("key,") else 0)
 
 
 def main():
