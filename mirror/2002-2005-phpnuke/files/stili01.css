@@ -1,0 +1,148 @@
+.base
+{
+	font-family: verdana;
+	font-size: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+.pic
+{
+      font-family: verdana;
+	font-size: 10px;
+	text-decoration: none;
+	color: black;
+}
+
+.base:hover
+{
+	color: black;
+	text-decoration: underline;
+}
+.titolo
+{
+    FONT-SIZE: 30px;
+    FILTER: DropShadow(Color=000000, OffX=2, OffY=2, Positive=2);
+    COLOR: red;
+    FONT-FAMILY: verdana;
+    TEXT-DECORATION: none;
+    font-weight: bold;
+}
+.barra
+{ 
+	scrollbar-face-color: #FF9933;
+	scrollbar-shadow-color: #E87909;
+	scrollbar-highlight-color: #FFB533;
+	scrollbar-3dlight-color: #E87909;
+	scrollbar-darkshadow-color: black;
+	scrollbar-track-color: #FCFEE4;
+	scrollbar-arrow-color: #FFFFCE
+}
+.header 
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight:normal;
+	color: #FFFFFF;
+	text-decoration: none;
+	width: 100%;
+	height: 18px;
+	padding-top: 3px;
+}
+.header:hover 
+{ 
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight:normal;
+	color: #000000;
+	text-decoration: none;
+	background-color: #FFF122;
+}
+
+.riga 
+{ 
+	width:80px;
+	height:18px;
+	background-color: #FF9933;
+	border: 1px solid #14416D;
+	
+}
+.riga2 
+{ 
+	width:70px;
+	height:18px;
+	background-color: #FF9933;
+	border: 1px solid #14416D;
+	
+}
+.rigatitolo
+{ 
+	width:550px;
+	height:18px;
+	background-color: #FF9933;
+	font-family: verdana;
+	font-size: 10px;
+	font-weight:bolder;
+	text-decoration: none;
+	color: white;
+}
+.rigaaggiornamento
+{ 
+	width:550px;
+	height:18px;
+	background-color: #FF0000;
+	font-family: verdana;
+	font-size: 10px;
+	font-weight:bolder;
+	text-decoration: none;
+	color: #FFFF00;
+}
+.rigaprimapagina
+{ 
+	width:554px;
+	height:18px;
+	background-color: #FFFFFF;
+	font-family: verdana;
+	font-size: 10px;
+	text-decoration: none;
+	color: black;
+	border: 1px solid ;
+}
+.rigainfo
+{ 
+	width:340px;
+	height:18px;
+	font-family: verdana;
+	font-size: 10px;
+	text-decoration: none;
+	color: black;
+}
+#centrale
+{
+	width: 620px;
+	height: 420px;
+	position: absolute; top:40px;
+	left:40px;
+	background-color:white;
+	padding:10px;
+}
+#centrale1
+{
+	width: 601px;
+	height: 401px;
+	position: absolute; top:49px;
+	left:49px;
+	background-color:FF9933;
+	padding:1px;
+}
+#info
+{
+	Z-INDEX: 1;
+    LEFT: 100px;
+    WIDTH: 368px;
+    height: 289px;
+    POSITION: absolute;
+    TOP: 100px;
+	DISPLAY: none;
+	BACKGROUND: url(images/info.gif);
+}

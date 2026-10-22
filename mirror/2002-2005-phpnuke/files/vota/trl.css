@@ -1,0 +1,178 @@
+.testonero {
+	font-size : 10px;
+	font-family : verdana,arial;
+	color : #000000;
+	}
+
+.testoblu {
+font-size : 10px;
+font-family : verdana,arial;
+color : #285D7D;
+text-decoration: none;
+}
+.testoblu:hover {
+font-size : 10px;
+font-family : verdana,arial;
+color : #419A86;
+text-decoration: none;
+}
+
+.testoblunav  {
+font-size : 10px;
+font-family : verdana,arial;
+color : #285D7D;
+text-decoration: none;
+}
+.testoblunav:hover {
+font-size : 10px;
+font-family : verdana,arial;
+color : #419A86;
+text-decoration: none;
+}
+
+.testoblulink  {
+font-size : 10px;
+font-family : verdana,arial;
+color : #285D7D;
+text-decoration: none;
+}
+.testoblulink:hover {
+font-size : 10px;
+font-family : verdana,arial;
+color : #419A86;
+text-decoration: none;
+}
+.testoblum {
+font-size : 11px;
+font-family : verdana,arial;
+color : #285D7D;
+text-decoration: none;
+font-weight: bold;
+}
+.testoblum:hover {
+font-size : 11px;
+font-family : verdana,arial;
+color : #419A86;
+text-decoration: none;
+font-weight: bold;
+}
+
+.lettera{
+font-size : 16px;
+font-family : arial;
+color : #285D7D;
+text-decoration: none;
+font-weight: bold;
+}
+.lettera:hover {
+font-size : 16px;
+font-family :arial;
+color : #419A86;
+text-decoration: none;
+font-weight: bold;
+}
+
+
+.testoverde {
+font-size : 10px;
+font-family : verdana,arial;
+color : #419A86;
+}
+
+.testoverdechiaro {
+font-size : 10px;
+font-family : verdana,arial;
+color : #80A7CA;
+text-decoration: none;
+}
+
+.testoverdechiaro:hover {
+font-size : 10px;
+font-family : verdana,arial;
+color : #419A86;
+text-decoration: none;
+}
+
+.testoverdechiarolink {
+font-size : 10px;
+font-family : verdana,arial;
+color : #8AB6CF;
+text-decoration: none;
+}
+
+.testoverdechiarolink:hover {
+font-size : 10px;
+font-family : verdana,arial;
+color : #419A86;
+text-decoration: none;
+}
+
+.testoverdechiarog {
+font-size : 14px;
+font-family : verdana,arial;
+color : #8AB6CF;
+text-decoration: none;
+}
+
+.form-input {
+font: 8pt Verdana, Arial;
+font-weight:normal; 
+color: #285D7D;
+border-color: #285D7D;
+border-style: double;
+width: 190px;
+border-width: 1px;
+background-color: #ffffff;
+}
+.form-textarea {
+font: 8pt Verdana, Arial;
+font-weight:normal; 
+color: #285D7D;
+border-color: #285D7D;
+border-style: double;
+width: 190px;
+border-width: 1px;
+background-color: #ffffff;
+}
+.form-select {
+font: 8pt Verdana, Arial;
+font-weight:normal; 
+color: #285D7D;
+border-color: #285D7D;
+border-style: double;
+width: 188px;
+border-width: 1px;
+background-color: #ffffff;
+scrollbar-arrow-color: #ffffff;
+}
+.bottone-invio{
+font: 8pt Verdana, Arial;
+font-weight:normal; 
+color: #285D7D;
+border-color: #285D7D;
+border-style: double;
+width: 60px;
+border-width: 1px;
+background-color: #ffffff;
+}
+
+.orario {
+    font-size : 10pt;
+	font-family : arial,verdana;
+    font-weight : bold;
+	color : #4F687F;
+	text-decoration : none;
+	text-transform : uppercase;
+	
+		}
+
+.bg-generale  {
+	background-color:#EFECEB;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,48 @@
+<html>
+
+<head>
+<title>Aspetta... stai inviando il tuo voto</title>
+<LINK REL="STYLESHEET" TYPE="text/css" HREF="www.drownedmadonna.com/vota/trl.css">
+<script language="JavaScript" SRC="www.drownedmadonna.com/vota/popup_trl.js">
+    </script>
+<script language="JavaScript">
+<!--
+var gia_votato = 0
+function vota(id) {
+	if (gia_votato == 0)
+	{
+		document.form_vota.ID.value = id
+		gia_votato = 0
+		document.form_vota.submit();
+
+
+	}
+	else
+	{
+		document.form_vota.ID.value = '';
+		document.form_vota.submit();
+	}
+}
+//-->
+</script>
+
+
+
+
+
+<form name=form_vota method=post action="http://www.mtv.it/tv/programmi/trl/inserisci_vota.asp">
+			<input type="hidden" name="ID" value="">
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta http-equiv="refresh" content="0;URL=javascript:vota('4D7D5E3418C645CF8E59F82C96A9D0AF')"onfocus=this.blur()">
+</form>
+</head>
+
+<body bgcolor="#FFFFFF">
+<div align="center">
+
+  <p><p><p><p><b><font face="Arial, Helvetica, sans-serif" color="#FF0000">Aspetta...</font></b></p>
+ 
+</div>
+</body>
+</html>
