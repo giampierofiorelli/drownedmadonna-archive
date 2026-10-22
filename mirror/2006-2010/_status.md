@@ -1,7 +1,7 @@
 # 2006-2010
 
-Processed 468 of 5012 files (9%).
+Processed 510 of 5012 files (10%).
 
-Last update: 2026-10-22 11:33 UTC
+Last update: 2026-10-22 11:44 UTC
 
-Delay between requests: 2.0s. Retries this run: {"http_503": 1, "wait_seconds": 1340, "URLError": 103}
+Delay between requests: 2.0s. Retries this run: {"http_503": 1, "wait_seconds": 1560, "URLError": 119}
