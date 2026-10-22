@@ -186,7 +186,14 @@ def is_listing(path, query):
     p = path.lower()
     if "/category/exclusive" in p or "/tag/exclusive" in p:
         return True
-    return p.endswith("modules.php") and query.get("file") == "categories" and query.get("catid") == "2"
+    # PHP-Nuke categories whose every story is an exclusive: 2 EXCLUSIVE,
+    # 8 Exclusive Rumours, 11 Exclusive Preview, 15 WORLD EXCLUSIVE.
+    return (p.endswith("modules.php") and query.get("file") == "categories"
+            and query.get("catid") in EXCLUSIVE_CATEGORIES)
+
+
+EXCLUSIVE_CATEGORIES = {"2", "8", "11", "15"}
+CATEGORY_LABELS = {"2": "EXCLUSIVE", "8": "EXCLUSIVE RUMOURS", "11": "EXCLUSIVE PREVIEW", "15": "WORLD EXCLUSIVE"}
 
 
 def is_nuke_page(path):
@@ -201,7 +208,7 @@ def plan_dates(era):
                 for r in csv.DictReader(f)}
 
 
-def read_nuke_listing(text, captured, get, listing_path, only_exclusive=False):
+def read_nuke_listing(text, captured, get, listing_path, only_exclusive=False, label=None):
     """PHP-Nuke listing page: each story block has a sid link and a 'Written by ... on' line.
 
     On the Exclusive category page every story is an exclusive; on front pages
@@ -237,6 +244,8 @@ def read_nuke_listing(text, captured, get, listing_path, only_exclusive=False):
             continue
         title = re.sub(r"^\[\s*([^\]]*exclusive[^\]]*?)\s*\]\s*", lambda m: m.group(1).upper() + ": ",
                        title.strip(), flags=re.I).rstrip(".")
+        if label and not starts_exclusive(title) and not re.match(r"^\w+( \w+)?\s*:", title):
+            title = f"{label}: {title}"  # the category page shows titles without the badge
         a = get(f"nuke:{int(sids[0])}")
         a.exclusive = True
         a.listing = a.listing or listing_path
@@ -320,7 +329,8 @@ def build(out_dir, era_pages, config_eras):
                 # Front pages and news listings keep the titles and summaries of
                 # stories never archived on their own; the Exclusive category
                 # lists only exclusives, other pages are filtered by title/tag.
-                read_nuke_listing(text, captured_on.get(key), get, f"{era}/{rel}", only_exclusive=not listed)
+                read_nuke_listing(text, captured_on.get(key), get, f"{era}/{rel}", only_exclusive=not listed,
+                                  label=CATEGORY_LABELS.get(query.get("catid")) if listed else None)
                 continue
             if not listed:
                 continue
