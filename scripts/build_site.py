@@ -23,6 +23,7 @@ import json
 
 import exclusives
 import promo
+import year_news
 from urlkeys import normalize, site_host
 
 MIRROR = "mirror"
@@ -173,6 +174,8 @@ def main():
     print(f"exclusives: {n_excl} listed, {n_review} to review")
     n_promo = promo.build(OUT, era_pages)
     print(f"confessions promo: {n_promo} news")
+    n_2007 = year_news.build(OUT, era_pages, 2007)
+    print(f"2007 news: {n_2007}")
     with open(os.path.join(OUT, "index.html"), "w", encoding="utf-8") as f:
         f.write(f"""<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex">
 <title>DrownedMadonna archive</title>
@@ -181,6 +184,7 @@ def main():
 <p>Earlier versions of drownedmadonna.com recovered from the Wayback Machine. Download in progress: this site rebuilds as files arrive.</p>
 <p><a href="exclusives.html">All exclusives, in chronological order</a> <small>{n_excl} so far</small></p>
 <p><a href="confessions-promo.html">Confessions on a Dance Floor promo news, Sept-Dec 2005</a> <small>{n_promo} news</small></p>
+<p><a href="news-2007.html">All 2007 news in English, in chronological order</a> <small>{n_2007} news</small></p>
 <ul>{''.join(items)}</ul>""")
 
 

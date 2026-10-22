@@ -12,6 +12,7 @@ on:
       - scripts/urlkeys.py
       - scripts/exclusives.py
       - scripts/promo.py
+      - scripts/year_news.py
       - .github/workflows/pages.yml
 
 permissions:
