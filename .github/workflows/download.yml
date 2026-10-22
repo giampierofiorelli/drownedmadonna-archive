@@ -76,7 +76,8 @@ jobs:
         run: python scripts/next_era.py
 
       - name: Continue in a new run
-        if: ${{ !cancelled() && steps.next.outputs.done == 'false' }}
+        # Only after a clean download step: a crash must not loop into new runs.
+        if: ${{ !cancelled() && steps.dl.outcome != 'failure' && steps.next.outputs.done == 'false' }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run download.yml --ref main
