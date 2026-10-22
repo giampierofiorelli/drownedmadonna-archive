@@ -1,0 +1,38 @@
+name: Wayback probe
+
+on:
+  workflow_dispatch:
+    inputs:
+      from:
+        description: First capture date (YYYYMMDD)
+        default: "20070301"
+      to:
+        description: Last capture date (YYYYMMDD)
+        default: "20070630"
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Query CDX
+        env:
+          PROBE_FROM: ${{ inputs.from }}
+          PROBE_TO: ${{ inputs.to }}
+        run: python scripts/probe_cdx.py
+      - name: Commit results
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add inventory/probe/
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Wayback probe ${{ inputs.from }}-${{ inputs.to }}"
+          git pull --rebase -q
+          git push -q
