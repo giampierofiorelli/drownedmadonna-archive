@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Kris Bladen's news feed</title>
+		<description>Latest activities around Kris Bladen. Last visit date: 2013-08-13 20:40:42</description>
+		<link>http://drownedmadonna.com/community/35747-kris-bladen/profile.html</link>
+		<lastBuildDate>Mon, 19 Aug 2013 08:56:49 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://drownedmadonna.com/components/com_community/templates/blackout/images/user_thumb.png</url>
+			<title></title>
+			<link>/community/35747-kris-bladen/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+		<item>
+			<title>Kris Bladen   http://seo-web.ca</title>
+			<link>http://seo-web.ca</link>
+			<guid>http://seo-web.ca</guid>
+			<description><![CDATA[<img src="http://drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://drownedmadonna.com//community/35747-kris-bladen/profile.html">Kris Bladen</a>   <a href="http://seo-web.ca">http://seo-web.ca</a>]]></description>
+			<pubDate>Tue, 13 Aug 2013 21:40:00 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

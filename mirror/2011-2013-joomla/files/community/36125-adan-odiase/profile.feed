@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Adan Odiase's news feed</title>
+		<description>Latest activities around Adan Odiase. Last visit date: 2013-08-20 07:37:27</description>
+		<link>http://drownedmadonna.com/community/36125-adan-odiase/profile.html</link>
+		<lastBuildDate>Fri, 23 Aug 2013 06:54:42 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://drownedmadonna.com/components/com_community/templates/blackout/images/user_thumb.png</url>
+			<title></title>
+			<link>/community/36125-adan-odiase/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+		<item>
+			<title>Adan Odiase   http://www.youtube.com/watch?v=AU3f1-IMs6I</title>
+			<link>http://www.youtube.com/watch?v=AU3f1-IMs6I</link>
+			<guid>http://www.youtube.com/watch?v=AU3f1-IMs6I</guid>
+			<description><![CDATA[<img src="http://drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://drownedmadonna.com//community/36125-adan-odiase/profile.html">Adan Odiase</a>   <a href="http://www.youtube.com/watch?v=AU3f1-IMs6I">http://www.youtube.com/watch?v=AU3f1-IMs6I</a>]]></description>
+			<pubDate>Tue, 20 Aug 2013 08:37:00 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
