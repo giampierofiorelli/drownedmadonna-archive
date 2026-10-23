@@ -1,0 +1,1502 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Drowned Madonna </title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ISO-8859-1">
+<META HTTP-EQUIV="EXPIRES" CONTENT="0">
+<META NAME="RESOURCE-TYPE" CONTENT="DOCUMENT">
+<META NAME="DISTRIBUTION" CONTENT="GLOBAL">
+<META NAME="AUTHOR" CONTENT="Drowned Madonna">
+<META NAME="COPYRIGHT" CONTENT="Copyright (c) 2003 by Drowned Madonna">
+<META NAME="KEYWORDS" CONTENT="News, news, New, new, Technology, technology, Headlines, headlines, Nuke, nuke, PHP-Nuke, phpnuke, php-nuke, Geek, geek, Geeks, geeks, Hacker, hacker, Hackers, hackers, Linux, linux, Windows, windows, Software, software, Download, download, Downloads, downloads, Free, FREE, free, Community, community, MP3, mp3, Forum, forum, Forums, forums, Bulletin, bulletin, Board, board, Boards, boards, PHP, php, Survey, survey, Kernel, kernel, Comment, comment, Comments, comments, Portal, portal, ODP, odp, Open, open, Open Source, OpenSource, Opensource, opensource, open source, Free Software, FreeSoftware, Freesoftware, free software, GNU, gnu, GPL, gpl, License, license, Unix, UNIX, *nix, unix, MySQL, mysql, SQL, sql, Database, DataBase, Blogs, blogs, Blog, blog, database, Mandrake, mandrake, Red Hat, RedHat, red hat, Slackware, slackware, SUSE, SuSE, suse, Debian, debian, Gnome, GNOME, gnome, Kde, KDE, kde, Enlightenment, enlightenment, Interactive, interactive, Programming, programming, Extreme, extreme, Game, game, Games, games, Web Site, web site, Weblog, WebLog, weblog, Guru, GURU, guru, Oracle, oracle, db2, DB2, odbc, ODBC, plugin, plugins, Plugin, Plugins">
+<META NAME="DESCRIPTION" CONTENT="Unwrap the drowned world of Madonna...">
+<META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<META NAME="REVISIT-AFTER" CONTENT="1 DAYS">
+<META NAME="RATING" CONTENT="GENERAL">
+<META NAME="GENERATOR" CONTENT="PHP-Nuke 6.5 - Copyright 2003 by http://phpnuke.org">
+<LINK REL="StyleSheet" HREF="themes/Wannabie/style/style.css" TYPE="text/css">
+
+
+
+
+
+</head>
+
+
+<body class="barra"   bgground="/images/bg.jpg" text="#000000"  topmargin="0" marginheight="0" marginwidth="0" leftmargin="0" rightmargin="0">
+
+
+
+<table border="0"  bgcolor="#006699"  width="1003"  cellpadding="0" cellspacing="0" align="center">
+<tr>
+    <td align="center"><p><img src="/images/drownedheader.jpg" border="0"></p>
+	
+    <table width="1003" border="0" cellpadding="0" cellspacing="0" border="0" bgcolor="#006699" align="center"> 
+ 		<tr valign="top">
+  			<td width="20" align="center"></td>
+    		
+  <td width="150"  align="center">
+  
+  <table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Languages</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><font class="content">Choose your Language:<br><br><a href="index.php?newlang=english"><img src="images/language/flag-english.png" border="0" alt="English" title="English" hspace="3" vspace="3"></a> <a href="index.php?newlang=italian"><img src="images/language/flag-italian.png" border="0" alt="Italian" title="Italian" hspace="3" vspace="3"></a> </font></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">News</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><A href="http://www.drownedmadonna.com/index.php">+ Latest News</A>  <BR><A href="http://www.drownedmadonna.com/modules.php?name=Submit_News">+ Submit News</A> 
+<BR><A href="http://www.drownedmadonna.com/modules.php?name=Stories_Archive">+ Archive</A> 
+</font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Who's Online</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><font class="content">There are currently, 204 guest(s) and 0 member(s) that are online.<br><br>You are Anonymous user. You can register for free by clicking <a href="modules.php?name=Your_Account">here</a></font></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Ringtones</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<SCRIPT>function jsOpenhWnd(u){p="toolbar=no,height=660,width=380,directories=no,status=no,scrollbars=auto,resizable=no,menubar=no";hWnd=window.open(u,"Hwnd",p);hWnd.focus();}</SCRIPT>
+
+<body>
+
+<center>Download one of the following Madonna's ringtones on your mobile or send it to one of your friends:</center><br>
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=3131&son_nom=Crazy For You&son_wav=crazyforyo.mid&lang=EN')">+ Crazy For You</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=106&son_nom=Die another day&son_wav=POLY1101.mid&lang=EN')">+ Die Another Day</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=1428&son_nom=Do It With Madonna&son_wav=doitwithma.mid&lang=EN')">+ Do It With Madonna</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=3578&son_nom=Don t Cry For Me Argentina&son_wav=d9.mid&lang=EN')">+ Don't Cry For Me Argentina</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=2661&son_nom=Don t tell me&son_wav=d2.mid&lang=EN')">+ Don't Tell Me</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=458&son_nom=Frozen&son_wav=POLY1-11407.mid&lang=EN')">+ Frozen</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=3132&son_nom=Holiday&son_wav=holiday.mid&lang=EN')">+ Holiday</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=694&son_nom=Hollywood&son_wav=POLY1-11671.mid&lang=EN')">+ Hollywood</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=2667&son_nom=Like a prayer&son_wav=l1.mid&lang=EN')">+ Like A Prayer</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=2668&son_nom=Like a Virgin&son_wav=likeavirgi.mid&lang=EN')">+ Like A Virgin</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=978&son_nom=Love profusion&son_wav=POLY1-12169.mid&lang=EN')">+ Love Profusion</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=455&son_nom=Material girl&son_wav=POLY1-11404.mid&lang=EN')">+ Material Girl</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=846&son_nom=Me Against The Music&son_wav=POLY1-11938.mid&lang=EN')">+ Me Against The Music</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=1155&son_nom=Me Against The Music&son_wav=meagainst0.mid&lang=EN')">+ Me Against The Music</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=815&son_nom=Nothing fails&son_wav=POLY1-11776.mid&lang=EN')">+ Nothing Fails</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=3133&son_nom=Papa Don t Preach&son_wav=papadontpr.mid&lang=EN')">+ Papa Don't Preach</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=3134&son_nom=Vogue&son_wav=vogue.mid&lang=EN')">+ Vogue</A><br />
+
+<A ONCLICK="javascript:;" HREF="javascript:jsOpenhWnd('http://drownedmad.sonnerie.net/external/DrtTop/dl.php?f=c_14&type=14&id=2709&son_nom=Your Honesty&son_wav=yourhonest.mid&lang=EN')">+ Your Honesty</A>
+<br><br><center>In association with<br><a href="http://www.mobfad.com" target=_blank><img src="/mobfad_logo.gif" border="0"></a></center>
+
+</body>
+</html></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Community</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><A href="http://www.madonnavillage.it">+ Home</A><BR><A href="http://www.madonnavillage.it/modules.php?name=Forums">+ Forums</A> <BR><A href="http://www.madonnavillage.it/modules.php?name=WebChat">+ Chat</A> <BR><A href="http://www.madonnavillage.it/modules.php?name=Private_Messages">+ Private Messages</A> <BR><A href="http://www.madonnavillage.it/modules.php?name=FriendFinder">+ Friends Finder</A> <BR><A href="http://www.madonnavillage.it/modules.php?name=Fans_Diary">+ Fans' Diary</A> <BR><A href="http://www.madonnavillage.it/modules.php?name=Hangman">+ Games</A> <BR><A href="http://www.madonnavillage.it/modules.php?name=Wallpapers">+ Wallpapers</A> <BR><A href="http://www.madonnavillage.it/modules.php?name=ecard">+ e-Cards</A> </font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">American Life Story</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><a href="/modules.php?name=american_life_story"><img src="/images/al_story.jpg" border="0"></a></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Johnny Rocks</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><a href="http://www.drownedmadonna.com/modules.php?name=Johnny_Rocks"><img src="/images/JohnnyRocks_ad.jpg" border="0"></a></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">The English Roses</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><CENTER><A 
+href="http://www.amazon.co.uk/exec/obidos/ASIN/0141380470/madonnavillag-21" 
+target=_blank><IMG  src="http://images-eu.amazon.com/images/P/0141380470.02._PE30_SCMZZZZZZZ_.jpg" 
+ border="0"></A></CENTER></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Mr Peabody's Apples</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><a href="http://www.amazon.co.uk/exec/obidos/ASIN/0141380489/madonnavillag-21" target=_blank><img src="http://images-eu.amazon.com/images/P/0141380489.02._PE30_SCMZZZZZZZ_.jpg" border="0"></a></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Yakov and the Seven...</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><a href="http://www.amazon.co.uk/exec/obidos/ASIN/0141380497/madonnavillag-21" target=_blank><img src="http://images-eu.amazon.com/images/P/0141380497.02._PE30_SCMZZZZZZZ_.jpg" border="0"></a></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Adventures of Abdi</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><a href="http://www.amazon.co.uk/exec/obidos/ASIN/0141380500/madonnavillag-21" target=_blank><img src="http://images-eu.amazon.com/images/P/0141380500.02._PE30_SCMZZZZZZZ_.jpg" border="0"></a></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Swept Away</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><a href="http://www.amazon.co.uk/exec/obidos/ASIN/B00008V6YY/madonnavillag-21" target="_blank"><img border="0" src="/imgs4screen/SweptAway/SweptAwayDVD.jpg"></a></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Dangerous Game</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><CENTER><A href="http://www.amazon.co.uk/exec/obidos/ASIN/B00005ABUP/madonnavillag-21" target=_blank><IMG src="/AMAZON/DangerousGame.jpg" border=0></A></CENTER></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+</td>
+	<td width="20" align="center"></td>
+	<td align="center">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF"><tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#006699"><tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"><tr><td><div align="justify">
+<center><font class="option" color="#000000"><b>Madonna Village</b></font></center><br>
+<font class="content"><CENTER><A href="http://www.madonnavillage.it" 
+target=_blank><IMG alt="Madonna Village" hspace=0 
+src="http://www.drownedmadonna.com/thevillage.jpg" align=baseline 
+border=0></A></CENTER></font></td></tr></table></td></tr></table></div></td></tr></table><br>
+<br><table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF"><tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#006699"><tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"><tr><td><div align="justify">
+<center><font class="option" color="#000000"><b>ANNOUNCEMENT</b></font></center><br>
+<font class="content"><center><a href="mailto:share@drownedmadonna.com"><img src="/images/states.jpg" border="0"></a></center></font></td></tr></table></td></tr></table></div></td></tr></table><br>
+<br><table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF"><tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#006699"><tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"><tr><td><div align="justify">
+<center><font class="option" color="#000000"><b>NEW CONTENT</b></font></center><br>
+<font class="content"><CENTER><img src="/ringtones.jpg" border="0"></center></font></td></tr></table></td></tr></table></div></td></tr></table><br>
+<br><table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#FFFFFF"><tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#006699"><tr><td>
+<table width="100%" border="0" cellspacing="0" cellpadding="6" bgcolor="#FFFFFF"><tr><td><div align="justify">
+<center><font class="option" color="#000000"><b>EXCLUSIVE INTERVIEWS</b></font></center><br>
+<font class="content"><br><br><center><a href="http://www.drownedmadonna.com/modules.php?name=mike_mcknight"><img src="/images/MikeMcKnight_logo.jpg" border="0"></a>
+<br><br>
+<a href="http://www.drownedmadonna.com/modules.php?name=lorne_cousin"><img src="/images/2005/Lorne_Cousin/lorne_logo.jpg" border="0"></a>
+<br/><br/>
+<a href="http://www.drownedmadonna.com/modules.php?name=aviddiva"><img src="/images/aviddiva.jpg" border="0"></a><br><br>
+<img src="/images/previous_exclusive_interview.jpg" border="0"></center>
+<br>
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+
+
+<img src="/images/rombo.jpg" border="0"> <a href="http://www.drownedmadonna.com/modules.php?name=Johnny_Rocks">Johnny Rocks</a><br>
+<img src="/images/rombo.jpg" border="0"> <a href="http://www.drownedmadonna.com/modules.php?name=blow_up">Blow-Up</a><br>
+<img src="/images/rombo.jpg" border="0"> <a href="http://www.drownedmadonna.com/modules.php?name=Stefan_Smith">Stefan Smith</a><br>
+<img src="/images/rombo.jpg" border="0"> <a href="http://www.drownedmadonna.com/modules.php?name=Monshur">Monshur Alami</a><br>
+<img src="/images/rombo.jpg" border="0"> <a href="http://www.drownedmadonna.com/modules.php?name=News&file=article&sid=5011">Eric West</a>
+</BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE></BLOCKQUOTE>
+</font></td></tr></table></td></tr></table></div></td></tr></table><br>
+<br> <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=35">Life</a></font><br><font class="testo_notizia" color="#000000"><b>Madonna Donates For Tsunami Auction.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P><FONT size=2><FONT color=#333333><FONT face=Verdana><EM>By Anita Singh, PA Showbusiness Editor</EM> </FONT></FONT></FONT></P>
+<P>A host of celebrities have contributed to <STRONG>the auction for upmarket fashion website <A href="http://www.clothesagency.com/">clothesagency.com</A></STRONG><A href="http://www.clothesagency.com/">.<BR></A><BR><STRONG>Madonna has donated a signed studded belt</STRONG> and Tara Palmer-Tomkinson a green and black dress from Top Shop, while actor Richard E Grant has donated the suit he wore in the Spice Girls movie Spice World.<BR><BR>Liz Hurley, Elle Macpherson, Graham Norton and the Duchess of York have also offered personal items.<BR><BR>Premiership side Chelsea have offered a day with the team at their next European away match.</P>
+<P><SPAN class=article><FONT face=Verdana color=#333333 size=2>Kate Winslet and Zara Phillips have donated their little black dresses to raise money for the Asian tsunami appeal.</FONT><BR></SPAN></P>
+<P><STRONG>The online auction will begin on February 11 and run until March 13, with all money going to tsunami victims in Sri Lanka.<BR></STRONG><BR><STRONG>Clothesagency.com</STRONG> is the brainchild of aristocrat Lady Apsley.<BR><BR>She said: “We have been overwhelmed by the response from celebrities willing to donate to this worthy cause. We are hoping to attract some really big bids.”<BR></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-06 13:45:03 W. Europe Standard Time  [0 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5923">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=6">Magazines</a></font><br><font class="testo_notizia" color="#000000"><b>Madonna In Italian Tv- Magazine ONDATV.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P align=center><A href="http://www.drownedmadonna.com/images/2005/italia/Articolorob.jpg"><IMG height=777 src="http://www.drownedmadonna.com/images/2005/italia/Articolorob.jpg" width=600 border=0></A></P>
+<P align=center><STRONG>[click to enlarge]</STRONG></P>
+<P align=center><EM>special thanks to our friend<STRONG> Robertomadonna</STRONG></EM></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-05 15:58:37 W. Europe Standard Time  [3 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5922">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=12">Vote</a></font><br><font class="testo_notizia" color="#000000"><b>Nominate Madonna for one of the greatest Americans ever.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P align=center>Let's nominate <STRONG>Madonna for one of the greatest Americans ever in AOL Tv</STRONG> new Poll.</P>
+<P align=center>Here is the <A href="http://tv.channel.aol.com/greatestamerican"><STRONG>link.</STRONG></A></P>
+<P align=center><EM>thanks to <STRONG>Fonzi</STRONG></EM></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-05 10:29:05 W. Europe Standard Time  [45 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5920"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5920">2 comments</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=21">Web</a></font><br><font class="testo_notizia" color="#000000"><b>Imagine...a splash page !</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P align=center><IMG src="http://www.madonnavillage.it/drownedmadonna/imaginehomepage.jpg" width=600 border=0></P>
+<P align=center>The New Homepage for <A href="http://www.madonna.com/"><STRONG>Madonna.com</STRONG></A></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-04 21:24:06 W. Europe Standard Time  [16 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5919"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5919">1 comment</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=8">Interviews</a></font><br><font class="testo_notizia" color="#000000"><b>[<a href="modules.php?name=&amp;file=categories&amp;op=newindex&amp;catid=10"><font class="esclusiva">BREAKING NEWS</font></a>] Jennifer Lopez'' Madonna The Coolest''.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P><B><FONT color=#000000><IMG src="http://www.vogue.co.uk/ImageLib/240x360/Shows/SS2005/New_York/R-T-W/Marc_Jacobs/Backstage/00570f.jpg" align=left border=0>JENNIFER LOPEZ </FONT></B>may be about to present her first catwalk show, but she still doesn't regards herself a real designer. "Let's be real," she says. <STRONG>"I'm obviously not at the level of a John Galliano</STRONG>. There is an art to what he does that I admire. But I do have a certain style and a certain image that people respond to." Having been designing for three years, Lopez sees the launch of this new line, Sweetface, as the real beginning of her fashion agenda. "It's not going to be mass," she says of the collection that features cashmere tops, houndstooth trousers, velvet jackets, fox furs and glittering fedoras. "It's about making a smaller line, with better quality and better fabrics." And for Lopez, fashion was a natural progression in her career. "I was the girl who would take my dad's sweatshirt and cut it up, so it had all these straps. <STRONG>I remember being very young and looking at Madonna and thinking she was the coolest: her bracelets up to her elbow, her lace and gloves and tights. Seeing how music is so correlated to fashion, or even how movies are so correlated to fashion, it's something so natural to me."</STRONG> (February 4 2005, AM) </P>
+<P>source: <STRONG>Vogue</STRONG></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-04 12:07:38 W. Europe Standard Time  [92 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5918"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5918">5 comments</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=4">TV</a></font><br><font class="testo_notizia" color="#000000"><b>Swept Away On German Tv.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P align=center><STRONG>German</STRONG> TV <STRONG>Premiere 1</STRONG> will air<STRONG> "Swept away / Stürmische Liebe"</STRONG> on <STRONG>9th February at 9.15</STRONG> <STRONG>pm</STRONG></P>
+<P align=center><STRONG><IMG src="http://www.city-online-shopping.de/vorschau/vorschau03/dezember03/f031207.jpg" border=0></STRONG></P>
+<P align=center><EM>thanks to our German correspondent <STRONG>singysingysingy</STRONG></EM></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-04 12:02:56 W. Europe Standard Time  [0 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5917">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=4">TV</a></font><br><font class="testo_notizia" color="#000000"><b>Elton At It Again!</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P><STRONG><IMG src="http://wwwimage.cbs.com/latenight/lateshow/dave_tv/images/highlights/2005/ls_dtv_bsh_20050203.jpg" align=left border=0>Elton John</STRONG> was among the guests on yesterday's episode of&nbsp;<EM> <STRONG>Late Show</STRONG></EM> with <STRONG>David Letterman. David asked him about the Madonna lip-synching question.</STRONG></P>
+<P><STRONG>Elton </STRONG>talked<STRONG> </STRONG>about young bands driving up and down motorways, trying to get their music heard and had it been "best concert" he could have accepted it but to<STRONG> have Madonna lumped</STRONG> in with all the real live talent was annoying. He said, <STRONG>everybody knows she lip synchs,</STRONG> that someone pointed out that <STRONG>she couldn't sing live while in the crab position</STRONG> and he said <STRONG>especially not if she had haemorr***ds.</STRONG>&nbsp; <STRONG>Watch clip <A href="http://www.cbs.com/latenight/lateshow/#">here</A></STRONG></P>
+<P><EM>A very special thanks to<STRONG> QueenBitch </STRONG>from<STRONG> MadonnaNation board</STRONG></EM></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-04 11:44:36 W. Europe Standard Time  [184 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5916"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5916">9 comments</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=9">Parties</a></font><br><font class="testo_notizia" color="#000000"><b>Yet another Madonna Night!</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P>This time in&nbsp;<STRONG> Brussels on February, 5th.</STRONG></P>
+<P align=center><IMG src="http://www.madonnavillage.it/drownedmadonna/chezmamam.jpg" width=600 border=0></P>
+<P>Our reader <STRONG>Olivier</STRONG> a <STRONG>big Madonna fan and also the DJ from a famous gay bar in Brussels called <EM>"Chez Maman"</EM></STRONG> ( <STRONG><A href="http://www.chezmaman.be">www.chezmaman.be</A> </STRONG>) , &nbsp;just want to inform you that they 'll have a <STRONG><EM>Madonna Night</EM></STRONG> on <STRONG>Saturday, February the 5th,</STRONG>&nbsp; wich starts at midnight.<BR><STRONG>Madonna impersonators, Madonna music, Madonna fans..have fun!!!</STRONG></P>
+<P align=center><STRONG><IMG src="http://www.madonnavillage.it/drownedmadonna/madonnarectonew.jpg" border=0></STRONG></P>
+<P align=center><STRONG><EM>Image from the flyer&nbsp;for the soirèe</EM></STRONG></P>
+<P><BR><BR>&nbsp;</P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-03 22:48:17 W. Europe Standard Time  [1 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5909">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=4">TV</a></font><br><font class="testo_notizia" color="#000000"><b>''Die Another Day'' For Polish Fans.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P>Our friend<STRONG> Mariusz</STRONG> from <STRONG>Poland</STRONG>, webmaster of&nbsp;<A href="http://www.madonnaonline.prv.pl/"><STRONG>http://www.madonnaonline.prv.pl/</STRONG></A> &nbsp;informs&nbsp;our Polish readers&nbsp;&nbsp;that<STRONG> TVP1</STRONG> - <STRONG>the 1st channel of polish tv</STRONG> will&nbsp;broadcast<STRONG><EM> Die another Day</EM></STRONG> this <STRONG>Friday at 8:40 pm</STRONG>. The<STRONG> Bond</STRONG> movie in wich <STRONG>Madonna</STRONG> made a <STRONG>cameo</STRONG> appearance , as <STRONG>Verity</STRONG>, was&nbsp; translated into polish with a title that sounds like the translation of <STRONG><EM>&nbsp;the english"</EM>Death comes tomorrow"</STRONG></P>
+<P align=center><IMG src="http://www.theweeklynews.org/Archive_TWN/021128/Die_Another_Day_with_Madonna.jpg" border=0></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-03 22:01:43 W. Europe Standard Time  [50 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5908"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5908">4 comments</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=9">Parties</a></font><br><font class="testo_notizia" color="#000000"><b>[<a href="modules.php?name=&amp;file=categories&amp;op=newindex&amp;catid=6"><font class="esclusiva">Read It First Here</font></a>] Madonna Party ''Like A Virgin''.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P align=center><STRONG><IMG src="http://www.madonnavillage.it/drownedmadonna/events5.jpg" border=0></STRONG></P>
+<P align=center><STRONG>Saturday February 5, 2005<BR></STRONG>DJ Pier Novikov<BR>Live Madonna Impersonators<BR>Ciccone Back Up Dancers<BR><BR>Dress: Madonna 1985-2005<BR>18+ 11pm-4am<BR>$12 at door<BR><STRONG>At: Metro 3730 N Clark St. Chicago</STRONG></P>
+<P align=center><STRONG><IMG src="http://www.madonnavillage.it/drownedmadonna/events6.jpg" border=0></STRONG></P>
+<P align=center><STRONG><BR></STRONG><EM>special thanks to <STRONG>FRED<BR></P></STRONG></EM>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-03 18:41:15 W. Europe Standard Time  [3 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5906">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=0"></a></font><br><font class="testo_notizia" color="#000000"><b>Verbatim Verboten.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P><IMG src="http://www.feznyc.com/photos/VerbatimVerboten92.jpg" align=right border=0>The comedy <STRONG>Verbatim Verboten</STRONG>, a collection of transcripts of illicitly recorded conversations of celebrities, politicians, criminals, athletes, and power brokers, will be performed Mondays at New York’s <STRONG>Fez</STRONG> nightclub from January 31 through February 28. The rants and raves of Britney Spears, Enron executives, <STRONG>Madonna</STRONG>, Louis Armstrong, Orson Welles, Michael Alig, and British royalty, among others, will be performed by a rotating cast that includes David Drake, Shequida, and Jonny McGovern. </P>
+<P><EM>Special thanks to <STRONG>Vincy</STRONG>.</EM></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="http://www.drownedmadonna.com/index.php">Giampiero</a> on 2005-02-03 18:38:33 W. Europe Standard Time  [2 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5905">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=26">Exhibition</a></font><br><font class="testo_notizia" color="#000000"><b>Glamour: Fashion, Film, Fantasy.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P><STRONG>“Glamour: Fashion, Film, Fantasy,”</STRONG> a new exhibition at the <STRONG>Museum at FIT</STRONG> in<STRONG> New York</STRONG>, features approximately <STRONG>100 ultra-glamorous fashions</STRONG> on view from <STRONG>February 15 through April 9, 2005</STRONG>. Combining “sex appeal plus luxury plus elegance plus romance,” as glamour was described by a Hollywood writer, these clothes are not for the shy. <BR><STRONG>“Glamour: Fashion, Film, Fantasy”</STRONG> includes many bias-cut gowns from the 1930s, as well as contemporary fashions inspired by them. Viewers can compare Travis Banton’s 1938 silk jersey and chiffon gown, trimmed in fox and worn by Marlene Dietrich, with Bob Mackie’s strapless gown covered with white bugle beads which was worn by Madonna to the 1991 Academy Awards. <BR><STRONG>“Glamour: Fashion, Film, Fantasy”</STRONG> was curated by Dr. <STRONG>Valerie Steele</STRONG>, director and chief curator of <STRONG>The Museum at FIT</STRONG>. A related exhibition at the <STRONG>Museum of the City of New York</STRONG>, <STRONG>“Glamour, New York Style,”</STRONG> will also open in February. Curated by Phyllis Magison, it will explore glamour on the <STRONG>Broadway</STRONG> stage and in <STRONG>New York</STRONG> society. </P>
+<P>The <STRONG>Museum at FIT</STRONG> is located on the southwest corner of Seventh Avenue at 27 Street. Exhibition hours are Tuesday through Friday, noon to 8 pm; Saturday 10 am to 5 pm; closed Sundays, Mondays, and legal holidays. Admission is free. For museum information call (212) 217-5800 or go to: <A href="http://www.fitnyc.edu/museum" target=_blank>www.fitnyc.edu/museum</A>. </P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="http://www.drownedmadonna.com/index.php">Giampiero</a> on 2005-02-03 18:02:52 W. Europe Standard Time  [4 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5904">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=20">Tours</a></font><br><font class="testo_notizia" color="#000000"><b>[<a href="modules.php?name=&amp;file=categories&amp;op=newindex&amp;catid=3"><font class="esclusiva">Rumours</font></a>] Latest News from Spotlight.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext">From today's&nbsp;newsletter of&nbsp;<STRONG>Spotlight</STRONG>, the&nbsp;magazine of&nbsp;France fansclub: <BR><BR><IMG src="/images/rombo.jpg" border=0>&nbsp;The release date of <STRONG>re-Invention Tour DVD</STRONG> won't be April, as reported previously. It will be released next November and the exact date will be confirmed later.<BR><BR><IMG src="/images/rombo.jpg" border=0>&nbsp;The <STRONG>documentary</STRONG> directed by&nbsp;<STRONG>Jonas Akerlund</STRONG> will be in theaters in <STRONG>April</STRONG>.&nbsp; <BR><BR><EM>Special thanks to our friend <STRONG>paomad</STRONG>.</EM>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="http://www.drownedmadonna.com/index.php">Giampiero</a> on 2005-02-03 17:52:51 W. Europe Standard Time  [187 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5903"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5903">12 comments</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=39">Kabbalah</a></font><br><font class="testo_notizia" color="#000000"><b>Drink up .</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P><STRONG>&nbsp; MSNBC/ Jeannette Walls:</STRONG></P>
+<P><STRONG><IMG src="http://msnbcmedia.msn.com/j/msnbc/Components/Photos/050202/050202_madonna_bcol_5p.small.jpg" align=left border=0>Finally, Madonna is going to have something to drink other than Kabbalah water</STRONG>. </P>
+<P>The merchandising-minded spiritualists at the trendy<STRONG> Kabbalah Center are launching a new Kabbalah energy drink. And they’re hoping that Kabbalah devotee Ashton Kutcher will be the face of the new beverage, which they’re targeting to mass market, non-Kabbalah consumers.</STRONG> Kabbalah is a spiritual offshoot of Judaism, but the form practiced by some celebrities at the Kabbalah Center has been blasted as a shallow money-making operation and even called a cult. “We’re going after the Red Bull market,” spokesman Darin Ezra told The Scoop. “But Kabbalah Energy Drink tastes better. And it’s infused with Kabbalah water, which is holy water.” So does it have mystical healing powers, like Kabbalah water is supposed to? “I’m not going to comment on that,” said Ezra. <STRONG>He says that Kutcher, Madonna, and Demi Moore are currently trying out the Kabbalah energy drink, may agree to be its spokesman</STRONG>. The product has been launched in a very limited market in Southern California, and will go wider shortly, with a major media campaign of radio, print and television and the tag line: “Source of Power.” Does this foreshadow a whole line of Kabbalah products? Say Kabbalah breakfast cereal and breath mints? “<STRONG>If it’s successful,” the spokesman says, “There will be more Kabbalah products.” </STRONG></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-03 09:52:52 W. Europe Standard Time  [65 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5902"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5902">6 comments</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=39">Kabbalah</a></font><br><font class="testo_notizia" color="#000000"><b>[<a href="modules.php?name=&amp;file=categories&amp;op=newindex&amp;catid=11"><font class="esclusiva">Exclusive Preview</font></a>] US Vanity Fair: ''The Garden of Kabbalah''.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P align=center><A href="/images/2005/usa/vanityfair_gen/01.jpg" target=_blank><IMG src="/images/2005/usa/vanityfair_gen/01_small.jpg" border=0></A>&nbsp;<A href="/images/2005/usa/vanityfair_gen/02.jpg" target=_blank><IMG src="/images/2005/usa/vanityfair_gen/02_small.jpg" border=0></A>&nbsp;<A href="/images/2005/usa/vanityfair_gen/03.jpg" target=_blank><IMG src="/images/2005/usa/vanityfair_gen/03_small.jpg" border=0></A></P>
+<P align=center><A href="/images/2005/usa/vanityfair_gen/04.jpg" target=_blank><IMG src="/images/2005/usa/vanityfair_gen/04_small.jpg" border=0></A>&nbsp;<A href="/images/2005/usa/vanityfair_gen/05.jpg" target=_blank><IMG src="/images/2005/usa/vanityfair_gen/05_small.jpg" border=0></A>&nbsp;<A href="/images/2005/usa/vanityfair_gen/06.jpg" target=_blank><IMG src="/images/2005/usa/vanityfair_gen/06_small.jpg" border=0></A></P>
+<P align=center><A href="/images/2005/usa/vanityfair_gen/07.jpg" target=_blank><IMG src="/images/2005/usa/vanityfair_gen/07_small.jpg" border=0></A></P>
+<P align=center><STRONG>First Look</STRONG></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="http://www.drownedmadonna.com/index.php">Giampiero</a> on 2005-02-03 09:48:35 W. Europe Standard Time  [77 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5901"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5901">3 comments</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=4">TV</a></font><br><font class="testo_notizia" color="#000000"><b>''That's Madonna, Right There! ''</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P>A quick reminder from <STRONG>top40 website</STRONG></P>
+<P><STRONG>LOS ANGELES (UPN)</STRONG> -<STRONG> "That's </STRONG><STRONG>Madonna</STRONG><STRONG>, Right There!"</STRONG> - The <STRONG>final five</STRONG> performers take a private jet to Los Angeles, where they move into a mansion, and later are <STRONG>surprised when superstar Madonna</STRONG> takes time from her busy concert tour schedule to meet with them and share some valuable advice on the music business, on<STRONG> THE ROAD TO STARDOM WITH </STRONG><STRONG>MISSY ELLIOTT</STRONG><STRONG>, Wednesday, Feb. 16 (8:00-9:00 PM, ET/PT) on UPN. </STRONG></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-02 21:02:30 W. Europe Standard Time  [4 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5900">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=6">Magazines</a></font><br><font class="testo_notizia" color="#000000"><b>[<a href="modules.php?name=&amp;file=categories&amp;op=newindex&amp;catid=12"><font class="esclusiva">The First Look</font></a>] Madonna And Ashley Olsen Fighting The Chill.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P align=center>A clip from the<STRONG> US</STRONG> magazine<EM><STRONG> Life and Style</STRONG></EM></P>
+<P align=center><STRONG><IMG src="http://www.drownedmadonna.com/images/2005/usa/Life&amp;Style.jpg" border=0></STRONG></P>
+<P align=center><IMG src="http://www.drownedmadonna.com/images/2005/usa/Life&amp;Style2.jpg" border=0></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-02 20:00:15 W. Europe Standard Time  [41 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5899"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5899">2 comments</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=6">Magazines</a></font><br><font class="testo_notizia" color="#000000"><b>[<a href="modules.php?name=&amp;file=categories&amp;op=newindex&amp;catid=11"><font class="esclusiva">Exclusive Preview</font></a>] MADONNA IN NEXT WEEKS US WEEKLY.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P align=center><A href="http://www.drownedmadonna.com/images/2005/usa/USWeekly.jpg"><IMG height=508 src="http://www.drownedmadonna.com/images/2005/usa/USWeekly.jpg" width=600 border=0></A></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-02 19:46:42 W. Europe Standard Time  [4 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5898">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=5">Movies</a></font><br><font class="testo_notizia" color="#000000"><b>[<a href="modules.php?name=&amp;file=categories&amp;op=newindex&amp;catid=14"><font class="esclusiva">Scoop</font></a>] Maverick films to produce action comedy for Sean ''puffy'' Combs</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P>Paramount Pictures and MTV Films have signed Sean "Puffy" Combs to develop a heist action-comedy as a starring vehicle for the music mogul.<BR><BR><STRONG>The untitled project, to be produced by MTV, Maverick Entertainment Films and Combs' Bad Boy Worldwide EntertainmentBad Boy Worldwide Entertainment Group,</STRONG> will be set in Combs' hometown of Miami during the Miami Grand Prix and will be focused on the fast-paced, multi-cultural side of the city.<BR><BR>Combs, MTV exec VP David Gale and <STRONG>Maverick partner Guy Oseary. Guy Oseary will produce and are seeking writers and a director.<BR></STRONG><BR>"This will definitely take a page out of all the great heist movies and return the favor by having two token white guys," Combs told Daily Variety. "And it will be sophisticated. It won't be a hip-hop film with guys in do-rags because I'm always trying to break down people's perceptions and barriers."<BR><BR>Combs developed the pitch with Oseary and MTV Films VP Heather Parry, who spearheaded the project with Jason Weiss, MTV senior director of development. Paramount exec VP Brian Witten and Eben Davidson will oversee for the studio; <STRONG>Maverick prexy Mark Morgan and inhouse producer Greg Mooradian will shepherd for Maverick.<BR></STRONG><BR>Combs -- hugely successful in the hip-hop music world -- will produce the film soundtrack through his Bad Boy record label. He's collaborated with top music artists such as David Bowie, Usher and Missy Elliot and received solid notices for his thesp turns in "Monster's Ball" opposite Halle Berry and in "A Raisin in the Sun" on Broadway.<BR><BR>The deal with Combs is the latest move under Viacom co-prexy Tom Freston and newly installed studio chief Brad Grey to aim Paramount toward younger, hipper audiences by taking advantage of the MTV brand.<BR><BR>Par stunned Sundance on Jan. 23 with a multi-pic deal worth up to $16 million to buy John Singleton's urban drama "Hustle &amp; Flow." It's also signed a production deal with music execs Jimmy Iovine and Paul Rosenberg, who are producing "Locked and Loaded" with rap artist 50 Cent and directed by Jim Sheridan.</P>
+<P><STRONG>variety</STRONG><BR><BR></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">newyorkcityboy</a> on 2005-02-02 17:03:26 W. Europe Standard Time  [3 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5897">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=36">Newspapers</a></font><br><font class="testo_notizia" color="#000000"><b>Madonna In Today's Edition Of NYDailyNews.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P align=center><IMG src="http://www.drownedmadonna.com/images/2005/usa/NYDailyNews_february.jpg" border=0></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-02 15:02:09 W. Europe Standard Time  [79 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5896"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5896">8 comments</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=47">Fashion</a></font><br><font class="testo_notizia" color="#000000"><b>[<a href="modules.php?name=&amp;file=categories&amp;op=newindex&amp;catid=8"><font class="esclusiva">Exclusive Rumours</font></a>] Madonna In Milan.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P>Apparently <STRONG>Madonna will be in Milan</STRONG>, Italy&nbsp;&nbsp;in February to <STRONG>attend the Versace Fashion Show</STRONG>. She'll arrive on the <STRONG>24th of February in the afternoon</STRONG> and <U>probably</U> she'll&nbsp;attend the<STRONG>&nbsp;Versace Fashion Show on 25th at 2.30 pm</STRONG> in Milan.</P>
+<P>Also fellow fansite <STRONG><A href="http://www.madonna.nu/">madonna.nu</A></STRONG> talks of this possible date for <STRONG>Madonna</STRONG>'s appearance at the fashion show.</P>
+<P align=center><IMG src="http://www.madonnavillage.it/drownedmadonna/versacelogo.jpg" border=0></P>
+<P><EM>A very special thanks to our friend <STRONG>Olgha</STRONG>.</EM></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-02 09:02:44 W. Europe Standard Time  [50 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5895"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5895">1 comment</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=6">Magazines</a></font><br><font class="testo_notizia" color="#000000"><b>[<a href="modules.php?name=&amp;file=categories&amp;op=newindex&amp;catid=11"><font class="esclusiva">Exclusive Preview</font></a>] Madonna In Vogue Paris - February 2005.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><DIV align=center><STRONG>Versace Campaign&nbsp; in France this week with 2 photos in VOGUE Paris - February 2005.</STRONG></DIV>
+<P align=center><A href="http://www.drownedmadonna.com/images/2005/Francia/VogueFeb_big.jpg"><IMG src="http://www.drownedmadonna.com/images/2005/Francia/VogueFeb_small.jpg" border=0></A></P>
+<P align=center>There is also an article about the book <STRONG>"Cahier n° 7" by Julien D'Ys</STRONG> and <STRONG>"Pink Lotus", Madonna's perfume.</STRONG></P>
+<P align=center><A href="http://www.drownedmadonna.com/images/2005/Francia/VogueCahier_7.jpg"><IMG src="http://www.drownedmadonna.com/images/2005/Francia/VogueCahier_7.jpg" width=400 border=0></A></P>
+<P align=center><IMG src="http://www.drownedmadonna.com/images/2005/Francia/VogueFeb_lotus.jpg" border=0>&nbsp;&nbsp; <A href="http://www.drownedmadonna.com/images/2005/Francia/VogueFeb_Grandsiecle.jpg"><IMG src="http://www.drownedmadonna.com/images/2005/Francia/VogueFeb_Grandsiecle.jpg" width=300 border=0></A></P>
+<P align=center><STRONG>Madonna is in an article called "Grand siècle" too.</STRONG></P>
+<P align=center><STRONG>[click to enlarge]</STRONG></P>
+<P align=center><EM>special thanks to our french correspondent <STRONG>Claudine</STRONG></EM></P>
+<P align=center><EM></EM>&nbsp;</P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-01 22:07:33 W. Europe Standard Time  [12 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5892">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=29">Review</a></font><br><font class="testo_notizia" color="#000000"><b>[<a href="modules.php?name=&amp;file=categories&amp;op=newindex&amp;catid=6"><font class="esclusiva">Read It First Here</font></a>] Why looking for the new Madonna is a lost cause.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><H1 align=center><FONT size=2>Immaterial Girls</FONT></H1>
+<H4 align=center><FONT size=2>Why looking for the new Madonna is a lost cause</FONT></H4>
+<H5 align=center>By Andre Mayer / CBC.ca<BR>February 1, 2005 </H5>
+<P align=center><IMG src="http://www.cbc.ca/arts/images/pics/madonna_lg.jpg" border=0></P>
+<P align=center><EM><SPAN class=caption>Illustration by Jillian Tamaki</SPAN> </EM></P><EM>
+<P><STRONG>If there’s one music-journalism cliché that’s begging for retirement, it’s the phrase “the new Madonna.</STRONG> ” The following women have all, on some occasion, been heralded <STRONG>as the next Material Girl: Britney Spears, Christina Aguilera, Shania Twain, Jennifer Lopez, Pink, Beyoncé, Kylie Minogue, Paula Abdul, Nelly Furtado, Lil’ Kim, Kelis, Charlotte Church, Mitsou, Missy Elliott and Courtney Love </STRONG>– and that list doesn’t include some of the more outlandish suggestions broached in Internet chat rooms. The idea has been bandied about so recklessly that in 1997 a Malaysian diplomat christened then-U.S. Secretary of State Madeleine Albright “America’s new Madonna for the senior set” – a hyperbolic reference to Albright’s little-publicized singing talent. </P>
+<P><STRONG>The newest recipient of this overused laurel is singer/fashion renegade Gwen Stefani</STRONG>, who took leave of ska-punk outfit No Doubt last year to essay a solo career. So far, the venture has been nothing short of triumphant: her debut record, <EM>Love. Angel. Music. Baby., </EM>went to No. 7 on Billboard; first single <EM>What You Waiting For? </EM>is nominated for a Grammy Award for “best female pop vocal performance”; and Gwen’s pretty face stares out from every conceivable magazine cover<STRONG>. For Stefani, like many songstresses before her, being hailed The New Madonna </STRONG>(TNM) <STRONG>is praise of the highest order</STRONG> – and an utter fallacy. Nothing against you personally, Gwen, <STRONG>but Madonna simply cannot be duplicated</STRONG>, and <STRONG>anyone who thinks so clearly undervalues her enormous bearing on pop music. </STRONG></P>
+<P>In<STRONG> the late ’80s and early ’90s, any female singer who demonstrated exhibitionist tendencies was believed to be TNM</STRONG> – thus the ephemeral stardom of kittenish Francophone star Mitsou, whose naked romp through <EM>Dis-Moi, Dis-Moi </EM>(1991) got the video banned on various international music stations, including MuchMusic. The thing people find Madonna-esque about Stefani is her fashion bravado and her physical transformations from one video/photo spread/awards show to the next. Like Madonna, she experiments freely with styles and looks. </P>
+<P><STRONG>People talk of Madonna’s love of reinvention, however, as though it were her only attribute</STRONG>. If we’ve learned anything from Madonna Louise Ciccione’s 23-year music career, it’s that her influence is manifold. Most prominently, <STRONG>she empowered female pop stars to control their own image, and for that, everyone from J-Lo to Furtado owes her a debt.</STRONG> Madonna’s own likeness has always been aggressively sexual, but it was cultivated by her and not some faceless committee of record execs.<STRONG> Madonna was the first to embrace a multimedia approach to promotion</STRONG>, exploiting videos and motion pictures to burn her name into the collective unconscious. Then there’s her nose for push-button subject matter like Catholicism and deviant sex.<STRONG> No artist before or since has been able to leverage controversy quite like she has,</STRONG> to the point where every new video – from <STRONG><EM>Like A Prayer</EM> to <EM>Justify My Love</EM> to the Bush-bashing <EM>American Life</EM> – is guaranteed to be a fresh outrage. By the time of her Blonde Ambition Tour (1990), her concerts had become unparalleled in their combination of lighting, choreography and carnal suggestion. </STRONG></P>
+<P>Of course, anyone with this much daring is bound to overreach from time to time, hence the film <EM>Swept Away, </EM>her foray into children’s literature and the ridiculous nod to Che Guevara on the cover of American Life. Say what you want about her, but she exhibits a dogged will to try anything. </P>
+<P><STRONG>Those considering “the new Madonna” miss the fundamental illogic of that phrase</STRONG>. The rise of Madonna represented nothing less than a cultural mutiny. To posit someone as TNM is to suggest a songstress who could single-handedly affect a comparable paradigm shift in the pop world – impossible. The idea is as risible as those critics still hoping to coronate “the new Beatles”: three decades ago, it was Queen, the Bay City Rollers and the Knack; more recently, Blur and Oasis. By dint of sheer talent, experimentation and the ineluctable laws of chronology, the Beatles can’t be duplicated – much less by the chuckleheads who sang <EM>My Sharona. </EM></P>
+<P>Part of Madonna’s impact can be ascribed to timing: she emerged just as the music video was becoming the dominant means of marketing Top 40 pop. Imagine if Britney, Pink or J-Lo had debuted in the early ’80s; <STRONG>would they have changed the role of female pop singers the way Madonna did? Highly unlikely.</STRONG> While she’s revealed every other part of her body, Britney has yet to demonstrate a spine. Pink has the necessary moxie, but it’s hard to project a career as long as Madonna’s based on her mediocre output thus far. On paper, Jennifer Lopez would seem the closest match: she and Madonna both started as dancers, both are shameless merchandisers, both (ahem) act. Alas, J-Lo has a pathological need to be universally loved, which is anathema to progress in any creative medium. </P>
+<P><STRONG>Madonna’s detractors say she’s not so much a trendsetter as an early adopter with a rapt audience – that’s how she turned mehndi, yoga and Kabala into pervasive fads.</STRONG> Musically, too, she’s seen more as an appropriator than an innovator, having assimilated aspects of gay dance culture, trip-hop, torch song and ghetto fabulous into her radio-friendly canon. What she lacks in imagination she makes up for in quality and consistency. Of the 50-odd singles she’s released since 1982, the overwhelming majority are paragons of pop songcraft; only a handful are out-and-out howlers. Eliding recent singles like <EM>American Life</EM> and <EM>Me Against the Music, </EM><STRONG>no current singer is as reliably good as Madonna.</STRONG> </P>
+<P>The most warped aspect is that Madonna herself has gotten caught up in anointing the new Madonna. By all appearances, she’s thrown her support behind Britney Spears, which points up how absurd this sweepstakes has become. <STRONG>For Madge, designating a successor is nothing if not an ego-stroke. </STRONG>Why else would she agree to swap spit with Britney and Xtina (as Aguilera is known in message-board shorthand) at the 2003 MTV Video Music Awards? The stunt succeeded neither as an attempt to legitimize lesbianism nor as a particularly entertaining slice of award-show grotesquerie; more than anything, it was an opportunity for Madonna to indulge in public onanism, to make out with not one but two versions of her younger self. </P>
+<P>Given her legendary conceit, you’d think Madonna would have cottoned on to the fact that she’s a nonpareil, <STRONG>an act no one could conceivably duplicate. By admitting that publicly, she’d be doing the misguided music press a big, big favour. </STRONG></P>
+<P><EM><STRONG>Andre Mayer writes about the arts for CBC.ca. </STRONG></EM></P>
+<P>special thanks to our Canadian correspondent<STRONG> Kevin</STRONG></P></EM>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-01 21:06:00 W. Europe Standard Time  [91 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5890"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5890">4 comments</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=35">Life</a></font><br><font class="testo_notizia" color="#000000"><b>Madonna recruits Gwyneth.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P>FROM <STRONG>THE DAILY MAIL</STRONG> </P>
+<P><IMG src="/images/2005/italia/gyrotonic02.jpg" align=right border=0><IMG src="/images/2005/italia/gyrotonic01.jpg" align=left border=0>AS any fitness trainer will tell you, <STRONG>if it isn't hurting, it isn't working</STRONG>.&nbsp; Actress<STRONG> Gwyneth Paltrow</STRONG> should have no such problem. <STRONG>She has signed up for a regime of gyrotonic expansion</STRONG> which, judging by appearances, is a polite name for modern-day torture. It involves being strapped to a wooden rack surrounded by a system of ropes, levers and pulleys to stretch stressed and inflexible limbs in all directions. The devilish contraption is said to create long, powerful sinewy muscles and a svelte physique - and increase longevity into the bargain. <STRONG>Practitioner James D'Silva has already worked wonders with Madonna</STRONG> and has now recruited her close friend Miss Paltrow to his discreet basement studio in St John's Wood, North London, where he charges GBP 60 for an hour's serious stretching. <STRONG>The system made headlines last summer when it was revealed to be responsible for the extraordinary flexibility, strength and physique which saw Madonna through her world tour.</STRONG></P>
+<P><EM>Thanks to Roberto for the pics.</EM></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-01 14:15:12 W. Europe Standard Time  [2 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5889">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=46">Fansclubs</a></font><br><font class="testo_notizia" color="#000000"><b>Three new contests and more at MadonnaMemories.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext">Our lovely friend<STRONG> Mariam</STRONG>, informs our readers of some new updates at her website <A href="http://www.madonnamemories.com" target=_blank><SPAN class=message-text-plain-http-link><STRONG>http://www.madonnamemories.com</STRONG></SPAN></A><STRONG>.</STRONG> 
+<P><STRONG>Three new contests</STRONG> - You can win the <STRONG>Rolling Stone mag &nbsp;from 1989</STRONG>, a great <STRONG>Valentine's Day pack</STRONG>, or a special <STRONG>surprise pack! <BR></STRONG>
+<P>Plus,<STRONG><EM> "Wanna ask Bill Lanphier a question?"</EM></STRONG> &nbsp;-&nbsp;<STRONG>MadonnaMemories </STRONG>did an interview with<STRONG> Bill Lanphier</STRONG>, bass player for the <STRONG>Virgin Tour and LIVE AID</STRONG> some time back, and now <STRONG>he's back and ready to answer fan's questions</STRONG>, plus <STRONG>the best question gets a prize</STRONG>! <BR>
+<P><STRONG>New photos</STRONG> in the gallery - <STRONG>Beautiful shots from Blond Ambition from Jeremy Heshof</STRONG>, more candids, a great old photo of the week, and another scrapbook page added to operation scrapbook! </P>
+<P align=center><IMG src="http://www.madonnamemories.com/BA1.jpg" border=0></P>
+<P align=center><STRONG><EM>Pic courtesy of Mariam</EM></STRONG></P>
+<P>Need more to visit this exciting website?<STRONG> <A href="http://www.madonnamemories.com/" target=_blank>MadonnaMemories</A></STRONG>!</P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-01 12:55:19 W. Europe Standard Time  [1 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5888">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=14">Music</a></font><br><font class="testo_notizia" color="#000000"><b>[<a href="modules.php?name=&amp;file=categories&amp;op=newindex&amp;catid=6"><font class="esclusiva">Read It First Here</font></a>] ''Crazy For You'' Nominated Best Love Song In EW Poll!</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P><STRONG>Entertainment Weekly</STRONG> asked its readers&nbsp; to nominate pop music's <STRONG>best love songs</STRONG> and then to vote the Best among them.</P>
+<P><STRONG>Madonna's ''Crazy for You''</STRONG> was among the nominees and in the end<STRONG> won the Poll now closed</STRONG> as <STRONG>The Best Love Song.</STRONG></P>
+<P align=center><IMG src="http://www.madonnavillage.it/drownedmadonna/crazyforyoucover.jpg" border=0></P>
+<P><STRONG>Read<A href="http://www.ew.com/ew/article/poll/0,6115,1021035_4_0_,00.html"> Here</A> the whole chart.</STRONG></P>
+<P><EM>thanks to<STRONG> Martin</STRONG> and to <STRONG>Slyguy for breaking the news</STRONG> about this interesting poll </EM></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-02-01 07:14:46 W. Europe Standard Time  [73 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5886"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5886">4 comments</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=12">Vote</a></font><br><font class="testo_notizia" color="#000000"><b>Madonna Two Spots In Top5 For Greatest #1s.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext">QUEEN'S legendary Bohemian Rhapsody beat off tunes from Oasis, Kylie Minogue and&nbsp; <STRONG>Madonna</STRONG>&nbsp; to win the coveted title of <STRONG>the greatest No.1 ever.</STRONG> 
+<DIV>&nbsp;</DIV>
+<DIV><STRONG>&nbsp;&nbsp;BBC&nbsp; Radio 1</STRONG> yesterday announced how Freddie Mercury's men scooped the award after weeks of fierce voting by the station's listeners. </DIV>
+<DIV>&nbsp;</DIV>
+<DIV>&nbsp;&nbsp;Can't Get You Out Of My Head by Kylie and <STRONG>Madge's Like A Prayer were also close contenders out of the thousand No.1's since the official chart began.</STRONG></DIV>
+<DIV><STRONG>source: Daily Star</STRONG></DIV>
+<DIV align=center><IMG src="http://www.bbc.co.uk/radio1/chart/greatestno1/images/banner.gif" border=0></DIV><FONT size=4><STRONG>
+<DIV align=center><BR></STRONG></FONT><FONT size=2><FONT size=2><STRONG>.</STRONG> <STRONG>1.Queen</STRONG> – Bohemian Rhapsody <BR clear=all><BR><FONT size=2><STRONG>2. Iron Maiden</STRONG> - Bring Your Daughter To The Slaughter <BR><STRONG>3. Michael Jackson </STRONG>- Billie Jean <BR><STRONG>4. Madonna</STRONG> - Like a Prayer <BR><STRONG>5. Madonna</STRONG> - Vogue <BR><BR><STRONG>6. Elvis Presley</STRONG> - Jailhouse Rock <BR><STRONG>7. Oasis</STRONG> - Don't Look Back in Anger <BR><STRONG>8. Abba </STRONG>- Dancing Queen <BR><STRONG>9. Mariah Carey</STRONG> - Without You <BR><STRONG>10. John Lennon</STRONG> - Imagine <BR><BR><STRONG>11. The Beatles</STRONG> - Hey Jude <BR><STRONG>12. Will Young</STRONG> - Leave Right Now <BR><STRONG>13. Cliff Richard</STRONG> - We Don't Talk Anymore <BR><STRONG>14. Busted</STRONG> - Thunderbirds / 3am <BR><STRONG>15. Kate Bush</STRONG> - Wuthering Heights <BR><BR><STRONG>16. Kylie Minogue</STRONG> – Can't Get You Out Of My Head <BR><STRONG>17. Tatu </STRONG>- All The Things She Said <BR><STRONG>18. Spice Girls</STRONG> - Wannabe <BR><STRONG>19. Celine Dion</STRONG> - My Heart Will Go On <BR><STRONG>20. Westlife</STRONG> - Flying Without Wings </FONT>
+<DIV align=center><FONT size=2><BR><FONT size=4><STRONG>Chart Facts</STRONG> </FONT></DIV>
+<DIV align=center>
+<UL>
+<LI><FONT size=2>There was a total of 26,072 votes recorded. 
+<LI>233 songs received no votes. 
+<LI>Queen was the most voted for artist overall, but this was mainly due to votes for Bohemian Rhapsody. Their two other Number 1s (Innuendo &amp; Under Pressure) only received a small amount of votes each. 
+<LI><STRONG>Madonna was the most voted for female artist with Like a Prayer at number 4, Vogue at number 5 and Music at number 21, as well as seven other songs receiving votes.</STRONG></LI></FONT></UL></DIV></FONT></DIV>
+<P align=center><IMG height=276 src="http://www.madonnavillage.it/drownedmadonna/voguecover.jpg" width=251 border=0>&nbsp; <IMG style="WIDTH: 227px; HEIGHT: 277px" height=287 src="http://www.madonnavillage.it/drownedmadonna/prayercover.jpg" width=227 border=0></P>
+<UL>
+<LI>Michael Jackson was the most voted for male artist in the list with Billie Jean at number 3. 
+<LI>The most recent song in the top 20 was Busted - Thunderbirds / 3am from August 2004. </LI></UL></FONT></FONT>
+<DIV><STRONG>Previous Related article:</STRONG></DIV>
+<DIV><STRONG>- <A href="http://www.drownedmadonna.com/modules.php?name=News&amp;file=article&amp;sid=5707">Vote for Madonna for the Greatest UK No.1 Single</A></STRONG></DIV>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-01-31 21:26:41 W. Europe Standard Time  [18 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5885"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5885">2 comments</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=14">Music</a></font><br><font class="testo_notizia" color="#000000"><b>[<a href="modules.php?name=&amp;file=categories&amp;op=newindex&amp;catid=3"><font class="esclusiva">Rumours</font></a>] DVD News From Brazil.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P>Fellow Fansite <STRONG><A href="http://www.madonnaonline.com.br/" target=_blank>MadonnaOnline</A></STRONG>, from <STRONG>Brazil</STRONG>, publishes an interesting piece of article about the release of <STRONG>Madonna's ReInvention DVD.</STRONG></P>
+<P>According to the website the date confirmed so far&nbsp;is&nbsp;actually <STRONG>the&nbsp;4th of April 2005</STRONG>. An <STRONG>Official announcement</STRONG>&nbsp;should be made soon by <STRONG><A href="http://home.madonna.com/" target=_blank>Madonna.com</A></STRONG>.</P>
+<P>Unreleased&nbsp;stuff is going to be&nbsp; included like the <STRONG>dance and musical rehearsals</STRONG> in <STRONG>Lisbon</STRONG> as well as&nbsp;the <STRONG>2 videos <EM>Bedtime Story</EM></STRONG> and <STRONG><EM>The Beast Within</EM>. Also viewing multi-angles could be used for the concert.</STRONG></P>
+<P><STRONG>The sound is 5.1 DTS and the screen will be 16:9</STRONG></P>
+<P><EM>Special thanks to<STRONG> Rafael</STRONG></EM></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-01-31 19:41:47 W. Europe Standard Time  [148 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5884"><b>Read More...</b></a> | <a href="modules.php?name=News&amp;file=article&amp;sid=5884">6 comments</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=39">Kabbalah</a></font><br><font class="testo_notizia" color="#000000"><b>[<a href="modules.php?name=&amp;file=categories&amp;op=newindex&amp;catid=12"><font class="esclusiva">The First Look</font></a>] New reportage on Kabbalah In New York Post.</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><P align=center>From today's edition of the <STRONG>New York Post</STRONG>:</P>
+<P align=center><A href="/images/2005/usa/nypost31gen.jpg" target=_blank><IMG alt="click to enlarge" src="/images/2005/usa/nypost31gen_small.jpg" border=0></A></P>
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="http://www.drownedmadonna.com/index.php">Giampiero</a> on 2005-01-31 15:10:29 W. Europe Standard Time  [6 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5883">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+ <table width="100%" border="0" bgcolor="#FFFFFF" cellpadding="5">
+  <tr>
+    <td background="images/bg.gif"><font class=""><a href="modules.php?name=News&new_topic=5">Movies</a></font><br><font class="testo_notizia" color="#000000"><b>Family Room Joins Maverick & Integrated for a Ride on the ``TERROR TRAIN'' .</b></font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<div align=justify><font class="storytext"><STRONG>PARK CITY, Utah--(BUSINESS WIRE)--Jan. 31, 2005--</STRONG>In conjunction with <STRONG>Maverick Films and Integrated Films and Management, Emmett/Furla Films</STRONG>, a wholly owned subsidiary of Family Room Entertainment Corporation (OTCBB:FMLY), are pleased to<STRONG> announce that they are in final negotiations to acquire the rights to remake the 1980 horror classic, "TERROR TRAIN." </STRONG>The original picture, which was directed by Roger Spottiswoode and starred Jamie Lee Curtis, follows a group of college coeds being terrorized by a masked killer during a New Year's Masquerade on a chartered train. <BR><BR>
+<P>Emmett/Furla and Integrated recently partnered to set up a remake of the horror classic "THE AMITYVILLE HORROR" with NuImage and Dimension Films. </P>
+<P>Co-chairs of Family Room Entertainment Randall Emmett and George Furla stated: "We are very excited to be re-teaming with Steve (Whitney) and Andy (Trapani) on another horror remake. We are also thrilled to be working with Maverick Films, who bring an extraordinary depth of creative resources." </P>
+<P>"Suspense on a train is a classic formula that's been relatively unexplored in recent years," said Andy Trapani and Steve Whitney of Integrated Films and Management. </P>
+<P><STRONG>Mark Morgan of Maverick Films stated: "Maverick has been looking for the right picture to collaborate with EFF and Integrated for some time. We are excited to start with 'TERROR TRAIN' and believe this to be the first of many to come." </STRONG></P>
+<P>The producers are currently out to writers on the Pic, which is being fast-tracked. </P>
+<P><STRONG>About Maverick Films</STRONG> </P>
+<P><STRONG>Maverick Films</STRONG> is a Los Angeles-based production company founded by<STRONG> Madonna</STRONG> and Guy Oseary in <STRONG>2001</STRONG>. Films in current development for the company include "<STRONG>TWILIGHT" with MTV and Paramount, "PERCY JACKSON" and "THE LIGHTNING THIEF" at Fox 2000 and "BEARD" with Mandalay and Universal. Maverick is currently in post-production on "CRUEL WORLD" and "SAM'S LAKE." </STRONG></P><!---------- END STORY BODY ---------->
+</font></div>
+	</td>
+  </tr>
+  <tr height="1">
+    <td background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td background="images/bg.gif" align="center"><font class="content">Written by <a href="">gugarko</a> on 2005-01-31 13:06:30 W. Europe Standard Time  [5 reads].</font><br>
+<font class="content">(<a href="modules.php?name=News&amp;file=article&amp;sid=5881">comments?</a> | Score: 0)</font></td>
+  </tr>
+</table>
+<br><br><br>
+
+
+</td>
+	<td width="20" align="center"></td>
+	<td width="150" align="center">
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Survey</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><form action="modules.php?name=Surveys" method="post"><input type="hidden" name="pollID" value="21"><input type="hidden" name="forwarder" value="modules.php?name=Surveys&amp;op=results&amp;pollID=21"><font class="content"><b>Which is the most memorable 2004 Madonna event?</b></font><br><br>
+<table border="0" width="100%"><tr><td valign="top"><input type="radio" name="voteID" value="1"></td><td width="100%"><font class="content">NRJ Achievement Award</font></td></tr>
+<tr><td valign="top"><input type="radio" name="voteID" value="2"></td><td width="100%"><font class="content">''Nobody Knows Me'' book</font></td></tr>
+<tr><td valign="top"><input type="radio" name="voteID" value="3"></td><td width="100%"><font class="content">re-Invention Tour</font></td></tr>
+<tr><td valign="top"><input type="radio" name="voteID" value="4"></td><td width="100%"><font class="content">Mr. Peabody's Apples</font></td></tr>
+<tr><td valign="top"><input type="radio" name="voteID" value="5"></td><td width="100%"><font class="content">Yakov and the Seven Thieves</font></td></tr>
+<tr><td valign="top"><input type="radio" name="voteID" value="6"></td><td width="100%"><font class="content">Madonna journey in Israel</font></td></tr>
+<tr><td valign="top"><input type="radio" name="voteID" value="7"></td><td width="100%"><font class="content">The Adventures of Abdi</font></td></tr>
+<tr><td valign="top"><input type="radio" name="voteID" value="8"></td><td width="100%"><font class="content">UK Hall Of Fame Award</font></td></tr>
+<tr><td valign="top"><input type="radio" name="voteID" value="9"></td><td width="100%"><font class="content">Band Aid 20 introduction</font></td></tr>
+<tr><td valign="top"><input type="radio" name="voteID" value="10"></td><td width="100%"><font class="content">Versace ad campaign</font></td></tr>
+</table><br><center><font class="content"><input type="submit" value="Vote"></font><br><br><font class="content"><a href="modules.php?name=Surveys&amp;op=results&amp;pollID=21&amp;mode=&amp;order=&amp;thold="><b>Results</b></a><br><a href="modules.php?name=Surveys"><b>Polls</b></a><br><br>Votes: <b>1910</b> <br> Comments: <b>7</b>
+
+</font></center></form>
+
+</font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Revolver</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center>
+<img  src="http://rafcart.free.fr/images/revolver.jpg" border="0">
+</center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Interact</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><A href="/modules.php?name=Feedback">Feedback</A> <BR><A href="http://www.drownedmadonna.com/modules.php?name=Recommend_Us">Recommend us</A> <BR><A href="http://www.drownedmadonna.com/modules.php?name=Submit_News">Submit News</A> </font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Contact Us</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><a href="mailto:share@drownedmadonna.com"><img src="/images/SCOOP.jpg" border="0"></a></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">eBay</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><A 
+href="http://tracker.tradedoubler.com/click?p=1699&a=766955&g=0&url=http://search.ebay.it/search/search.dll?MfcISAPICommand=GetResult&ht=1&SortProperty=MetaEndSort&cgiurl=http%3A%2F%2Fcgi.ebay.it%2Fws%2F&maxRecordsReturned=300&maxRecordsPerPage=50&ebaytag1code=101&query=madonna&shortcut=3&x=17&y=13" target="_blank">Madonna 
+items at <STRONG>eBay</STRONG>
+<br><img src="/ebay.jpg" border="0">
+</A>
+ </font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Partner</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><a href="http://www.madonnamegacollection.net" target=_blank><img src="/megacollection.jpg" border="0"></a></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Drowned Team</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><a href="mailto:share@drownedmadonna.com"><img src="/images/team.jpg" border="0"></a></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Friends Finder</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><a href="http://www.madonnavillage.it/modules.php?name=FriendFinder" target=_blank><img src="/images/fansfinder.jpg" border="0"></a></center>
+</font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Band Aid 20</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><a href="http://www.amazon.co.uk/exec/obidos/ASIN/B0006I0S6C/madonnavillag-21" target=_blank><img src="http://images-eu.amazon.com/images/P/B0006I0S6C.02.LZZZZZZZ.jpg" width="130" border="0"></a></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Live Aid DVD</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><a href="http://www.amazon.co.uk/exec/obidos/ASIN/B0002UUO9K/madonnavillag-21" target=_blank><img src="http://images-eu.amazon.com/images/P/B0002UUO9K.02._PE30_SCMZZZZZZZ_.jpg"  border="0"></a></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">Pop Divas 2004</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><a href="http://warnerbrospub.com/store/product.asp?upc=mfm0417" target=_blank><img src="/images/2004/popdivas2004_verysmall.jpg" border="0"></a></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+<table width="100%" border="0" bgcolor="#FFFFFF">
+  <tr>
+    <td background="images/bg.gif" align="center">
+	<font class="titolo_blocco" color="#000000">World AIDS Day</font></td>
+  </tr>
+  <tr height="1">
+    <td  background="images/riga.gif"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#FFFFFF">
+	<font class="testo_blocco"><center><a href="http://www.worldaidsday.org/default.asp" title="Link to the official World AIDS Day website" target=_blank><img src="http://www.worldaidsday.org/images/virtualribbon.gif" width="120" height="40" alt="Support World AIDS Day" border="0"></a></center></font>
+	</td>
+  </tr>
+
+</table>
+<br><br>
+
+
+
+</td>
+	<td width="20" align="center"></td>
+  </tr>
+</table>
+
+ <table width="1003" cellpadding="0" cellspacing="0" border="0" bgcolor="#006699"> 
+ <tr>
+  
+    
+	<td align="center"><br><br><b>Drowned Madonna version 6.0</b><br><b>PhpNuke</b> modified by <b>Giampiero</b>
+	<br><br>The comments are property of their posters, all the rest <b>© 2004 by Drowned Madonna</b><br><br><br></td>
+	
+  </tr>
+</table>
+
+</td>
+	</tr>
+	
+	</table>
+
+
+
+
+
+
+</td></tr></table><center></td></tr></table></td>
+</tr>
+</table>
+</tr></table>
+</body>
+</html>
