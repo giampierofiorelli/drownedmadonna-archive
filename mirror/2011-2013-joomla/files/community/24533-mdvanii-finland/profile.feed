@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Mdvanii Finland's news feed</title>
+		<description>Latest activities around Mdvanii Finland. Last visit date: 2011-11-26 09:43:44</description>
+		<link>http://drownedmadonna.com/community/24533-mdvanii-finland/profile.html</link>
+		<lastBuildDate>Sat, 26 Nov 2011 14:53:57 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://drownedmadonna.com/images/avatar/thumb_72edd1db5a6f2e0d5bf85352.jpg</url>
+			<title></title>
+			<link>/community/24533-mdvanii-finland/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+	</channel>
+</rss>

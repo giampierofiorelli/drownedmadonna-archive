@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Eden Thornton's news feed</title>
+		<description>Latest activities around Eden Thornton. Last visit date: 2012-10-15 12:22:58</description>
+		<link>http://drownedmadonna.com/community/24987-eden-thornton/profile.html</link>
+		<lastBuildDate>Fri, 09 Nov 2012 05:36:31 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://drownedmadonna.com/images/avatar/thumb_ef3d216fb3b5f3f16b6dbf74.jpg</url>
+			<title></title>
+			<link>/community/24987-eden-thornton/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+	</channel>
+</rss>
