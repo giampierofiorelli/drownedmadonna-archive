@@ -31,6 +31,19 @@
       "mode": "listings"
     },
     {
+      "era": "snapshots-2004-05",
+      "capture_from": "200405",
+      "capture_to": "200405",
+      "mode": "listings"
+    },
+    {
+      "era": "forum-madonnavillage",
+      "capture_from": "2004",
+      "capture_to": "2005",
+      "mode": "forum",
+      "domain": "madonnavillage.it"
+    },
+    {
       "era": "2006-2010",
       "capture_from": "2006",
       "capture_to": "2010"
