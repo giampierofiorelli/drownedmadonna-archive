@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>baldinox's news feed</title>
+		<description>Latest activities around baldinox. Last visit date: 0000-00-00 00:00:00</description>
+		<link>http://www.drownedmadonna.com/community/19694-baldinox/profile.html</link>
+		<lastBuildDate>Fri, 29 Jun 2012 02:06:14 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://www.drownedmadonna.com/components/com_community/templates/blackout/images/user_thumb.png</url>
+			<title></title>
+			<link>/community/19694-baldinox/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+	</channel>
+</rss>

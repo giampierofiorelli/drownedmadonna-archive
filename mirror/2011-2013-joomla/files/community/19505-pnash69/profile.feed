@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>pnash69's news feed</title>
+		<description>Latest activities around pnash69. Last visit date: 2012-11-06 22:29:00</description>
+		<link>http://drownedmadonna.com/community/19505-pnash69/profile.html</link>
+		<lastBuildDate>Thu, 08 Nov 2012 09:19:05 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://drownedmadonna.com/components/com_community/templates/blackout/images/user_thumb.png</url>
+			<title></title>
+			<link>/community/19505-pnash69/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+		<item>
+			<title>Giampiero Fiorelli and pnash69 are now friends</title>
+			<link>http://drownedmadonna.com/community/19505-pnash69/profile.html</link>
+			<guid>http://drownedmadonna.com/community/19505-pnash69/profile.html</guid>
+			<description><![CDATA[<img src="http://drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://drownedmadonna.com//community/giampiero-fiorelli/profile.html">Giampiero Fiorelli</a> and <a href="http://drownedmadonna.com//community/19505-pnash69/profile.html">pnash69</a> are now friends]]></description>
+			<pubDate>Sat, 24 Sep 2011 13:47:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Giampiero Fiorelli &amp;#9658; pnash69 Welcome back!</title>
+			<link>http://drownedmadonna.com/community/19505-pnash69/profile.html</link>
+			<guid>http://drownedmadonna.com/community/19505-pnash69/profile.html</guid>
+			<description><![CDATA[<img src="http://drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://drownedmadonna.com//community/giampiero-fiorelli/profile.html">Giampiero Fiorelli</a> &#9658; <a href="http://drownedmadonna.com//community/19505-pnash69/profile.html">pnash69</a> Welcome back!]]></description>
+			<pubDate>Sat, 24 Sep 2011 13:44:00 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
