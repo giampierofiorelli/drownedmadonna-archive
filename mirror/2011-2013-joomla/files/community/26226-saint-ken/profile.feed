@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Saint Ken's news feed</title>
+		<description>Latest activities around Saint Ken. Last visit date: 2012-10-17 16:53:10</description>
+		<link>http://drownedmadonna.com/community/26226-saint-ken/profile.html</link>
+		<lastBuildDate>Sat, 03 Nov 2012 15:32:25 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://drownedmadonna.com/images/avatar/thumb_5993802a44f38708ec176e3c.jpg</url>
+			<title></title>
+			<link>/community/26226-saint-ken/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+	</channel>
+</rss>
