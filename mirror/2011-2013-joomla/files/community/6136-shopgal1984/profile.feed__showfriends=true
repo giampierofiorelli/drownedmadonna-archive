@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Shopgal1984's news feed</title>
+		<description>Latest activities around Shopgal1984. Last visit date: 2011-11-22 16:18:01</description>
+		<link>http://drownedmadonna.com/community/6136-shopgal1984/profile.html</link>
+		<lastBuildDate>Sat, 26 Nov 2011 14:47:16 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://drownedmadonna.com/components/com_community/templates/blackout/images/user_thumb.png</url>
+			<title></title>
+			<link>/community/6136-shopgal1984/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+	</channel>
+</rss>
