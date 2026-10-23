@@ -25,6 +25,12 @@
       "domain": "madonnafanzine.com"
     },
     {
+      "era": "snapshots-2002-2005",
+      "capture_from": "2002",
+      "capture_to": "200505",
+      "mode": "listings"
+    },
+    {
       "era": "2006-2010",
       "capture_from": "2006",
       "capture_to": "2010"
