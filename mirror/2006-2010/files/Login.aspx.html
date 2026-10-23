@@ -1,0 +1,342 @@
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" > 
+
+<HTML>
+  <HEAD>
+    <title>LiveStats®</title>
+    <script language="javascript" src="Jscript/navValidator.js"></script>
+    <script language="javascript" src="Jscript/Sleight.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/DMStyle.css"/>
+    <style>
+      INPUT { width:220px;border:1px solid #9EA39C; height:22px; };
+    </style>
+   <script language="javascript">
+
+    var Image1 = new Image();
+    Image1.src = "Images/SignOn/login-off.gif";
+
+    var Image2 = new Image();
+    Image2.src = "Images/SignOn/login-over.gif";    
+    
+    var Image3 = new Image();
+    Image3.src = "Images/HeaderTile_30.gif";    
+    
+    function Init()
+    {
+        document.forms[0].txtLoginID.focus();
+    }
+    function EnterSubmit()
+    {
+      var keyCode = event.keyCode ? event.keyCode : event.which ? event.which : event.charCode;
+      
+      if (keyCode == 13)
+      {    
+        DoPostBack('Login','',true);
+      }
+    }
+   </script>
+   
+        
+  </HEAD>
+  <body bgcolor="#EBF2EA" Background="Images/Signon/background.gif" onload="Init();">
+  <script language=javascript>
+//V7.7
+var isMac   = (navigator.userAgent.indexOf('Mac') != -1) ? true : false;
+var mac4    = (isMac && document.all && navigator.appVersion.indexOf('MSIE 4.5') != -1) ? true : false;
+var mac5    = (isMac && document.all && navigator.appVersion.indexOf('MSIE 5') != -1) ? true : false;
+var isOpera = (navigator.userAgent.indexOf('Opera') != -1) ? true : false;
+var docObj  = document;
+
+</script>
+
+<script language="javascript" src="Jscript/Globals.js"></script>
+<script language="javascript" src="Jscript/DMUI.js"></script>
+<script language="javascript" src="Jscript/DMMisc.js"></script>
+<script language="javascript" src="Jscript/reportItemMenu.js"></script>
+
+<script language="javascript" src="Jscript/Zoom.js"></script>    
+<script language=javascript src="Jscript/DMReportSettings.js"></script>
+
+<script language=javascript>
+
+if ( parent.top.HideStatusWindows )
+  parent.top.HideStatusWindows();
+
+var bw = new checkBrowser(); // Browser Detection
+
+if(document.layers) 
+	document.captureEvents(Event.KEYDOWN);
+document.onkeydown = kPress;
+var submitCommand = '';
+
+
+
+function kPress(e)
+{
+  if ( bw.ns || bw.ns6)
+  {
+    if( e.which == 13 && submitCommand != '')
+    {
+      eval(submitCommand);
+      e.which = -1;    
+      return false;
+    }
+  }
+  else if ( bw.ie || document.all )
+  {
+    if ( event.keyCode == 13  && submitCommand != '' )
+    {
+      eval(submitCommand);
+        event.keyCode = -1;
+      return false;
+    }
+  }
+     
+  return true;
+};
+
+if(window.parent.frames['Report'])
+  window.parent.frames['Report'].focus();
+
+var focusException = '';
+function FocusForm()
+  {
+    if(document.forms[0])
+      {
+        if(focusException != '')
+          {
+            eval('document.forms[0].'+focusException+'.focus();');
+          }
+        else
+          {
+            var x = 0;
+            var fel = document.forms[0];
+    
+            while(fel.elements[x])
+              {
+                if((fel.elements[x].type == 'text' || fel.elements[x].type == 'textarea' || fel.elements[x].type == 'select-one') && !fel.elements[x].isDisabled &&  !fel.elements[x].readOnly)
+                  {
+                    fel.elements[x].focus();
+                    break;
+                  }
+                x++;
+              }
+          }
+      }
+  }
+function DoPostBack(action, extraparams, cleanURL)
+{  
+    //if ( cleanURL == 'undefined' )
+    if ( cleanURL )
+      cleanURL = true
+    var FormAction;
+    if(document.forms[0].action.indexOf('#') != -1)
+      FormAction = document.forms[0].action.substr(0, document.forms[0].action.indexOf('#'));
+    else
+      FormAction = document.forms[0].action;
+    if ( cleanURL == true )
+      if(document.forms[0].action.indexOf('?') != -1)
+        FormAction = document.forms[0].action.substr(0, document.forms[0].action.indexOf('?'));
+    if ( FormAction.indexOf("?") < 0 )
+      FormAction += "?";
+    if (FormAction.lastIndexOf("&") != ( FormAction.length - 1 ) )
+      FormAction += "&";
+    FormAction = FormAction.replace(/Action\=[^\?\&]*/g, '');
+    FormAction = FormAction.replace(/\&\&/g, '&');
+    FormAction = FormAction.replace(/\?\&/g, '?');
+    FormAction += "Action=" + action;
+
+    //if ( extraparams != undefined )
+    if ( extraparams )
+    { 
+      if ( extraparams != '' )
+      {
+        var extraCGI = extraparams.substr(0,extraparams.indexOf("="));
+      
+        var rgx = eval("/" + extraCGI + "\=[^\?\&]*/g");
+        FormAction = FormAction.replace(rgx, '');
+        FormAction = FormAction.replace(/\&\&/g, '&');
+        FormAction = FormAction.replace(/\?\&/g, '?');
+        FormAction +=  "&" + extraparams;
+      }
+    }
+    document.forms[0].action = FormAction;
+    document.forms[0].submit();
+    return false;
+}
+
+function CustomPost(CustomFormAction)
+{  
+    document.forms[0].action = CustomFormAction;  
+    document.forms[0].submit();
+    
+    return true;
+}
+
+function InitReport()
+{
+  var Report = GetReportFromURL();
+  SetHelp( Report );
+  
+  SetSettings( Report );
+  
+  if ( parent.top.HideAllFrames )
+    parent.top.HideAllFrames();
+
+  
+  pageLoaded = true;
+}
+
+function SetSettings( Report )
+{
+  if ( ! parent.top.ReportSettingsFrame )
+    return;
+  
+  if ( ! Report )
+    Report = GetReportFromURL();
+  var NewURL      = 'ReportSettingsFrame.aspx?Report=' + Report;
+  
+  var ReportParams = parent.top.ContentFrame.document.location.search;
+  if ( ReportParams )
+  {
+     ReportParams = "&" + ReportParams.substring( 1 );
+     NewURL += ReportParams;
+  }
+  var ExistingURL = parent.top.ReportSettingsFrame.document.location.href;
+  //if ( ExistingURL.indexOf( NewURL ) == -1 )
+  {
+    parent.top.ReportSettingsFrame.document.location = NewURL;
+  }
+}
+
+function SetHelp( Report )
+{
+  if ( ! Report )
+    Report = GetReportFromURL();
+  
+  if ( parent.top.SetContextHelp ) 
+    parent.top.SetContextHelp( Report );
+}
+
+function GetReportFromURL()
+{
+    var Path = document.location.pathname;
+    var Report = Path.substring( Path.indexOf( "Report-" ) + 7, Path.indexOf( ".aspx" ) );
+    return Report;
+}
+
+</script>
+
+
+
+
+
+<DIV ID="DMLoadDiv" STYLE="position:absolute;visibility:hidden;top:0;left:0;z-index:99;height:100%;">
+ <table cellspacing=0 cellpadding=0 border=0 width=100% height=100% bgcolor=white>
+  <tr valign=middle>
+   <td align=center><font class="title">One moment please...</font></td>
+  </tr>
+ </table>
+</DIV>
+
+<div id="altTag" STYLE="position:absolute;left:0;top:0;visibility:hidden;z-index:30;"></div>
+<form name="Login" method="post" action="Login.aspx" id="Login">
+<input type="hidden" name="__VIEWSTATE" value="dDw3NzY0MjM2NTc7Oz6SFJwgQ3b+PTnAqJvv0fx36KfzBw==" />
+
+   
+    <table cellspacing=0 cellpadding=60 border=0 width=100% height=100%>
+     <tr valign=top>
+      <td align=center>
+      
+      
+      <noscript>
+       <table cellpadding=0 cellspacing=0 border=0 class="ErrorTable" width=365>
+        <tr>
+         <td><img src="Icons/warning.png" hspace=5></td>
+         <td width=100%>LiveStats.XSP Requires a JavaScript Enabled Browser.</td>
+        </tr>
+       </table>
+       <table cellpadding=0 cellspacing=0 border=0 width=310>
+        <tr>
+         <td>
+          - Your browser security settings may be set too high.
+         <br>- JavaScript may be disabled in your browser.
+         </td>
+        </tr>
+       </table>
+       <br><br><br>
+      </noscript>      
+      
+      
+
+      
+       <table cellspacing=0 cellpadding=0 border=0>
+        <tr>
+         <td><img src="Images/SignOn/Login_Header.png"></td>
+        </tr>
+        <tr>
+         <td height=185 style="border-left:1px solid #A1A29D;border-right:1px solid #A1A29D;background-color:#C9E6F7;width:363px" align=center>
+          
+          <table cellspacing=0 cellpadding=0 border=0 width=318 id="LoginScreen">
+           <tr>
+            <td nowrap align=right><b>Server Domain:</b></td>
+            <td width=15 nowrap rowspan=7>&nbsp;</td>
+            <td width=100%><input name="txtLoginID" type="text" id="txtLoginID" /></td>
+           </tr>
+           <tr>
+            <td height=20 colspan=2>&nbsp;</td>
+           </tr>
+           <tr>
+            <td nowrap align=right><b>User Name:</b></td>
+            <td><input name="txtUserName" type="text" id="txtUserName" /></td>
+           </tr>
+           <tr>
+            <td height=20 colspan=2>&nbsp;</td>
+           </tr>
+           <tr>
+            <td nowrap align=right><b>Password:</b></td>
+            <td><input name="txtPassword" type="password" id="txtPassword" OnKeyDown="EnterSubmit();" /></td>
+           </tr>
+           <tr>
+            <td height=21 colspan=2>&nbsp;</td>
+           </tr>
+           <tr>
+            <td>&nbsp;</td>
+            <td align=right><a href="#here" onclick="DoPostBack('Login','',true);return false;"><img src="Images/SignOn/login-off.gif" border=0 OnMouseOver="this.src='Images/SignOn/login-over.gif';" OnMouseOut="this.src='Images/SignOn/login-off.gif';"></a></td>
+           </tr>
+          </table>
+          
+         </td>
+        </tr>
+        <tr>
+         <td><img src="Images/SignOn/Login_Footer.png"></td>
+        </tr>
+       </table>
+
+        <p>
+        <p> <p> 
+<table width=100% cellspacing=0 cellpadding=0 border=0>
+ <tr>
+ <td width=50%></td>
+  <td align=center width=602 style="width:602;">
+   <table cellspacing=0 cellpadding=0 border=0 width=602 style="width:602;">
+    <tr>
+     <td align=center><font style="font-size: 9px;  color: gray;  font-family: Arial,Verdana,Geneva;">LiveStats® .XSP V8.03&nbsp;&nbsp;Copyright ©1996-2005 <font color="#5E5E5E"><a href="#" OnClick="window.open('http://www.DeepMetrix.com');" style="font-size: 9px;  color: #5E5E5E;  font-family: Arial,Verdana,Geneva;text-decoration: none;">DeepMetrix® Corporation.&nbsp;</a></font><font style="font-size: 9px;  color: gray;  font-family: Arial,Verdana,Geneva;">All rights reserved.</font></font></td>
+    </tr>   
+    <tr><td align=center><font style="font-size: 9px;  color: gray;  font-family: Arial,Verdana,Geneva;">Licensed to Aruba S.p.A..</td></tr>   </table>
+  </td>
+  <td width=50%></td>
+ </tr>
+ <span height=1 width=610 style"heigh:1;width:601"></span></table>
+<p> 
+
+       
+      </td>
+     </tr>
+    </table>
+    
+
+  </form>
+  </body>
+</HTML>
