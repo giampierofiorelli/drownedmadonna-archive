@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Matthew Hock's news feed</title>
+		<description>Latest activities around Matthew Hock. Last visit date: 2013-05-16 07:24:16</description>
+		<link>http://www.drownedmadonna.com/community/28921-matthew-hock/profile.html</link>
+		<lastBuildDate>Sat, 29 Jun 2013 19:29:15 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://www.drownedmadonna.com/components/com_community/templates/blackout/images/user_thumb.png</url>
+			<title></title>
+			<link>/community/28921-matthew-hock/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+		<item>
+			<title>Matthew Hock  Bankruptcy Attorney Huntington Beach</title>
+			<link>http://www.drownedmadonna.com/community/28921-matthew-hock/profile.html</link>
+			<guid>http://www.drownedmadonna.com/community/28921-matthew-hock/profile.html</guid>
+			<description><![CDATA[<img src="http://www.drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://www.drownedmadonna.com//community/28921-matthew-hock/profile.html">Matthew Hock</a>  Bankruptcy Attorney Huntington Beach]]></description>
+			<pubDate>Thu, 16 May 2013 08:24:00 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

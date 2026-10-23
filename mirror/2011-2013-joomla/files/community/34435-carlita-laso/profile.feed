@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Carlita Laso's news feed</title>
+		<description>Latest activities around Carlita Laso. Last visit date: 2013-08-06 15:46:18</description>
+		<link>http://www.drownedmadonna.com/community/34435-carlita-laso/profile.html</link>
+		<lastBuildDate>Tue, 22 Oct 2013 07:57:59 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://www.drownedmadonna.com/components/com_community/templates/blackout/images/user_thumb.png</url>
+			<title></title>
+			<link>/community/34435-carlita-laso/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+		<item>
+			<title>Carlita Laso  For additional details on Skin Whitening Forever please click here - # link #</title>
+			<link>http://www.drownedmadonna.com/community/34435-carlita-laso/profile.html</link>
+			<guid>http://www.drownedmadonna.com/community/34435-carlita-laso/profile.html</guid>
+			<description><![CDATA[<img src="http://www.drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://www.drownedmadonna.com//community/34435-carlita-laso/profile.html">Carlita Laso</a>  For additional details on Skin Whitening Forever please click here - # link #]]></description>
+			<pubDate>Tue, 06 Aug 2013 16:46:00 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
