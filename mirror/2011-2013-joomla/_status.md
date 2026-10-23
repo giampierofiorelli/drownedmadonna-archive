@@ -1,7 +1,7 @@
 # 2011-2013-joomla
 
-Processed 1435 of 3310 files (43%).
+Processed 1517 of 3310 files (46%).
 
-Last update: 2026-10-23 19:47 UTC
+Last update: 2026-10-23 19:57 UTC
 
-Delay between requests: 2.0s. Retries this run: {"URLError": 1072, "wait_seconds": 34950, "http_503": 2}
+Delay between requests: 2.0s. Retries this run: {"URLError": 1110, "wait_seconds": 35780, "http_503": 2}
