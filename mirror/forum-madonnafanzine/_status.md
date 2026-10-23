@@ -1,7 +1,7 @@
 # forum-madonnafanzine
 
-Processed 229 of 478 files (48%).
+Processed 346 of 478 files (72%).
 
-Last update: 2026-10-22 23:57 UTC
+Last update: 2026-10-23 00:07 UTC
 
-Delay between requests: 2.0s. Retries this run: {"URLError": 5, "wait_seconds": 60}
+Delay between requests: 2.0s. Retries this run: {"URLError": 14, "wait_seconds": 170}
