@@ -26,6 +26,7 @@ QUERIES = {
     "feeds-rss": {"url": "drownedmadonna.com/rss", "matchType": "prefix"},
     # Sister sites and other domains the news may have been mirrored on.
     "madonnafanzine": {"url": "madonnafanzine.com", "matchType": "domain", "from": "2006", "to": "2008"},
+    "madonnavillage": {"url": "madonnavillage.it", "matchType": "domain", "from": "2004", "to": "2005"},
     "drownedmadonna-it": {"url": "drownedmadonna.it", "matchType": "domain"},
     "drownedmadonna-net": {"url": "drownedmadonna.net", "matchType": "domain"},
     "drownedmadonna-org": {"url": "drownedmadonna.org", "matchType": "domain"},
