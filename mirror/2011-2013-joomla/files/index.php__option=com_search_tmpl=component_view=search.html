@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns:fb="http://www.facebook.com/2008/fbml" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb" dir="ltr">
+<head>
+	  <base href="http://drownedmadonna.com/index.php" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="robots" content="index, follow" />
+  <meta name="keywords" content="Madonna news, Madonna tickets, Madonna tour tickets,Madonna fansite, MDNA" />
+  <meta name="description" content="Madonna news, Madonna tickets, madonna tour tickets, Madonna biggest Community and Forum." />
+  <meta name="generator" content="Joomla! 1.5 - Open Source Content Management" />
+  <title>Search</title>
+  <link href="/templates/DrownedMadonna2010/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+  <link rel="stylesheet" href="/media/system/css/modal.css" type="text/css" />
+  <link rel="stylesheet" href="http://drownedmadonna.com/components/com_k2/css/k2.css" type="text/css" />
+  <script type="text/javascript" src="/plugins/system/mtupgrade/mootools.js"></script>
+  <script type="text/javascript" src="/media/system/js/modal.js"></script>
+  <script type="text/javascript" src="http://drownedmadonna.com/components/com_k2/js/k2.js"></script>
+  <script type="text/javascript" src="/components/com_jfbconnect/includes/jfbconnect.js"></script>
+  <script type="text/javascript">
+window.addEvent("domready", function() {
+	SqueezeBox.initialize({});
+	$$("a.modal").each(function(el) {
+		el.addEvent("click", function(e) {
+			new Event(e).stop();
+			SqueezeBox.fromElement(el);
+		});
+	});
+});var K2RatingURL = 'http://drownedmadonna.com/';
+  </script>
+  <script type='text/javascript'>
+/*<![CDATA[*/
+	var jax_live_site = 'http://drownedmadonna.com/index.php';
+	var jax_site_type = '1.5';
+	var jax_token_var='257506b817550e1fcba313871599cc3a';
+/*]]>*/
+</script><script type="text/javascript" src="http://drownedmadonna.com/plugins/system/pc_includes/ajax_1.3.js"></script>
+  <script type="text/javascript">var jfbcLogoutFacebook = false;
+var jfbcBase = 'http://drownedmadonna.com/';
+var jfbcOptionsPermsUrl = 'http://drownedmadonna.com/component/jfbconnect/?task=loginFacebookUser&return=L2luZGV4LnBocD9vcHRpb249Y29tX3NlYXJjaCZ2aWV3PXNlYXJjaCZ0bXBsPWNvbXBvbmVudA%3D%3D';
+var jfbcRequiredPermissions = 'email,publish_stream,user_birthday,user_about_me,user_website';
+</script>
+  <meta property="og:image" content="http://www.drownedmadonna.com/img/bg-fb.jpg"/><meta property="og:url" content="http://drownedmadonna.com/index.php?option=com_search&view=search&tmpl=component"/><meta property="og:title" content="Search"/><meta property="og:description" content="Madonna news, Madonna tickets, madonna tour tickets, Madonna biggest Community and Forum."/><meta property="og:type" content="website" /><meta property="fb:app_id" content="117703361666128"/>
+
+	<link rel="stylesheet" href="/templates/DrownedMadonna2010/css/template.css" type="text/css" />
+
+</head>
+<body class="contentpane"><div id="fb-root"></div>
+<script type="text/javascript">
+
+
+window.fbAsyncInit = function() {
+FB.init({appId: '117703361666128', status: true, cookie: true, xfbml: true, oauth: true, channelUrl: 'http://drownedmadonna.com/components/com_jfbconnect/assets/jfbcchannel.php'});
+FB.Event.subscribe('comment.create', jfbc.social.comment.create);
+};
+(function() {
+var e = document.createElement('script'); e.async = true;
+e.src = document.location.protocol +
+'//connect.facebook.net/en_US/all.js';
+document.getElementById('fb-root').appendChild(e);
+}());
+</script>
+	
+	
+<div class="componentheading">
+	Search</div>
+
+
+<form id="searchForm" action="/component/search/" method="post" name="searchForm">
+	<table class="contentpaneopen">
+		<tr>
+			<td nowrap="nowrap">
+				<label for="search_searchword">
+					Search Keyword:
+				</label>
+			</td>
+			<td nowrap="nowrap">
+				<input type="text" name="searchword" id="search_searchword" size="30" maxlength="20" value="" class="inputbox" />
+			</td>
+			<td width="100%" nowrap="nowrap">
+				<button name="Search" onclick="this.form.submit()" class="button">Search</button>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				
+	<input type="radio" name="searchphrase" id="searchphraseall" value="all" checked="checked"  />
+	<label for="searchphraseall">All words</label>
+	<input type="radio" name="searchphrase" id="searchphraseany" value="any"  />
+	<label for="searchphraseany">Any words</label>
+	<input type="radio" name="searchphrase" id="searchphraseexact" value="exact"  />
+	<label for="searchphraseexact">Exact Phrase</label>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="3">
+				<label for="ordering">
+					Ordering:
+				</label>
+				<select name="ordering" id="ordering" class="inputbox"><option value="newest"  selected="selected">Newest First</option><option value="oldest" >Oldest First</option><option value="popular" >Most Popular</option><option value="alpha" >Alphabetical</option><option value="category" >Section/Category</option></select>			</td>
+		</tr>
+	</table>
+			Search Only:
+				<input type="checkbox" name="areas[]" value="k2" id="area_k2"  />
+			<label for="area_k2">
+				K2 Items			</label>
+				<input type="checkbox" name="areas[]" value="content" id="area_content"  />
+			<label for="area_content">
+				Articles			</label>
+				<input type="checkbox" name="areas[]" value="weblinks" id="area_weblinks"  />
+			<label for="area_weblinks">
+				Web Links			</label>
+				<input type="checkbox" name="areas[]" value="contacts" id="area_contacts"  />
+			<label for="area_contacts">
+				Contacts			</label>
+				<input type="checkbox" name="areas[]" value="categories" id="area_categories"  />
+			<label for="area_categories">
+				Categories			</label>
+				<input type="checkbox" name="areas[]" value="sections" id="area_sections"  />
+			<label for="area_sections">
+				Sections			</label>
+				<input type="checkbox" name="areas[]" value="newsfeeds" id="area_newsfeeds"  />
+			<label for="area_newsfeeds">
+				News Feeds			</label>
+			
+
+	<table class="searchintro">
+	<tr>
+		<td colspan="3" >
+			<br />
+			Search Keyword <b></b>		</td>
+	</tr>
+	<tr>
+		<td>
+			<br />
+			Total: 0 results found.		</td>
+	</tr>
+</table>
+
+<br />
+
+<input type="hidden" name="task"   value="search" />
+</form>
+
+<table class="searchintro">
+	<tr>
+		<td colspan="3" >
+					</td>
+	</tr>
+</table>
+
+
+			<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+			</script>
+			<script type="text/javascript">
+			try {
+			var pageTracker = _gat._getTracker("UA-8673333-2");
+			pageTracker._trackPageview();
+			} catch(err) {}</script>
+			</body>
+</html>
