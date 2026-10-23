@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Nilda Hohiudden's news feed</title>
+		<description>Latest activities around Nilda Hohiudden. Last visit date: 2013-10-19 23:58:08</description>
+		<link>http://drownedmadonna.com/community/39018-nilda-hohiudden/profile.html</link>
+		<lastBuildDate>Wed, 04 Dec 2013 12:03:21 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://drownedmadonna.com/components/com_community/templates/blackout/images/user_thumb.png</url>
+			<title></title>
+			<link>/community/39018-nilda-hohiudden/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+		<item>
+			<title>Nilda Hohiudden   http://www.youtu.be/wNUmLqoFjDg</title>
+			<link>http://www.youtu.be/wNUmLqoFjDg</link>
+			<guid>http://www.youtu.be/wNUmLqoFjDg</guid>
+			<description><![CDATA[<img src="http://drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://drownedmadonna.com//community/39018-nilda-hohiudden/profile.html">Nilda Hohiudden</a>   <a href="http://www.youtu.be/wNUmLqoFjDg">http://www.youtu.be/wNUmLqoFjDg</a>]]></description>
+			<pubDate>Sun, 20 Oct 2013 00:58:00 +0000</pubDate>
+		</item>
+	</channel>
+</rss>

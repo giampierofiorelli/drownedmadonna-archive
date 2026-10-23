@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Maloveci's news feed</title>
+		<description>Latest activities around Maloveci. Last visit date: 2012-10-28 13:30:10</description>
+		<link>http://drownedmadonna.com/community/3808-maloveci/profile.html</link>
+		<lastBuildDate>Mon, 05 Nov 2012 03:13:51 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://drownedmadonna.com/images/avatar/thumb_2db4e4054aeedf83ae305678.jpg</url>
+			<title></title>
+			<link>/community/3808-maloveci/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+		<item>
+			<title>Maloveci  uploaded a new avatar</title>
+			<link>http://drownedmadonna.com/community/3808-maloveci/profile.html</link>
+			<guid>http://drownedmadonna.com/community/3808-maloveci/profile.html</guid>
+			<description><![CDATA[<img src="http://drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://drownedmadonna.com//community/3808-maloveci/profile.html">Maloveci</a>  uploaded a new avatar]]></description>
+			<pubDate>Wed, 12 Oct 2011 01:57:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Giampiero Fiorelli and Maloveci are now friends</title>
+			<link>http://drownedmadonna.com/community/3808-maloveci/profile.html</link>
+			<guid>http://drownedmadonna.com/community/3808-maloveci/profile.html</guid>
+			<description><![CDATA[<img src="http://drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://drownedmadonna.com//community/giampiero-fiorelli/profile.html">Giampiero Fiorelli</a> and <a href="http://drownedmadonna.com//community/3808-maloveci/profile.html">Maloveci</a> are now friends]]></description>
+			<pubDate>Sun, 25 Sep 2011 14:01:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Giampiero Fiorelli &amp;#9658; Maloveci Welcome back!</title>
+			<link>http://drownedmadonna.com/community/3808-maloveci/profile.html</link>
+			<guid>http://drownedmadonna.com/community/3808-maloveci/profile.html</guid>
+			<description><![CDATA[<img src="http://drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://drownedmadonna.com//community/giampiero-fiorelli/profile.html">Giampiero Fiorelli</a> &#9658; <a href="http://drownedmadonna.com//community/3808-maloveci/profile.html">Maloveci</a> Welcome back!]]></description>
+			<pubDate>Sat, 24 Sep 2011 16:15:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Maloveci  uploaded a new avatar</title>
+			<link>http://drownedmadonna.com/community/3808-maloveci/profile.html</link>
+			<guid>http://drownedmadonna.com/community/3808-maloveci/profile.html</guid>
+			<description><![CDATA[<img src="http://drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://drownedmadonna.com//community/3808-maloveci/profile.html">Maloveci</a>  uploaded a new avatar]]></description>
+			<pubDate>Sat, 24 Sep 2011 14:47:00 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
