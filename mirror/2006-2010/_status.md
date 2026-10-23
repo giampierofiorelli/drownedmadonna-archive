@@ -1,7 +1,7 @@
 # 2006-2010
 
-Processed 3013 of 5012 files (60%).
+Processed 3061 of 5012 files (61%).
 
-Last update: 2026-10-23 08:25 UTC
+Last update: 2026-10-23 08:35 UTC
 
-Delay between requests: 2.0s. Retries this run: {"URLError": 66, "wait_seconds": 2230}
+Delay between requests: 2.0s. Retries this run: {"URLError": 105, "wait_seconds": 3470}
