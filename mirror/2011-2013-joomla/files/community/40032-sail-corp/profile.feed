@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>sail corp's news feed</title>
+		<description>Latest activities around sail corp. Last visit date: 2013-10-25 10:16:34</description>
+		<link>http://www.drownedmadonna.com/community/40032-sail-corp/profile.html</link>
+		<lastBuildDate>Mon, 04 Nov 2013 14:40:25 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://www.drownedmadonna.com/images/avatar/thumb_3faa449cdc7987800340153b.jpg</url>
+			<title></title>
+			<link>/community/40032-sail-corp/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+	</channel>
+</rss>
