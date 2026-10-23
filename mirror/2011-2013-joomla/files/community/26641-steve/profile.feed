@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Steve's news feed</title>
+		<description>Latest activities around Steve. Last visit date: 2012-09-15 20:26:03</description>
+		<link>http://drownedmadonna.com/community/26641-steve/profile.html</link>
+		<lastBuildDate>Mon, 15 Oct 2012 00:51:32 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://drownedmadonna.com/images/avatar/thumb_c7e777a90ccb56e3e0faeef7.jpg</url>
+			<title></title>
+			<link>/community/26641-steve/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+		<item>
+			<title>Steve Hey, here I am at USA premiere of MDNA 8/28 Philly and looking forward to the MDNA show 11/13 at Madison Square Garden!</title>
+			<link>http://drownedmadonna.com/community/26641-steve/profile.html</link>
+			<guid>http://drownedmadonna.com/community/26641-steve/profile.html</guid>
+			<description><![CDATA[<img src="http://drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://drownedmadonna.com//community/26641-steve/profile.html">Steve</a> Hey, here I am at USA premiere of MDNA 8/28 Philly and looking forward to the MDNA show 11/13 at Madison Square Garden!]]></description>
+			<pubDate>Sat, 15 Sep 2012 02:00:00 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
