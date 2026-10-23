@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- generator="Joomla! 1.5 - Open Source Content Management" -->
+<?xml-stylesheet href="/media/system/css/modal.css" type="text/css"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>mrsciccone's news feed</title>
+		<description>Latest activities around mrsciccone. Last visit date: 2012-10-22 18:31:12</description>
+		<link>http://drownedmadonna.com/community/517-mrsciccone/profile.html</link>
+		<lastBuildDate>Sat, 03 Nov 2012 12:55:43 +0000</lastBuildDate>
+		<generator>Joomla! 1.5 - Open Source Content Management</generator>
+		<image>
+			<url>http://drownedmadonna.com/images/avatar/thumb_ed1856fbc31960555aab7d96.jpg</url>
+			<title></title>
+			<link>/community/517-mrsciccone/profile.html</link>
+			<width>64</width>
+			<height>64</height>
+		</image>
+		<language>en-gb</language>
+		<item>
+			<title>mrsciccone  uploaded a new avatar</title>
+			<link>http://drownedmadonna.com/community/517-mrsciccone/profile.html</link>
+			<guid>http://drownedmadonna.com/community/517-mrsciccone/profile.html</guid>
+			<description><![CDATA[<img src="http://drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://drownedmadonna.com//community/517-mrsciccone/profile.html">mrsciccone</a>  uploaded a new avatar]]></description>
+			<pubDate>Sun, 05 Feb 2012 17:56:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Giampiero Fiorelli and mrsciccone are now friends</title>
+			<link>http://drownedmadonna.com/community/517-mrsciccone/profile.html</link>
+			<guid>http://drownedmadonna.com/community/517-mrsciccone/profile.html</guid>
+			<description><![CDATA[<img src="http://drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://drownedmadonna.com//community/giampiero-fiorelli/profile.html">Giampiero Fiorelli</a> and <a href="http://drownedmadonna.com//community/517-mrsciccone/profile.html">mrsciccone</a> are now friends]]></description>
+			<pubDate>Wed, 21 Sep 2011 19:16:00 +0000</pubDate>
+		</item>
+		<item>
+			<title>Giampiero Fiorelli &amp;#9658; mrsciccone Welcome back!</title>
+			<link>http://drownedmadonna.com/community/517-mrsciccone/profile.html</link>
+			<guid>http://drownedmadonna.com/community/517-mrsciccone/profile.html</guid>
+			<description><![CDATA[<img src="http://drownedmadonna.com/components/com_community/assets/favicon/default.png" alt="" />&nbsp;<a class="actor-link" href="http://drownedmadonna.com//community/giampiero-fiorelli/profile.html">Giampiero Fiorelli</a> &#9658; <a href="http://drownedmadonna.com//community/517-mrsciccone/profile.html">mrsciccone</a> Welcome back!]]></description>
+			<pubDate>Wed, 21 Sep 2011 16:57:00 +0000</pubDate>
+		</item>
+	</channel>
+</rss>
