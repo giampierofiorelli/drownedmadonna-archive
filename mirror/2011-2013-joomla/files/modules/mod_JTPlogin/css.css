@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+#jtphorzlogin {
+	height: 36px;
+	line-height: 36px;
+	padding: 2px;
+	background-color: none;
+	background-image: none;
+	background-repeat: repeat-x;
+	color: #ffffff;
+	font-size: 10px;
+	text-align: center;
+	vertical-align: baseline;
+	margin: 0px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	float:left;
+}
+
+#jtphorzlogin a{
+	color: #eeeeee;
+}
+
+#jtphorzlogin a:hover{
+text-decoration: none;
+}
+
+#jtphorzlogin .inputbox {
+	border: 0px;
+	color:#999999;
+}
+
+#jtphorzlogin .button {
+	padding:1px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
